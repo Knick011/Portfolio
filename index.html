@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #e8491d;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #ffffff;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .recommendations ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Data Analyst | Data Visualization | SQL | Tableau</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm **Your Name**, a passionate Data Analyst with expertise in data visualization, SQL, and generating actionable insights from data. Welcome to my professional portfolio where I showcase my projects and skills.</p>
+        </section>
+        
+        <section id="project">
+            <h2>Cyclistic Bike-Share Analysis</h2>
+            <h3>Overview</h3>
+            <p>In this project, I analyzed Cyclistic's bike-share trip data to understand the usage patterns of annual members versus casual riders. The goal was to identify trends and provide strategic recommendations to convert casual riders into annual members, enhancing Cyclistic's profitability and growth.</p>
+            
+            <h3>Business Task</h3>
+            <p><strong>Primary Question:</strong> How do annual members and casual riders use Cyclistic bikes differently?</p>
+            
+            <h3>Data Description</h3>
+            <ul>
+                <li><strong>Data Source:</strong> Cyclistic's historical trip data (past 12 months)</li>
+                <li><strong>Key Variables:</strong>
+                    <ul>
+                        <li><code>trip_id</code>: Unique identifier for each trip</li>
+                        <li><code>started_at</code>: Start time of the trip</li>
+                        <li><code>ended_at</code>: End time of the trip</li>
+                        <li><code>member_casual</code>: Membership type (member or casual)</li>
+                        <li><code>ride_length</code>: Duration of the ride in seconds</li>
+                        <li><code>day_of_week</code>: Day of the week the trip started</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>Methodology</h3>
+            <ol>
+                <li><strong>Data Cleaning:</strong> Consolidated monthly data tables into a single <code>trips_all</code> table using SQLite.</li>
+                <li><strong>Data Analysis:</strong> Performed descriptive analysis using SQL queries to identify usage patterns.</li>
+                <li><strong>Visualization:</strong> Created insightful visualizations in Tableau to illustrate key findings.</li>
+            </ol>
+            
+            <h3>Key Findings</h3>
+            <ul>
+                <li><strong>Average Ride Length:</strong> Members have a longer average ride duration compared to casual riders.</li>
+                <li><strong>Ride Patterns by Day:</strong> Members predominantly use bikes on weekdays, aligning with commuting behavior, while casual riders prefer weekends for leisure rides.</li>
+                <li><strong>Total Rides Distribution:</strong> Although casual riders account for a higher number of total rides, members contribute more substantial usage per user.</li>
+            </ul>
+            
+            <h3>Visualizations</h3>
+            <img src="images/average_ride_length.png" alt="Average Ride Length by Membership Type">
+            <p><em>Figure 1: Average Ride Length by Membership Type</em></p>
+            
+            <img src="images/ride_count_by_day.png" alt="Ride Count by Day of the Week and Membership Type">
+            <p><em>Figure 2: Ride Count by Day of the Week and Membership Type</em></p>
+            
+            <img src="images/total_rides_pie.png" alt="Total Rides by Membership Type">
+            <p><em>Figure 3: Total Rides by Membership Type</em></p>
+            
+            <h3>Recommendations</h3>
+            <div class="recommendations">
+                <ol>
+                    <li><strong>Weekend Promotions:</strong> Target casual riders with weekend membership discounts to encourage conversions.</li>
+                    <li><strong>Commuter Campaigns:</strong> Highlight the benefits of annual memberships for daily commuters through tailored marketing.</li>
+                    <li><strong>Inclusive Marketing:</strong> Promote Cyclistic’s assistive bike options to attract a diverse user base and enhance membership appeal.</li>
+                </ol>
+            </div>
+            
+            <h3>Conclusion</h3>
+            <p>By understanding the distinct usage patterns of members and casual riders, Cyclistic can implement targeted marketing strategies to convert casual users into annual members, driving profitability and fostering sustainable growth.</p>
+            
+            <p><a href="documents/Cyclistic_Case_Study.pdf" target="_blank">Download Full Report (PDF)</a></p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via the following channels:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/myname" target="_blank">github.com/myname</a></li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
