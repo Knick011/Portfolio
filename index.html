@@ -4,66 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nihith's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #e8491d;
-            color: #ffffff;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-            background-color: #ffffff;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        footer {
-            background-color: #35424a;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            width: 100%;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .recommendations ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-    </style>
-
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Nihith Mekala's Portfolio showcasing data analysis projects, skills in SQL, Tableau, and data visualization.">
+    <meta name="keywords" content="Nihith Mekala, Data Analyst, Portfolio, SQL, Tableau, Data Visualization, Cyclistic Bike-Share Analysis">
+    <meta name="author" content="Nihith Mekala">
 </head>
 <body>
     <header>
@@ -80,7 +26,7 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm **Nihith**, a passionate Data Analyst with expertise in data visualization, SQL, and generating actionable insights from data. Welcome to my professional portfolio where I showcase my projects and skills.</p>
+            <p>Hello! I'm <strong>Nihith</strong>, a passionate Data Analyst with expertise in data visualization, SQL, and generating actionable insights from data. Welcome to my professional portfolio where I showcase my projects and skills.</p>
         </section>
         
         <section id="project">
@@ -96,25 +42,95 @@
                 <li><strong>Data Source:</strong> Cyclistic's historical trip data (past 12 months)</li>
                 <li><strong>Key Variables:</strong>
                     <ul>
-                      </ul>
+                        <li>Trip Duration</li>
+                        <li>Start Time</li>
+                        <li>End Time</li>
+                        <li>Start Station</li>
+                        <li>End Station</li>
+                        <li>Membership Type</li>
+                    </ul>
                 </li>
             </ul>
             
             <h3>Methodology</h3>
             <ol>
-                        </ol>
+                <li>Data Cleaning and Preprocessing</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Statistical Analysis</li>
+                <li>Data Visualization</li>
+                <li>Deriving Insights and Recommendations</li>
+            </ol>
             
             <h3>Key Findings</h3>
             <ul>
-                    </ul>
+                <li>Casual riders tend to take longer rides compared to members.</li>
+                <li>Members consistently dominate ride counts throughout the year, with a notable peak in September.</li>
+                <li>Casual riders' usage peaks during summer months and weekends, indicating recreational use.</li>
+            </ul>
             
             <h3>Visualizations</h3>
             
+            <!-- Figure 1 -->
+            <div class="figure">
+                <h4>Figure 1: Average Ride Length by Membership Type</h4>
+                <img src="images/figure1.png" alt="Average Ride Length by Membership Type">
+                <p><strong>Purpose:</strong> Compares the average ride lengths for two types of users: casual riders and members.</p>
+                <p><strong>Observation:</strong></p>
+                <ul>
+                    <li><strong>Casual Riders:</strong> The average ride length is significantly longer at 24.65 minutes.</li>
+                    <li><strong>Members:</strong> The average ride length is much shorter at 12.67 minutes.</li>
+                </ul>
+                <p><strong>Insight:</strong> Casual riders likely use the service for longer, less frequent trips (possibly recreational). Members use it for shorter, frequent trips, suggesting utility for commuting.</p>
+            </div>
+            
+            <!-- Figure 2 -->
+            <div class="figure">
+                <h4>Figure 2: Number of Rides by Month and Membership Type</h4>
+                <img src="images/figure2.png" alt="Number of Rides by Month and Membership Type">
+                <p><strong>Purpose:</strong> Shows how the total number of rides fluctuates monthly for casual riders and members.</p>
+                <p><strong>Observation:</strong></p>
+                <ul>
+                    <li><strong>Members:</strong> Their ride counts consistently dominate casual riders, peaking sharply in September 2024.</li>
+                    <li><strong>Casual Riders:</strong> Show a steady increase until July 2024, followed by a decline.</li>
+                </ul>
+                <p><strong>Key Points:</strong></p>
+                <ul>
+                    <li>Members exhibit consistent ride usage year-round, with a spike in late summer (September).</li>
+                    <li>Casual users show steady growth until summer, indicating seasonal or recreational use.</li>
+                </ul>
+            </div>
+            
+            <!-- Figure 3 -->
+            <div class="figure">
+                <h4>Figure 3: Number of Rides by Day of the Week and Membership Type</h4>
+                <img src="images/figure3.png" alt="Number of Rides by Day of the Week and Membership Type">
+                <p><strong>Purpose:</strong> Compares ride counts for casual and member users across each day of the week.</p>
+                <p><strong>Observation:</strong></p>
+                <ul>
+                    <li><strong>Casual Riders:</strong> Their ride numbers are significantly higher on weekends, particularly on Saturday.</li>
+                    <li><strong>Members:</strong> Consistently use the service on weekdays, peaking on Wednesday and Thursday.</li>
+                </ul>
+                <p><strong>Insight:</strong> Members likely use the service for commuting on weekdays. Casual riders prefer weekends for leisure trips.</p>
+            </div>
+            
+            <!-- Summary -->
+            <div class="summary">
+                <h4>Summary Across Figures</h4>
+                <ul>
+                    <li><strong>Average Ride Length:</strong> Casual riders take longer rides compared to members.</li>
+                    <li><strong>Monthly Ride Trends:</strong> Members dominate total rides, peaking in late summer.</li>
+                    <li><strong>Day of the Week Trends:</strong> Members ride more on weekdays, while casual riders dominate weekends.</li>
+                </ul>
+                <p>These patterns suggest members primarily use the service for regular commuting, whereas casual riders favor it for recreational purposes.</p>
+            </div>
             
             <h3>Recommendations</h3>
             <div class="recommendations">
                 <ol>
-                   </ol>
+                    <li>Implement targeted marketing campaigns during peak months to attract more casual riders to become members.</li>
+                    <li>Introduce flexible membership plans catering to different user needs, such as short-term memberships for recreational users.</li>
+                    <li>Enhance weekend service offerings and promotions to capitalize on the higher usage by casual riders.</li>
+                </ol>
             </div>
             
             <h3>Conclusion</h3>
@@ -128,7 +144,7 @@
             <p>Feel free to reach out to me via the following channels:</p>
             <ul>
                 <li><strong>Email:</strong> <a href="mailto:nihith011@gmail.com">nihith011@gmail.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/nihith-mekala-174374206" target="_blank">www.linkedin.com/in/nihith-mekala-174374206</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nihith-mekala-174374206" target="_blank">www.linkedin.com/in/nihith-mekala-174374206</a></li>
                 <li><strong>GitHub:</strong> <a href="https://github.com/Knick011" target="_blank">github.com/Knick011</a></li>
             </ul>
         </section>
