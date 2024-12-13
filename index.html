@@ -32,7 +32,7 @@
             <h2>About Me</h2>
             <p>
                 Hi there! I'm <strong>Nihith Mekala</strong>, a data-driven storyteller with a passion for turning raw numbers into insightful narratives. 
-                I am armed with SQL, Excel, and Tableau, ready to uncover patterns and paint visual pictures of complex datasets.
+                I’m armed with SQL, Excel, and Tableau, ready to uncover patterns and paint visual pictures of complex datasets.
             </p>
             <p>
                 My background is a vibrant mix of life sciences, marketing, and event management, which has taught me how to blend analytical rigor with a creative spark. Whether I’m exploring Toronto’s public transportation trends or strategizing ways to boost user engagement, I rely on data to guide decisions. 
@@ -42,8 +42,7 @@
                 Beyond crunching numbers, I’m a multilingual enthusiast fluent in English, Telugu, and Hindi, with a basic grasp of Tamil, Japanese, and Turkish—this global perspective helps me connect with diverse teams and audiences. I love continuous learning and have dived into courses from IBM, Google, and UC Davis to stay on the cutting edge of analytics and visualization.
             </p>
             <p>
-                When I’m not analyzing data, you’ll find me brainstorming creative solutions for business challenges, guiding students as a mentor, or planning events that bring people together. For me, data isn’t just about charts and numbers; it’s about building stories, fostering understanding, and making informed decisions that help people and organizations thrive.
-            </p>
+                When I’m not analyzing data, you’ll find me brainstorming creative solutions for business challenges.
         </section>
 
         <!-- Projects Section -->
@@ -63,34 +62,57 @@
                     <li>Subway delays appear more related to internal factors like maintenance and equipment issues rather than external traffic conditions.</li>
                 </ul>
                 
-                <h4>Visualizations & Analysis</h4>
+                <!-- Figure 4 -->
                 <div class="figure">
-                    
-                    <img src="images/figure4.png" alt="A line chart comparing hourly collisions and subway delays, showing distinct peak times." />
-                    <p class="caption">Although collisions spike during typical rush hours, subway delays follow a different pattern, suggesting internal operation issues may be the cause of delays rather than traffic.</p>
+                    <p><strong>Figure 4:</strong> Traffic Collisions vs Subway Delays by Hour</p>
+                    <img src="images/figure4.png" alt="A line chart comparing hourly collisions and subway delays, showing distinct peak times.">
+                    <p><strong>Purpose:</strong> Compare hourly collision counts with subway delay occurrences.</p>
+                    <p><strong>Observation:</strong></p>
+                    <ul>
+                        <li><strong>Collisions:</strong> Peak at 8 AM and 5 PM (rush hours).</li>
+                        <li><strong>Delays:</strong> Peak at 6 AM and 10 PM, differing from collision peaks.</li>
+                    </ul>
+                    <p><strong>Insight:</strong> The mismatch in peak times suggests delays are not directly caused by traffic collisions, implying internal operational issues.</p>
                 </div>
-                
+
+                <!-- Figure 5 -->
                 <div class="figure">
-                    
-                    <img src="images/figure5.png" alt="A bar chart illustrating average subway delay times across different hours of the day." />
-                    <p class="caption">The highest average delays occur in early morning and late evening hours, indicating potential off-peak maintenance or equipment challenges.</p>
+                    <p><strong>Figure 5:</strong> Average Subway Delay by Hour</p>
+                    <img src="images/figure5.png" alt="A bar chart illustrating average subway delay times across different hours of the day.">
+                    <p><strong>Purpose:</strong> Show the distribution of average subway delays throughout the day.</p>
+                    <p><strong>Observation:</strong></p>
+                    <ul>
+                        <li><strong>Delays:</strong> Highest in early morning (around 6 AM) and late evening (around 10 PM).</li>
+                    </ul>
+                    <p><strong>Insight:</strong> Non-peak hours see increased delays, potentially due to maintenance or operational strategies occurring outside rush hours.</p>
                 </div>
-                
+
+                <!-- Figure 6 -->
                 <div class="figure">
-                
-                    <img src="images/figure6.png" alt="A combined chart showing monthly trends of collisions and delays." />
-                    <p class="caption">Monthly data reveals that fluctuations in collisions do not coincide with increases in subway delays, reinforcing the lack of a direct relationship.</p>
+                    <p><strong>Figure 6:</strong> Collisions and Delays by Month</p>
+                    <img src="images/figure6.png" alt="A combined chart showing monthly trends of collisions and delays.">
+                    <p><strong>Purpose:</strong> Examine if monthly changes in collisions align with changes in subway delays.</p>
+                    <p><strong>Observation:</strong></p>
+                    <ul>
+                        <li>Fluctuations in collisions do not mirror trends in subway delays over months.</li>
+                    </ul>
+                    <p><strong>Insight:</strong> The lack of correlation across months supports the idea that collisions are not a main driver of subway delays.</p>
                 </div>
-                
+
+                <!-- Figure 7 -->
                 <div class="figure">
-                   
-                    <img src="images/figure7.png" alt="A scatter plot examining the correlation between hourly collisions and subway delays." />
-                    <p class="caption">The scatter plot shows no clear correlation between collision counts and delay durations, suggesting other internal factors at play.</p>
+                    <p><strong>Figure 7:</strong> Hourly Correlation Between Collisions and Delays</p>
+                    <img src="images/figure7.png" alt="A scatter plot examining the correlation between hourly collisions and subway delays.">
+                    <p><strong>Purpose:</strong> Visualize the correlation between collision frequency and subway delay duration on an hourly basis.</p>
+                    <p><strong>Observation:</strong></p>
+                    <ul>
+                        <li>The scatter plot shows no clear relationship or trend between the two variables.</li>
+                    </ul>
+                    <p><strong>Insight:</strong> Traffic collisions are likely not a significant factor causing subway delays, directing attention to internal issues.</p>
                 </div>
 
                 <h4>Tools Used</h4>
                 <ul>
-                    <li>Excel for Data Cleaning</li>
                     <li>SQL for Data Preparation</li>
                     <li>Tableau for Data Visualization</li>
                 </ul>
@@ -105,32 +127,50 @@
                 </p>
                 <h4>Key Findings</h4>
                 <ul>
-                    <li>Casual riders tend to enjoy longer, more leisurely rides, often during weekends and peak summer months.</li>
+                    <li>Casual riders tend to enjoy longer, more leisurely rides, often on weekends and during peak summer months.</li>
                     <li>Annual members prefer shorter, more frequent rides, spread consistently throughout the week, reflecting a more utility-driven approach.</li>
                 </ul>
 
-                <h4>Visualizations & Analysis</h4>
+                <!-- Figure 1 -->
                 <div class="figure">
-                    
-                    <img src="images/figure1.png" alt="A bar chart comparing average ride lengths between casual riders and annual members." />
-                    <p class="caption">Casual riders typically spend more time per trip, suggesting a recreational use, while members hop on and off more frequently for everyday tasks.</p>
+                    <p><strong>Figure 1:</strong> Average Ride Length by Membership Type</p>
+                    <img src="images/figure1.png" alt="Average Ride Length by Membership Type">
+                    <p><strong>Purpose:</strong> Compares the average ride lengths for two types of users: casual riders and members.</p>
+                    <p><strong>Observation:</strong></p>
+                    <ul>
+                        <li><strong>Casual Riders:</strong> Average ride length is around 24.65 minutes, longer and less frequent.</li>
+                        <li><strong>Members:</strong> Average ride length is about 12.67 minutes, shorter and more frequent.</li>
+                    </ul>
+                    <p><strong>Insight:</strong> Casual riders likely use the service for leisurely, less frequent trips, while members use it for shorter, frequent trips—indicating a more utilitarian approach.</p>
                 </div>
 
+                <!-- Figure 2 -->
                 <div class="figure">
-                    
-                    <img src="images/figure2.png" alt="A line or bar chart showing how the number of rides changes month-to-month." />
-                    <p class="caption">Monthly trends highlight seasonality, with ride volumes increasing during warmer months. Casual riders especially surge during summer weekends.</p>
+                    <p><strong>Figure 2:</strong> Number of Rides by Month</p>
+                    <img src="images/figure2.png" alt="A chart showing how the number of rides changes month-to-month.">
+                    <p><strong>Purpose:</strong> Show seasonal trends in ride frequency throughout the year.</p>
+                    <p><strong>Observation:</strong></p>
+                    <ul>
+                        <li>Higher ride volumes occur in warmer months, especially among casual riders.</li>
+                    </ul>
+                    <p><strong>Insight:</strong> Seasonal surges suggest targeted promotions during summer months could convert casual users into annual members when interest is at its peak.</p>
                 </div>
 
+                <!-- Figure 3 -->
                 <div class="figure">
-                   
-                    <img src="images/figure3.png" alt="A chart breaking down rides per day of the week, comparing casual and member usage." />
-                    <p class="caption">Members maintain a steady usage pattern on weekdays, while casual riders spike on weekends, indicating opportunities for targeted weekend promotions.</p>
+                    <p><strong>Figure 3:</strong> Rides by Day of the Week</p>
+                    <img src="images/figure3.png" alt="A chart breaking down rides per day of the week, comparing casual and member usage.">
+                    <p><strong>Purpose:</strong> Compare weekday vs. weekend usage patterns for casual riders and members.</p>
+                    <p><strong>Observation:</strong></p>
+                    <ul>
+                        <li><strong>Casual Riders:</strong> Spike on weekends, indicating leisure-oriented usage.</li>
+                        <li><strong>Members:</strong> More consistent usage across weekdays, reflecting routine commuting.</li>
+                    </ul>
+                    <p><strong>Insight:</strong> Weekend promotions could entice casual riders to consider memberships. Consistent weekday usage by members supports their role as regular commuters.</p>
                 </div>
 
                 <h4>Tools Used</h4>
                 <ul>
-                     <li>SQL for Data Preparation</li>
                     <li>Excel for Data Cleaning</li>
                     <li>Tableau for Visualization</li>
                 </ul>
@@ -141,11 +181,10 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-           
+            <p>Interested in collaborating or learning more about my work? Drop me a line:</p>
             <ul>
                 <li>Email: <a href="mailto:nihith011@gmail.com">nihith011@gmail.com</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/nihith-mekala-174374206" target="_blank">LinkedIn Profile</a></li>
-                <li>GitHub: <a href="https://github.com/Knick011" target="_blank">GitHub Profile</a></li>
             </ul>
         </section>
     </div>
