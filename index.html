@@ -3,155 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihith's Portfolio</title>
+    <title>Nihith Mekala's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     
     <!-- SEO Optimization -->
-    <meta name="description" content="Nihith Mekala's Portfolio showcasing data analysis projects, skills in SQL, Tableau, and data visualization.">
-    <meta name="keywords" content="Nihith Mekala, Data Analyst, Portfolio, SQL, Tableau, Data Visualization, Cyclistic Bike-Share Analysis">
+    <meta name="description" content="Nihith Mekala's Data Analyst Portfolio showcasing projects in SQL, Tableau, and Data Visualization.">
+    <meta name="keywords" content="Nihith Mekala, Data Analyst, SQL, Tableau, Data Visualization, Data Analytics Portfolio">
     <meta name="author" content="Nihith Mekala">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Nihith</h1>
-        <p>Data Analyst | Data Visualization | SQL | Tableau</p>
+        <h1>Nihith Mekala</h1>
+        <p>Data Analyst | SQL | Tableau | Data Visualization</p>
     </header>
-    
+
+    <!-- Navigation -->
     <nav>
         <a href="#about">About Me</a>
-        <a href="#project">Project</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-    
+
+    <!-- Main Content -->
     <div class="container">
+        <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm <strong>Nihith</strong>, a passionate Data Analyst with expertise in data visualization, SQL, and generating actionable insights from data. Welcome to my professional portfolio where I showcase my projects and skills.</p>
+            <p>
+                Hi there! I'm <strong>Nihith Mekala</strong>, a data-driven storyteller with a passion for turning raw numbers into insightful narratives. 
+                Think of me as a curious detective—only instead of a magnifying glass, I’m armed with SQL, Excel, and Tableau, ready to uncover patterns and paint visual pictures of complex datasets.
+            </p>
+            <p>
+                My background is a vibrant mix of life sciences, marketing, and event management, which has taught me how to blend analytical rigor with a creative spark. Whether I’m exploring Toronto’s public transportation trends or strategizing ways to boost user engagement, I rely on data to guide decisions. 
+                During my time at McMaster University, I not only honed my analytical skills, but also learned to communicate data-driven insights in a way that anyone can understand. From mentoring international students, to coordinating cultural events, and even creating a winning charity initiative, I've discovered the power of data to bring communities together, streamline operations, and inspire positive change.
+            </p>
+            <p>
+                Beyond crunching numbers, I’m a multilingual enthusiast fluent in English, Telugu, and Hindi, with a basic grasp of Tamil, Japanese, and Turkish—this global perspective helps me connect with diverse teams and audiences. I love continuous learning and have dived into courses from IBM, Google, and UC Davis to stay on the cutting edge of analytics and visualization.
+            </p>
+            <p>
+                When I’m not analyzing data, you’ll find me brainstorming creative solutions for business challenges, guiding students as a mentor, or planning events that bring people together. For me, data isn’t just about charts and numbers; it’s about building stories, fostering understanding, and making informed decisions that help people and organizations thrive.
+            </p>
         </section>
-        
-        <section id="project">
-            <h2>Google Capstone project: Cyclistic Bike-Share Analysis</h2>
-            <h3>Overview</h3>
-            <p>In this project, I analyzed Cyclistic's bike-share trip data to understand the usage patterns of annual members versus casual riders. The goal was to identify trends and provide strategic recommendations to convert casual riders into annual members, enhancing Cyclistic's profitability and growth.</p>
-            
-            <h3>Business Task</h3>
-            <p><strong>Primary Question:</strong> How do annual members and casual riders use Cyclistic bikes differently?</p>
-            
-            <h3>Data Description</h3>
-            <ul>
-                <li><strong>Data Source:</strong> Cyclistic's historical trip data (past 12 months)</li>
-                <li><strong>Key Variables:</strong>
-                    <ul>
-                        <li>Trip Duration</li>
-                        <li>Start Time</li>
-                        <li>End Time</li>
-                        <li>Start Station</li>
-                        <li>End Station</li>
-                        <li>Membership Type</li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <h3>Methodology</h3>
-            <ol>
-                <li>Data Cleaning and Preprocessing</li>
-                <li>Exploratory Data Analysis (EDA)</li>
-                <li>Statistical Analysis</li>
-                <li>Data Visualization</li>
-                <li>Deriving Insights and Recommendations</li>
-            </ol>
-            
-            <h3>Key Findings</h3>
-            <ul>
-                <li>Casual riders tend to take longer rides compared to members.</li>
-                <li>Members consistently dominate ride counts throughout the year, with a notable peak in September.</li>
-                <li>Casual riders' usage peaks during summer months and weekends, indicating recreational use, while the opposite happens during winter.</li>
-            </ul>
-            
-            <h3>Visualizations</h3>
-            
-            <!-- Figure 1 -->
-            <div class="figure">
-                <h4>Figure 1: Average Ride Length by Membership Type</h4>
-                <img src="images/figure1.png" alt="Average Ride Length by Membership Type">
-                <p><strong>Purpose:</strong> Compares the average ride lengths for two types of users: casual riders and members.</p>
-                <p><strong>Observation:</strong></p>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Project 1: TTC Analysis -->
+            <section>
+                <h3>TTC Traffic Collisions and Subway Delay Analysis</h3>
+                <p>
+                    In this project, I explored Toronto Transit Commission (TTC) data to see if traffic collisions correlate with subway delays. Using SQL for data preparation and Tableau for visualization, I drilled down into hourly and monthly patterns to separate fact from assumption.
+                </p>
+                <h4>Key Findings</h4>
                 <ul>
-                    <li><strong>Casual Riders:</strong> The average ride length is significantly longer at 24.65 minutes.</li>
-                    <li><strong>Members:</strong> The average ride length is much shorter at 12.67 minutes.</li>
+                    <li>Traffic collisions peak during <strong>rush hours</strong> (8 AM and 5 PM), but subway delays tend to increase at <strong>6 AM and 10 PM</strong>.</li>
+                    <li>No strong correlation was found between traffic collisions and subway delays, challenging the assumption that traffic directly affects subway performance.</li>
+                    <li>Subway delays appear more related to internal factors like maintenance and equipment issues rather than external traffic conditions.</li>
                 </ul>
-                <p><strong>Insight:</strong> Casual riders likely use the service for longer, less frequent trips (possibly recreational). Members use it for shorter, frequent trips, suggesting utility for commuting.</p>
-            </div>
-            
-            <!-- Figure 2 -->
-            <div class="figure">
-                <h4>Figure 2: Number of Rides by Month and Membership Type</h4>
-                <img src="images/figure2.png" alt="Number of Rides by Month and Membership Type">
-                <p><strong>Purpose:</strong> Shows how the total number of rides fluctuates monthly for casual riders and members.</p>
-                <p><strong>Observation:</strong></p>
+                
+                <h4>Visualizations & Analysis</h4>
+                <div class="figure">
+                    <h5>Figure 4: Traffic Collisions vs Subway Delays by Hour</h5>
+                    <img src="images/figure4.png" alt="A line chart comparing hourly collisions and subway delays, showing distinct peak times." />
+                    <p class="caption">Although collisions spike during typical rush hours, subway delays follow a different pattern, suggesting internal operation issues may be the cause of delays rather than traffic.</p>
+                </div>
+                
+                <div class="figure">
+                    <h5>Figure 5: Average Subway Delay by Hour</h5>
+                    <img src="images/figure5.png" alt="A bar chart illustrating average subway delay times across different hours of the day." />
+                    <p class="caption">The highest average delays occur in early morning and late evening hours, indicating potential off-peak maintenance or equipment challenges.</p>
+                </div>
+                
+                <div class="figure">
+                    <h5>Figure 6: Collisions and Delays by Month</h5>
+                    <img src="images/figure6.png" alt="A combined chart showing monthly trends of collisions and delays." />
+                    <p class="caption">Monthly data reveals that fluctuations in collisions do not coincide with increases in subway delays, reinforcing the lack of a direct relationship.</p>
+                </div>
+                
+                <div class="figure">
+                    <h5>Figure 7: Hourly Correlation Between Collisions and Delays</h5>
+                    <img src="images/figure7.png" alt="A scatter plot examining the correlation between hourly collisions and subway delays." />
+                    <p class="caption">The scatter plot shows no clear correlation between collision counts and delay durations, suggesting other internal factors at play.</p>
+                </div>
+
+                <h4>Tools Used</h4>
                 <ul>
-                    <li><strong>Members:</strong> Their ride counts consistently dominate casual riders, peaking sharply in September 2024.</li>
-                    <li><strong>Casual Riders:</strong> Show a steady increase until July 2024, followed by a decline.</li>
+                    <li>SQL for Data Preparation</li>
+                    <li>Tableau for Data Visualization</li>
                 </ul>
-                <p><strong>Key Points:</strong></p>
+                <p><strong>Conclusion:</strong> Subway delays are not strongly influenced by traffic collisions. By focusing on internal operational improvements, the TTC could potentially reduce delays and enhance the passenger experience.</p>
+            </section>
+
+            <!-- Project 2: Google Capstone -->
+            <section>
+                <h3>Google Capstone Project: Cyclistic Bike-Share Analysis</h3>
+                <p>
+                    For this capstone project, I analyzed Cyclistic's bike-share data to understand the riding habits of casual users versus annual members. The goal was to pinpoint marketing and operational strategies to convert occasional riders into loyal subscribers.
+                </p>
+                <h4>Key Findings</h4>
                 <ul>
-                    <li>Members exhibit consistent ride usage year-round, with a spike in late summer (September).</li>
-                    <li>Casual users show steady growth until summer, indicating seasonal or recreational use.</li>
+                    <li>Casual riders tend to enjoy longer, more leisurely rides, often during weekends and peak summer months.</li>
+                    <li>Annual members prefer shorter, more frequent rides, spread consistently throughout the week, reflecting a more utility-driven approach.</li>
                 </ul>
-            </div>
-            
-            <!-- Figure 3 -->
-            <div class="figure">
-                <h4>Figure 3: Number of Rides by Day of the Week and Membership Type</h4>
-                <img src="images/figure3.png" alt="Number of Rides by Day of the Week and Membership Type">
-                <p><strong>Purpose:</strong> Compares ride counts for casual and member users across each day of the week.</p>
-                <p><strong>Observation:</strong></p>
+
+                <h4>Visualizations & Analysis</h4>
+                <div class="figure">
+                    <h5>Figure 1: Average Ride Length by Membership Type</h5>
+                    <img src="images/figure1.png" alt="A bar chart comparing average ride lengths between casual riders and annual members." />
+                    <p class="caption">Casual riders typically spend more time per trip, suggesting a recreational use, while members hop on and off more frequently for everyday tasks.</p>
+                </div>
+
+                <div class="figure">
+                    <h5>Figure 2: Number of Rides by Month</h5>
+                    <img src="images/figure2.png" alt="A line or bar chart showing how the number of rides changes month-to-month." />
+                    <p class="caption">Monthly trends highlight seasonality, with ride volumes increasing during warmer months. Casual riders especially surge during summer weekends.</p>
+                </div>
+
+                <div class="figure">
+                    <h5>Figure 3: Rides by Day of the Week</h5>
+                    <img src="images/figure3.png" alt="A chart breaking down rides per day of the week, comparing casual and member usage." />
+                    <p class="caption">Members maintain a steady usage pattern on weekdays, while casual riders spike on weekends, indicating opportunities for targeted weekend promotions.</p>
+                </div>
+
+                <h4>Tools Used</h4>
                 <ul>
-                    <li><strong>Casual Riders:</strong> Their ride numbers are significantly higher on weekends, particularly on Saturday.</li>
-                    <li><strong>Members:</strong> Consistently use the service on weekdays, peaking on Wednesday and Thursday.</li>
+                    <li>Excel for Data Cleaning</li>
+                    <li>Tableau for Visualization</li>
                 </ul>
-                <p><strong>Insight:</strong> Members likely use the service for commuting on weekdays. Casual riders prefer weekends for leisure trips.</p>
-            </div>
-            
-            <!-- Summary -->
-            <div class="summary">
-                <h4>Summary Across Figures</h4>
-                <ul>
-                    <li><strong>Average Ride Length:</strong> Casual riders take longer rides compared to members.</li>
-                    <li><strong>Monthly Ride Trends:</strong> Members dominate total rides, peaking in late summer.</li>
-                    <li><strong>Day of the Week Trends:</strong> Members ride more on weekdays, while casual riders dominate weekends.</li>
-                </ul>
-                <p>These patterns suggest members primarily use the service for regular commuting, whereas casual riders favor it for recreational purposes.</p>
-            </div>
-            
-            <h3>Recommendations</h3>
-            <div class="recommendations">
-                <ol>
-                    <li>Implement targeted marketing campaigns during peak months to attract more casual riders to become members.</li>
-                    <li>Introduce flexible membership plans catering to different user needs, such as short-term memberships for recreational users.</li>
-                    <li>Enhance weekend service offerings and promotions to capitalize on the higher usage by casual riders.</li>
-                </ol>
-            </div>
-            
-            <h3>Conclusion</h3>
-            <p>By understanding the distinct usage patterns of members and casual riders, Cyclistic can implement targeted marketing strategies to convert casual users into annual members, driving profitability and fostering sustainable growth.</p>
-            
-            <p><a href="documents/Cyclistic_Case_Study.pdf" target="_blank">Download Full Report (PDF)</a></p>
+                <p><strong>Conclusion:</strong> By tailoring marketing initiatives to highlight membership perks—especially during weekend and holiday periods—Cyclistic can convert more casual riders into annual members and foster long-term loyalty.</p>
+            </section>
         </section>
-        
+
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me via the following channels:</p>
+            <p>Interested in collaborating or learning more about my work? Drop me a line:</p>
             <ul>
-                <li><strong>Email:</strong> <a href="mailto:nihith011@gmail.com">nihith011@gmail.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nihith-mekala-174374206" target="_blank">www.linkedin.com/in/nihith-mekala-174374206</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/Knick011" target="_blank">github.com/Knick011</a></li>
+                <li>Email: <a href="mailto:nihith011@gmail.com">nihith011@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/nihith-mekala-174374206" target="_blank">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/Knick011" target="_blank">GitHub Profile</a></li>
             </ul>
         </section>
     </div>
-    
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Nihith. All rights reserved.</p>
+        <p>&copy; 2024 Nihith Mekala. All rights reserved.</p>
     </footer>
 </body>
 </html>
