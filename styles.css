@@ -1,4 +1,6 @@
-/* Global Reset & Basic Settings */
+/* -------------------------------------------------------
+   Global Reset & Basic Settings
+-------------------------------------------------------- */
 * {
     box-sizing: border-box;
 }
@@ -17,10 +19,12 @@ body {
     color: #333;
 }
 
-/* Header Styling */
+/* -------------------------------------------------------
+   Header Styling
+-------------------------------------------------------- */
 header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #2c3e50; /* Dark slate for a professional look */
+    color: #ecf0f1;           /* Light text for contrast */
     padding: 30px 0;
     text-align: center;
 }
@@ -35,9 +39,11 @@ header p {
     font-size: 1.2em;
 }
 
-/* Navigation Styling */
+/* -------------------------------------------------------
+   Navigation Styling
+-------------------------------------------------------- */
 nav {
-    background-color: #e74c3c;
+    background-color: #e74c3c; /* A bright color to stand out */
     padding: 15px;
     text-align: center;
 }
@@ -52,20 +58,24 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #d35400;
+    color: #d35400; /* Slightly darker shade on hover */
 }
 
-/* Container for Main Content */
+/* -------------------------------------------------------
+   Main Content Container
+-------------------------------------------------------- */
 .container {
     padding: 40px 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 40px auto;
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Section and Article Styling */
+/* -------------------------------------------------------
+   Section & Article Styling
+-------------------------------------------------------- */
 section {
     margin-bottom: 60px;
 }
@@ -74,7 +84,9 @@ article {
     margin-bottom: 50px; /* Adds spacing between different project articles */
 }
 
-/* Headings */
+/* -------------------------------------------------------
+   Headings
+-------------------------------------------------------- */
 section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
@@ -101,19 +113,26 @@ section h4 {
     font-weight: 600;
 }
 
-/* Text Elements */
-section p, section ul, section ol {
+/* -------------------------------------------------------
+   Text Elements
+-------------------------------------------------------- */
+section p, 
+section ul, 
+section ol {
     margin: 10px 0;
     font-size: 1em;
     line-height: 1.7;
 }
 
-section ul, section ol {
+section ul, 
+section ol {
     padding-left: 20px;
     margin-bottom: 15px;
 }
 
-/* Image and Figure Styling */
+/* -------------------------------------------------------
+   Image & Figure Styling
+-------------------------------------------------------- */
 section img {
     max-width: 100%;
     height: auto;
@@ -128,14 +147,6 @@ section img {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* If you don’t use <h5> inside .figure, you can delete or modify this */
-.figure h5 {
-    margin-bottom: 10px;
-    color: #2c3e50;
-    font-size: 1.2em;
-    font-weight: 600;
 }
 
 .figure img {
@@ -156,7 +167,9 @@ section img {
     line-height: 1.4;
 }
 
-/* Contact Section Styling */
+/* -------------------------------------------------------
+   Contact Section Styling
+-------------------------------------------------------- */
 #contact ul {
     list-style-type: none;
     padding: 0;
@@ -177,7 +190,9 @@ section img {
     color: #c0392b;
 }
 
-/* Footer Styling */
+/* -------------------------------------------------------
+   Footer Styling
+-------------------------------------------------------- */
 footer {
     background-color: #2c3e50;
     color: #ecf0f1;
@@ -187,7 +202,9 @@ footer {
     width: 100%;
 }
 
-/* Responsive Design */
+/* -------------------------------------------------------
+   Responsive Design
+-------------------------------------------------------- */
 @media (max-width: 768px) {
     nav a {
         display: block;
@@ -196,6 +213,7 @@ footer {
 
     .container {
         padding: 20px 10px;
+        margin: 20px auto;
     }
 
     header h1 {
@@ -220,9 +238,5 @@ footer {
 
     .figure, .container {
         padding: 20px;
-    }
-
-    .figure h5 {
-        font-size: 1.1em;
     }
 }
