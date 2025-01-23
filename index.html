@@ -35,23 +35,24 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Hello! I’m <strong>Nihith Mekala</strong>, a dedicated Data Analyst with a knack for uncovering stories hidden within data. I specialize in 
-                <em>SQL, Excel, and Tableau</em> to transform raw numbers into meaningful insights that guide strategic decisions. 
+                Hello! I’m <strong>Nihith Mekala</strong>, a dedicated Data Analyst with a knack for uncovering stories hidden within data. 
+                I specialize in <em>SQL, Excel, and Tableau</em> to transform raw numbers into meaningful insights that guide strategic decisions.
             </p>
             <p>
-                My journey has been shaped by diverse experiences in life sciences, marketing, and event management. This unique blend allows me 
-                to approach analytics with both a scientific and creative lens. Whether examining trends in Toronto’s public transportation 
-                or researching strategies to boost user engagement, I’ve learned that the power of data is magnified when effectively communicated.
+                My journey has been shaped by diverse experiences in life sciences, marketing, and event management. 
+                This unique blend allows me to approach analytics with both a scientific and creative lens. Whether I’m examining 
+                trends in Toronto’s public transportation or strategizing ways to boost user engagement, 
+                I’ve learned that the power of data is amplified when effectively communicated.
             </p>
             <p>
                 During my tenure at McMaster University, I honed my analytical thinking while also sharpening my ability to present 
-                data-driven insights in an understandable and impactful way. From mentoring international students, to coordinating cultural events, 
-                to launching a successful charity initiative, I have witnessed firsthand how data can unite communities, optimize operations, and spark positive change.
+                data-driven insights in an understandable and impactful way. From mentoring international students and coordinating cultural events, 
+                to launching a successful charity initiative, I witnessed how data can unite communities, optimize operations, and spark positive change.
             </p>
             <p>
-                Outside of data crunching, I enjoy exploring languages and cultures—I'm fluent in English, Telugu, and Hindi, with a basic 
-                understanding of Tamil, Japanese, and Turkish. This global perspective helps me collaborate effectively with diverse teams 
-                and audiences around the world. When I’m not buried in datasets, you’ll find me brainstorming innovative solutions to complex business challenges.
+                Outside of data crunching, I enjoy exploring languages and cultures—I'm fluent in English, Telugu, and Hindi, 
+                with a basic understanding of Tamil, Japanese, and Turkish. This global perspective helps me collaborate effectively 
+                with diverse teams and audiences. When I’m not buried in datasets, you’ll find me brainstorming innovative solutions to business challenges.
             </p>
         </section>
 
@@ -64,62 +65,144 @@
                 <h3>TTC Traffic Collisions and Subway Delay Analysis</h3>
                 <p>
                     In this analysis, I investigated whether traffic collisions in Toronto correlate with subway delays on the Toronto Transit Commission (TTC) network. 
-                    By cleaning and preparing data in SQL, and creating interactive visuals in Tableau, I sought to identify any meaningful connections 
+                    By cleaning and preparing data in SQL, then creating interactive visuals in Tableau, I sought to uncover any meaningful link 
                     between surface-level traffic collisions and underground subway disruptions.
                 </p>
                 
                 <h4>Approach</h4>
                 <ul>
-                    <li><strong>Data Collection & Cleaning:</strong> Imported collision records and TTC delay logs, then used SQL to filter out incomplete data, remove duplicates, and standardize date/time formats.</li>
-                    <li><strong>Data Analysis:</strong> Calculated collision frequencies by hour and month, while examining average subway delay durations during the same periods.</li>
-                    <li><strong>Visualization:</strong> Developed Tableau dashboards to visualize trends and identify peak occurrences of collisions and delays.</li>
+                    <li><strong>Data Collection & Cleaning:</strong> Imported collision records and TTC delay logs, using SQL to filter out incomplete data, 
+                        remove duplicates, and standardize date/time formats for accurate comparison.</li>
+                    <li><strong>Data Analysis:</strong> Grouped collision counts by hour and month, while examining average subway delay durations 
+                        during the same periods. Calculated correlation coefficients to gauge the relationship between collisions and delays.</li>
+                    <li><strong>Visualization:</strong> Built interactive Tableau dashboards to visualize hourly/monthly trends and identify 
+                        potential overlap between traffic collisions and subway delays.</li>
                 </ul>
 
                 <h4>Key Findings</h4>
                 <ul>
                     <li>
-                        <strong>Distinct Rush-Hour Patterns:</strong> Traffic collisions peaked at 8 AM and 5 PM—typical rush hours—while 
-                        subway delays spiked at 6 AM and 10 PM, suggesting different causal factors.
+                        <strong>Distinct Rush-Hour Patterns:</strong> Traffic collisions peaked during traditional rush hours (8 AM, 5 PM), 
+                        but subway delays spiked at 6 AM and 10 PM, suggesting different driving factors.
                     </li>
                     <li>
-                        <strong>No Strong Correlation:</strong> Despite assumptions, monthly and hourly analyses revealed minimal connection 
-                        between collision numbers and subway delays.
+                        <strong>No Strong Correlation:</strong> Monthly and hourly analyses showed minimal alignment between collision numbers and subway delays.
                     </li>
                     <li>
-                        <strong>Internal Operational Influence:</strong> Analysis indicates that maintenance and equipment issues might be a larger contributor to delays than external traffic conditions.
+                        <strong>Operational Influences on Delays:</strong> Maintenance and equipment issues appeared more responsible for delays 
+                        than external traffic conditions, particularly during off-peak hours.
                     </li>
                 </ul>
 
                 <!-- Figure 4 -->
                 <div class="figure">
-                    <img src="images/figure4.png" alt="A line chart comparing hourly collisions and subway delays, revealing different peak times.">
-                    <p><strong>Purpose:</strong> Highlight potential overlap between collision frequency and subway delay counts.</p>
-                    <p><strong>Observation:</strong> Collisions peak during rush hours, delays peak outside those hours.</p>
-                    <p><strong>Insight:</strong> Reinforces the idea that collisions are not a primary driver of subway delays.</p>
+                    <img src="images/figure4.png" alt="A line chart comparing hourly collisions and subway delays, revealing distinct peak times.">
+                    <p><strong>Purpose:</strong> Illustrate and compare the frequency of traffic collisions against subway delay occurrences on an hourly basis.</p>
+                    <p><strong>Observation:</strong> 
+                        <ul>
+                            <li>Collisions peak around rush hours (8 AM and 5 PM).</li>
+                            <li>Subway delays peak at 6 AM and 10 PM, outside typical rush-hour windows.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Insight:</strong> The divergence in peak times underscores the limited influence of rush-hour collisions on subway disruptions.</p>
+                    <p>
+                        <em>Additional Detail:</em> The line chart aggregates total collisions and delay counts by hour, allowing a direct visual 
+                        comparison of trends throughout a 24-hour period.
+                    </p>
                 </div>
 
                 <!-- Figure 5 -->
                 <div class="figure">
                     <img src="images/figure5.png" alt="A bar chart showing average subway delay times across different hours of the day.">
-                    <p><strong>Purpose:</strong> Display time periods with the longest subway delays.</p>
-                    <p><strong>Observation:</strong> Early mornings (6 AM) and late evenings (10 PM) see higher average delays.</p>
-                    <p><strong>Insight:</strong> Operational activities (e.g., maintenance) likely happen during off-peak hours, contributing to increased delays at those times.</p>
+                    <p><strong>Purpose:</strong> Highlight the hours with the longest average subway delay durations.</p>
+                    <p><strong>Observation:</strong>
+                        <ul>
+                            <li>Average delays are highest early in the morning (around 6 AM) and late in the evening (around 10 PM).</li>
+                        </ul>
+                    </p>
+                    <p><strong>Insight:</strong> 
+                        Off-peak hours may be prone to longer delays due to planned maintenance, fewer staff on duty, or scheduled operational tasks.
+                    </p>
+                    <p>
+                        <em>Additional Detail:</em> The data is aggregated by hour and averaged to reveal when commuters might experience the greatest delays, 
+                        guiding resource allocation.
+                    </p>
                 </div>
 
                 <!-- Figure 6 -->
                 <div class="figure">
-                    <img src="images/figure6.png" alt="A combined chart comparing monthly collision data and monthly subway delay data.">
-                    <p><strong>Purpose:</strong> Determine if seasonal or monthly changes in collisions affect delays.</p>
-                    <p><strong>Observation:</strong> Monthly collision trends do not align with subway delay trends.</p>
-                    <p><strong>Insight:</strong> Traffic patterns have limited direct impact on transit service disruptions.</p>
+                    <img src="images/figure6.png" alt="A combined monthly trend chart comparing collisions and subway delays.">
+                    <p><strong>Purpose:</strong> Examine whether monthly fluctuations in collision frequency mirror subway delay trends.</p>
+                    <p><strong>Observation:</strong>
+                        <ul>
+                            <li>Months with high collision counts do not necessarily see a spike in subway delays.</li>
+                            <li>Seasonal variation in traffic accidents does not translate directly to subway service disruptions.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Insight:</strong> Seasonal factors affecting road safety (e.g., winter conditions) do not appear to consistently impact underground rail service.</p>
+                    <p>
+                        <em>Additional Detail:</em> This view helps identify potential seasonal or weather-related factors. 
+                        While collisions may follow certain monthly patterns, they do not align with subway performance issues over the same timeframe.
+                    </p>
                 </div>
 
-                <!-- Figure 7 -->
+                <!-- Figure 7 (Treemap) -->
                 <div class="figure">
-                    <img src="images/figure7.png" alt="A scatter plot examining potential correlation between hourly collisions and subway delays.">
-                    <p><strong>Purpose:</strong> Investigate linear or nonlinear correlation between collision frequency and subway delay duration.</p>
-                    <p><strong>Observation:</strong> The data points are scattered without a distinct trend.</p>
-                    <p><strong>Insight:</strong> Confirms the lack of significant correlation between collisions and delays.</p>
+                    <img src="images/figure7.png" alt="Treemap showing hourly traffic collisions and average subway delays.">
+                    <p><strong>Purpose of the Visualization:</strong></p>
+                    <ul>
+                        <li>Provide an hourly analysis of traffic collision frequency (rectangle size) and average subway delays (color intensity).</li>
+                        <li>Enable a quick visual comparison of how collisions and delays vary by hour of the day.</li>
+                    </ul>
+                    <p><strong>How to Read It:</strong></p>
+                    <ul>
+                        <li><strong>Rectangle Size:</strong> Represents the total number of collisions in that hour (larger rectangles = more collisions).</li>
+                        <li><strong>Color Intensity:</strong> Indicates the average delay duration (in minutes) for subway services. 
+                            Darker colors = longer delays.</li>
+                    </ul>
+                    <p><strong>Key Observations:</strong></p>
+                    <ul>
+                        <li><strong>Collision Frequency (Rectangle Size):</strong> 
+                            <ul>
+                                <li>Hours like <strong>15:00</strong> (3 PM) and <strong>14:00</strong> (2 PM) stand out as larger rectangles, reflecting higher collision counts.</li>
+                                <li>These timeframes align with peak traffic volume or the tail end of rush-hour congestion.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Average Delay Duration (Color Intensity):</strong>
+                            <ul>
+                                <li>Darker rectangles (e.g., <strong>5:00 AM</strong> and <strong>7:00 AM</strong>) signify longer subway delays, 
+                                    even when collisions are relatively low at those hours.</li>
+                                <li>Many high-collision hours (e.g., <strong>15:00</strong> and <strong>14:00</strong>) are lighter in color, indicating shorter delays.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Overlap of High Collisions & Long Delays:</strong>
+                            <ul>
+                                <li>Few hours show both large size (high collisions) and dark color (long delays), reinforcing a weak correlation between the two factors.</li>
+                                <li>For example, <strong>5:00 AM</strong> has dark shading (long delays) but small size (low collision frequency), suggesting operational issues over external factors.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Off-Peak Hours:</strong>
+                            <ul>
+                                <li>Hours such as <strong>0:00</strong> (midnight), <strong>3:00 AM</strong>, and <strong>4:00 AM</strong> show small rectangles (few collisions) and lighter shading (short delays).</li>
+                                <li>This indicates minimal traffic activity and relatively efficient subway service in late-night periods.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Insights & Conclusions:</strong></p>
+                    <ul>
+                        <li>
+                            <strong>Weak Correlation:</strong> The lack of overlap between large rectangles (high collision frequency) and dark colors (long subway delays) 
+                            confirms that external traffic collisions are not a major driver of subway disruptions.
+                        </li>
+                        <li>
+                            <strong>Operational Factors Dominate:</strong> High delays in early morning or late evening hours underscore maintenance schedules, 
+                            equipment checks, or staffing levels as leading causes of service interruptions.
+                        </li>
+                        <li>
+                            <strong>Focus on Off-Peak Interventions:</strong> The TTC could reduce delays by improving operational efficiency during hours when 
+                            collisions are low but delays remain high (e.g., 5:00 AM, 10:00 PM).
+                        </li>
+                    </ul>
                 </div>
 
                 <h4>Tools Used</h4>
@@ -129,12 +212,11 @@
                 </ul>
 
                 <p>
-                    <strong>Conclusion:</strong> While traffic collisions are a notable urban issue, their direct impact on subway delays 
-                    appears minimal. Focusing on internal improvements—maintenance schedules, infrastructure upgrades, and better operational 
-                    protocols—could significantly enhance the TTC’s reliability.
+                    <strong>Conclusion:</strong> While traffic collisions are a notable urban concern, this analysis shows they have minimal direct impact on subway 
+                    delays. Instead, addressing internal operational factors—such as maintenance schedules and equipment reliability—can significantly enhance TTC’s service efficiency.
                 </p>
                 
-                <!-- Corrected link reference -->
+                <!-- Link to the PDF case study (TTC Analysis) -->
                 <p>
                     <a href="documents/TTC_Analysis_Case_Study.pdf" target="_blank" rel="noopener noreferrer">
                         View the Complete TTC Analysis Case Study (PDF)
@@ -142,71 +224,102 @@
                 </p>
             </article>
 
-            <!-- Project 2: Google Capstone -->
+            <!-- Project 2: Google Capstone (Cyclistic) -->
             <article>
                 <h3>Google Capstone Project: Cyclistic Bike-Share Analysis</h3>
                 <p>
-                    As part of the Google Data Analytics Capstone, I focused on <em>Cyclistic</em>, a bike-share service seeking to understand 
+                    As part of the Google Data Analytics Capstone, I focused on <em>Cyclistic</em>, a bike-share service in Chicago seeking to understand 
                     the differences in riding behavior between casual users and annual members. My goal was to identify strategies that could 
                     turn occasional riders into loyal subscribers, thereby boosting long-term revenue and user engagement.
                 </p>
 
                 <h4>Approach</h4>
                 <ul>
-                    <li><strong>Data Cleaning:</strong> Used Excel to merge multiple CSV datasets, remove duplicates, and standardize columns like ride IDs and timestamps.</li>
-                    <li><strong>Exploratory Data Analysis:</strong> Calculated average ride lengths, daily/weekly usage frequencies, and seasonal user patterns.</li>
-                    <li><strong>Visualization & Reporting:</strong> Built Tableau dashboards to illustrate differences in ride duration and frequency between user groups.</li>
+                    <li><strong>Data Cleaning:</strong> Consolidated multiple CSV files in Excel, removed duplicates, and standardized columns (e.g., ride IDs, timestamps) for consistency.</li>
+                    <li><strong>Exploratory Data Analysis:</strong> Calculated average ride lengths, weekday/weekend usage frequencies, and monthly trends. Identified how seasonal factors influence ride volumes.</li>
+                    <li><strong>Visualization & Reporting:</strong> Built Tableau dashboards to compare casual vs. member ride lengths, usage distribution by day of the week, and seasonal patterns.</li>
                 </ul>
 
                 <h4>Key Findings</h4>
                 <ul>
                     <li>
-                        <strong>Longer, Leisurely Rides by Casual Riders:</strong> Average ride length for casual riders (~24.65 minutes) 
-                        is almost double that of members (~12.67 minutes).
+                        <strong>Longer, Leisure-Oriented Rides for Casual Users:</strong> Average ride length is ~24.65 minutes, 
+                        almost double that of members (~12.67 minutes).
                     </li>
                     <li>
-                        <strong>Weekend & Seasonal Surges:</strong> Casual riders show higher activity on weekends, especially during warmer months. 
-                        In contrast, members maintain more consistent weekday usage, typically for commuting or errands.
+                        <strong>Weekend & Seasonal Surges:</strong> Casual riders show higher activity on weekends, especially during warmer months, while members maintain consistent weekday usage.
                     </li>
                 </ul>
 
                 <!-- Figure 1 -->
                 <div class="figure">
-                    <img src="images/figure1.png" alt="Bar chart comparing average ride lengths for casual riders vs. members.">
-                    <p><strong>Purpose:</strong> Show how ride durations differ between casual users and subscribers.</p>
-                    <p><strong>Observation:</strong> Casual rides average around 24.65 minutes, while member rides average around 12.67 minutes.</p>
-                    <p><strong>Insight:</strong> Casual riders are more leisure-oriented, taking fewer but longer trips, whereas members demonstrate efficiency in usage.</p>
+                    <img src="images/figure1.png" alt="Bar chart comparing the average ride lengths of casual riders versus members.">
+                    <p><strong>Purpose:</strong> Visualize the discrepancy in ride duration between casual riders and annual members.</p>
+                    <p><strong>Observation:</strong>
+                        <ul>
+                            <li>Casual riders average about 24.65 minutes per ride, indicating a more leisurely pace.</li>
+                            <li>Members average around 12.67 minutes per ride, suggesting quick, utilitarian trips (e.g., commuting).</li>
+                        </ul>
+                    </p>
+                    <p><strong>Insight:</strong> 
+                        Casual users tend to treat the service as a recreational activity, whereas members integrate it into daily routines. 
+                    </p>
+                    <p>
+                        <em>Additional Detail:</em> This bar chart aggregates all recorded rides over the analysis period, then calculates the mean ride length 
+                        by user type, highlighting a significant behavioral difference.
+                    </p>
                 </div>
 
                 <!-- Figure 2 -->
                 <div class="figure">
-                    <img src="images/figure3.png" alt="Line or bar chart displaying month-to-month changes in ride volume for casual riders vs. members.">
-                    <p><strong>Purpose:</strong> Track how monthly weather changes affect ride frequency among different user types.</p>
-                    <p><strong>Observation:</strong> Casual rider numbers peak in summer, coinciding with warmer weather and tourism.</p>
-                    <p><strong>Insight:</strong> Promoting membership benefits during peak travel seasons could encourage casual riders to convert.</p>
+                    <img src="images/figure3.png" alt="Line or bar chart depicting monthly changes in ride volume among casual riders and members.">
+                    <p><strong>Purpose:</strong> Show how ridership fluctuates month by month for both user groups.</p>
+                    <p><strong>Observation:</strong>
+                        <ul>
+                            <li>Higher ride volumes occur in warmer months (May-August), especially among casual riders.</li>
+                            <li>Members maintain steadier usage, although they also show an uptick during summer.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Insight:</strong> 
+                        Seasonal promotions or incentives could capitalize on summertime interest to convert casual riders to membership plans.
+                    </p>
+                    <p>
+                        <em>Additional Detail:</em> This chart enables a quick comparison of how weather and seasonal events affect both groups differently. 
+                        Marketers can design campaigns targeting peak casual ridership months for maximum impact.
+                    </p>
                 </div>
 
                 <!-- Figure 3 -->
                 <div class="figure">
-                    <img src="images/figure2.png" alt="A stacked bar chart or line graph showing ridership by day of the week for casual riders vs. members.">
-                    <p><strong>Purpose:</strong> Reveal weekly usage patterns to distinguish workday vs. weekend habits.</p>
-                    <p><strong>Observation:</strong> Casual riders significantly spike on weekends, while members ride more evenly across weekdays.</p>
-                    <p><strong>Insight:</strong> Weekend promotions or loyalty programs could attract casual riders to upgrade if they see the long-term benefits of membership.</p>
+                    <img src="images/figure2.png" alt="Stacked bar chart or line graph illustrating daily ride distribution for casual riders vs. members.">
+                    <p><strong>Purpose:</strong> Contrast how each user type spreads their ridership across days of the week.</p>
+                    <p><strong>Observation:</strong>
+                        <ul>
+                            <li>Casual riders’ usage spikes on weekends, implying leisure and tourism-driven behavior.</li>
+                            <li>Members show consistent weekday patterns, aligning with routine commutes or daily errands.</li>
+                        </ul>
+                    </p>
+                    <p><strong>Insight:</strong> 
+                        Weekend-oriented promotions might appeal to casual riders, while commuter benefits and convenience features resonate with members.
+                    </p>
+                    <p>
+                        <em>Additional Detail:</em> This visualization sums ride counts by weekday for each user group, exposing clear usage peaks on Saturdays and Sundays for casual users.
+                    </p>
                 </div>
 
                 <h4>Tools Used</h4>
                 <ul>
                     <li><strong>Excel:</strong> Data cleaning, preliminary exploration, and pivot tables.</li>
-                    <li><strong>Tableau:</strong> Dashboard creation for ride length comparison, seasonality trends, and usage patterns.</li>
+                    <li><strong>Tableau:</strong> Dashboard creation for ride length comparison, seasonality trends, and usage patterns by day of week.</li>
                 </ul>
 
                 <p>
-                    <strong>Conclusion:</strong> Targeted marketing campaigns during peak leisure periods (weekends and summer months) may successfully 
-                    convert more casual riders into annual members. Emphasizing membership advantages—such as discounts, priority access, or bonus ride time—could 
-                    further align with the interests of casual riders, transforming their occasional use into year-round engagement.
+                    <strong>Conclusion:</strong> Targeted marketing campaigns during peak leisure periods (weekends and summer) could encourage casual riders to 
+                    become annual members. Emphasizing membership perks—like unlimited rides, discounted rates, and priority service—would address the distinct 
+                    needs of this recreational user base and potentially boost long-term retention.
                 </p>
 
-                <!-- Corrected link reference -->
+                <!-- Link to the PDF case study (Cyclistic) -->
                 <p>
                     <a href="documents/Cyclistic_Case_Study.pdf" target="_blank" rel="noopener noreferrer">
                         View the Complete Cyclistic Case Study (PDF)
