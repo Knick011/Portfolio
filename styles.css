@@ -1,5 +1,11 @@
+/* Global Reset & Basic Settings */
 * {
     box-sizing: border-box;
+}
+
+html {
+    /* Smooth scrolling for a nicer user experience when clicking anchor links */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -59,11 +65,16 @@ nav a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Section Styling */
+/* Section and Article Styling */
 section {
     margin-bottom: 60px;
 }
 
+article {
+    margin-bottom: 50px; /* Adds spacing between different project articles */
+}
+
+/* Headings */
 section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
@@ -74,6 +85,23 @@ section h2 {
     font-weight: 600;
 }
 
+section h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+section h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Text Elements */
 section p, section ul, section ol {
     margin: 10px 0;
     font-size: 1em;
@@ -85,6 +113,7 @@ section ul, section ol {
     margin-bottom: 15px;
 }
 
+/* Image and Figure Styling */
 section img {
     max-width: 100%;
     height: auto;
@@ -92,7 +121,6 @@ section img {
     margin: 10px 0;
 }
 
-/* Figure Styling */
 .figure {
     margin-bottom: 40px;
     background-color: #fdfdfd;
@@ -102,6 +130,7 @@ section img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* If you don’t use <h5> inside .figure, you can delete or modify this */
 .figure h5 {
     margin-bottom: 10px;
     color: #2c3e50;
@@ -183,6 +212,10 @@ footer {
 
     section h2 {
         font-size: 1.8em;
+    }
+
+    section h3 {
+        font-size: 1.4em;
     }
 
     .figure, .container {
