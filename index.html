@@ -1,37 +1,38 @@
+<!-- Line 1 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Page Setup -->
+    <!-- Line 5: Basic Page Setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nihith Mekala's Portfolio</title>
     
-    <!-- SEO Optimization -->
+    <!-- Line 10: SEO Optimization -->
     <meta name="description" content="Explore Nihith Mekala's Data Analyst Portfolio, featuring robust SQL queries, Tableau dashboards, and actionable insights in data analytics.">
     <meta name="keywords" content="Nihith Mekala, Data Analyst, SQL, Tableau, Data Visualization, Data Analytics Portfolio, Data Science">
     <meta name="author" content="Nihith Mekala">
     
-    <!-- Stylesheet -->
+    <!-- Line 15: Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Line 20: Header Section -->
     <header>
         <h1>Nihith Mekala</h1>
         <p>Data Analyst | SQL | Tableau | Data Visualization</p>
     </header>
 
-    <!-- Navigation -->
+    <!-- Line 26: Navigation -->
     <nav role="navigation">
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Main Content Container -->
+    <!-- Line 32: Main Content Container -->
     <div class="container">
         
-        <!-- About Me Section -->
+        <!-- Line 35: About Me Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>
@@ -56,7 +57,7 @@
             </p>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Line 69: Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
 
@@ -172,7 +173,7 @@
                             <ul>
                                 <li>Darker rectangles (e.g., <strong>5:00 AM</strong> and <strong>7:00 AM</strong>) signify longer subway delays, 
                                     even when collisions are relatively low at those hours.</li>
-                                <li>Many high-collision hours (e.g., <strong>15:00</strong> and <strong>14:00</strong>) are lighter in color, indicating shorter delays.</li>
+                                <li>Many high-collision hours (e.g., <strong>15:00</strong>) are lighter in color, indicating shorter delays.</li>
                             </ul>
                         </li>
                         <li><strong>Overlap of High Collisions & Long Delays:</strong>
@@ -224,7 +225,7 @@
                 </p>
             </article>
 
-            <!-- Project 2: Google Capstone (Cyclistic) -->
+            <!-- Line 200: Project 2: Google Capstone (Cyclistic) -->
             <article>
                 <h3>Google Capstone Project: Cyclistic Bike-Share Analysis</h3>
                 <p>
@@ -326,9 +327,190 @@
                     </a>
                 </p>
             </article>
+
+            <!-- Line 270: Project 3: Financial Analysis of Meme Stocks vs. WMT, Gold, and USD -->
+            <article>
+                <h3>Financial Analysis: Meme Stocks vs. WMT, Gold, and USD</h3>
+                <p>
+                    This project compares several <strong>meme stocks</strong> (AMC, GME, MSTR) against traditional or stable assets 
+                    (<strong>WMT</strong>, <strong>Gold</strong>, and the <strong>USD</strong>) from early 2020 to 2025. It demonstrates how 
+                    <em>different levels of detail</em> in data visualization can dramatically affect the conclusions drawn from the same dataset.
+                </p>
+                <p>
+                    Figures 1 and 2 (labeled “Stock 1” and “Stock 2”) offer **simplistic** views with fewer details—potentially leading to misguided or incomplete insights. 
+                    Figures 3 through 8 adopt a **more robust analysis**, highlighting how deeper context and clarity can yield more accurate and actionable conclusions.
+                </p>
+
+                <h4>Stock 1: Comparison of Meme Stocks and WMT</h4>
+                <div class="figure">
+                    <img src="images/stock1.png" alt="A simple line graph of AMC, GME, MSTR, and WMT from early 2020 to 2025.">
+                    <p><strong>Description:</strong> 
+                        A basic line chart tracking AMC, GME, MSTR, and WMT. Meme stocks show extreme volatility, while WMT remains stable.
+                    </p>
+                    <p><strong>Analysis (High Level):</strong></p>
+                    <ul>
+                        <li>GME spikes in early 2021 (the Reddit-driven short squeeze).</li>
+                        <li>AMC also experiences a smaller meme-driven rally.</li>
+                        <li>MSTR’s movement correlates with its Bitcoin holdings.</li>
+                        <li>WMT is stable, reflecting a blue-chip trajectory.</li>
+                    </ul>
+                    <p>
+                        <strong>Potential Pitfalls:</strong>  
+                        Without **more detailed labeling or a second y-axis**, viewers might misinterpret the relative importance of these movements. 
+                        **Annotations** for major events (e.g., GME short squeeze, BTC news for MSTR) are missing, further limiting context.
+                    </p>
+                    <p><strong>Suggestions for Improvement:</strong>  
+                        <em>Add annotated points for key events and consider a dual y-axis to handle extreme price differentials.</em>
+                    </p>
+                </div>
+
+                <h4>Stock 2: Average Price of Meme Stocks vs. Gold and USD</h4>
+                <div class="figure">
+                    <img src="images/stock2.png" alt="A simple bar chart showing average prices of AMC, GME, MSTR, WMT, Gold, and USD.">
+                    <p><strong>Description:</strong> 
+                        A bar chart displaying the average prices of AMC, GME, MSTR, WMT, Gold, and USD over the observed period. 
+                        Gold ($1,944.59) stands out with the highest average.
+                    </p>
+                    <p><strong>Analysis (High Level):</strong></p>
+                    <ul>
+                        <li>Gold, as a safe-haven asset, holds a high price point.</li>
+                        <li>Meme stocks (AMC, GME, MSTR) show higher averages than WMT due to short-lived spikes.</li>
+                        <li>WMT is lower in average price but more reliable.</li>
+                        <li>USD remains around $1.04, reflecting its role as a currency benchmark.</li>
+                    </ul>
+                    <p>
+                        <strong>Potential Pitfalls:</strong>  
+                        **Averages can be misleading** for highly volatile assets (like meme stocks). 
+                        No measure of volatility (standard deviation, error bars) is shown, and returns aren't normalized.
+                    </p>
+                    <p><strong>Suggestions for Improvement:</strong>  
+                        <em>Consider percentage growth or returns instead of raw average prices, and add standard deviation to highlight volatility.</em>
+                    </p>
+                </div>
+
+                <p><em>Note:</em> The above two figures demonstrate how <strong>insufficient detail</strong> can lead to oversimplified conclusions.</p>
+
+                <h4>Stock 3: Monthly Averages of Meme Stocks vs. Gold and USD</h4>
+                <div class="figure">
+                    <img src="images/stock3.png" alt="A detailed monthly line graph for AMC, GME, MSTR, WMT, Gold, and USD.">
+                    <p><strong>Description:</strong> 
+                        This line graph tracks monthly average prices for the same assets, capturing seasonal and trend variations more precisely.
+                    </p>
+                    <p><strong>Analysis:</strong></p>
+                    <ul>
+                        <li><strong>GME & AMC Spikes:</strong> Sharp growth in early 2021 (meme stock rally), followed by steep declines.</li>
+                        <li><strong>MSTR:</strong> Fluctuates with Bitcoin’s price, showing strong correlation with cryptocurrency markets.</li>
+                        <li><strong>Gold & USD:</strong> Gold maintains a moderate upward trajectory; USD remains relatively flat.</li>
+                        <li><strong>WMT:</strong> Slow, steady growth, underscoring its resilience.</li>
+                    </ul>
+                    <p><strong>Suggestions for Improvement:</strong></p>
+                    <ul>
+                        <li><strong>Annotate peaks:</strong> Identify the exact months of the GME short squeeze or BTC surges for MSTR.</li>
+                        <li><strong>Use a logarithmic scale:</strong> Helps compare assets with vastly different price levels (e.g., Gold vs. USD).</li>
+                    </ul>
+                </div>
+
+                <h4>Stock 4: Investment Metric per USD Invested</h4>
+                <div class="figure">
+                    <img src="images/stock4.png" alt="A graph illustrating how much each $1 invested would be worth over time for each asset.">
+                    <p><strong>Description:</strong> 
+                        Visualizes how $1 invested in each asset (AMC, GME, MSTR, WMT, Gold, USD) would change in value over the same timeframe.
+                    </p>
+                    <p><strong>Analysis:</strong></p>
+                    <ul>
+                        <li><strong>GME:</strong> Skyrockets during the short squeeze, then plummets.</li>
+                        <li><strong>WMT & Gold:</strong> Show consistent growth, though less dramatic than meme stocks.</li>
+                        <li><strong>AMC & MSTR:</strong> Temporary spikes but eventually underperform relative to stable assets.</li>
+                    </ul>
+                    <p><strong>Observation:</strong> 
+                        Meme stocks can yield high returns quickly but carry significant risk of losses. 
+                        Gold and WMT align with long-term, lower-volatility investment strategies.
+                    </p>
+                    <p>
+                        <strong>Suggestions for Improvement:</strong> 
+                        <em>Use a logarithmic scale or compress the Y-axis to better visualize smaller growth increments when GME’s line spikes off the chart.</em>
+                    </p>
+                </div>
+
+                <h4>Stock 5: Meme Stocks Outperformance Percentage to WMT</h4>
+                <div class="figure">
+                    <img src="images/stock5.png" alt="A bar chart depicting the percentage of time meme stocks exceeded WMT in value.">
+                    <p><strong>Description:</strong> 
+                        Shows how often (as a percentage of total trading days observed) meme stocks (AMC, GME, MSTR) traded above WMT’s price.
+                    </p>
+                    <p><strong>Analysis:</strong></p>
+                    <ul>
+                        <li><strong>GME & MSTR:</strong> Outperformed WMT a significant portion of the time (87% and 83%), largely due to short-term peaks.</li>
+                        <li><strong>AMC:</strong> Lower percentage than GME and MSTR, reflecting smaller rallies.</li>
+                        <li><strong>WMT:</strong> Less volatile, so “underperformance” in price is offset by stability.</li>
+                    </ul>
+                    <p><strong>Suggestions for Improvement:</strong> 
+                        <em>Overlay a timeline or line chart to reveal how these percentages shift over different market phases.</em>
+                    </p>
+                </div>
+
+                <h4>Stock 6: Monthly Ranking Based on Value</h4>
+                <div class="figure">
+                    <img src="images/stock6.png" alt="A dual chart or table showing monthly rankings and percentage changes for each asset.">
+                    <p><strong>Description:</strong> 
+                        This visualization ranks the assets by monthly average price and also shows their average percentage increase.
+                    </p>
+                    <p><strong>Analysis:</strong></p>
+                    <ul>
+                        <li><strong>Early 2021:</strong> GME dominates the rankings, coinciding with the retail trading surge.</li>
+                        <li><strong>WMT:</strong> Typically lower in ranking but more consistent in monthly growth percentages.</li>
+                        <li><strong>Volatility:</strong> AMC and GME jump around the ranks sharply, reflecting their speculative nature.</li>
+                    </ul>
+                    <p><strong>Suggestions for Improvement:</strong> 
+                        <em>Separate the ranking and percentage change into individual visuals or employ a heatmap for clearer trend analysis.</em>
+                    </p>
+                </div>
+
+                <h4>Stock 7: Volatility of Stocks in Relation to Gold</h4>
+                <div class="figure">
+                    <img src="images/stock7.png" alt="A bar chart showing the percentage of days each asset moves in the same direction as Gold.">
+                    <p><strong>Description:</strong> 
+                        Quantifies the daily movement alignment (up vs. down) of AMC, GME, MSTR, WMT, and USD against Gold.
+                    </p>
+                    <p><strong>Analysis:</strong></p>
+                    <ul>
+                        <li><strong>Meme Stocks:</strong> Show very low correlation with Gold, as they are driven by speculative or crypto-related news.</li>
+                        <li><strong>WMT:</strong> Highest alignment with Gold, indicating less erratic price swings and more reflection of broader economic trends.</li>
+                    </ul>
+                    <p><strong>Suggestions for Improvement:</strong> 
+                        <em>Include correlation coefficients (Pearson, Spearman) over multiple time frames to provide a more robust measure of alignment.</em>
+                    </p>
+                </div>
+
+                <h4>Stock 8: Volatility of Stocks in Relation to USD</h4>
+                <div class="figure">
+                    <img src="images/stock8.png" alt="A bar chart showing the percentage of days each asset moves in the same direction as USD.">
+                    <p><strong>Description:</strong> 
+                        Similar to the Gold comparison, but focusing on daily movement alignment with the USD.
+                    </p>
+                    <p><strong>Analysis:</strong></p>
+                    <ul>
+                        <li><strong>Meme Stocks:</strong> Display minimal alignment with USD, indicating these stocks are more speculative and less tied to currency fluctuations.</li>
+                        <li><strong>WMT:</strong> Maintains a stronger alignment, driven by macroeconomic factors like consumer spending.</li>
+                    </ul>
+                    <p><strong>Conclusion:</strong> 
+                        Meme stock volatility is primarily fueled by retail sentiment, online communities, and crypto sentiment (for MSTR), rather than traditional economic indicators.
+                    </p>
+                    <p><strong>Suggestions for Improvement:</strong> 
+                        <em>Expand timeframe or compare alignment during specific market events (inflation spikes, recessionary periods) to identify if correlations change.</em>
+                    </p>
+                </div>
+
+                <h4>Key Takeaways</h4>
+                <ul>
+                    <li><strong>“Bad vs. Good” Visuals:</strong> Stocks 1 & 2 are simplistic, lacking detail and context. Stocks 3–8 incorporate deeper insights, annotations, multiple axes, and more advanced metrics, illustrating how thorough analysis prevents oversimplified conclusions.</li>
+                    <li><strong>Risk vs. Stability:</strong> Meme stocks (AMC, GME, MSTR) can yield significant but short-lived returns. WMT and Gold offer comparatively steady, long-term growth.</li>
+                    <li><strong>Methodology Matters:</strong> Volatility measures, correlation analyses, and temporal breakouts (monthly, daily) give a more nuanced understanding than raw averages or single-line graphs.</li>
+                </ul>
+            </article>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Line 470: Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Interested in working together or discussing data projects? Feel free to reach out!</p>
@@ -339,9 +521,10 @@
         </section>
     </div>
 
-    <!-- Footer -->
+    <!-- Line 485: Footer -->
     <footer>
         <p>&copy; 2024 Nihith Mekala. All rights reserved.</p>
     </footer>
 </body>
 </html>
+<!-- Line 490: End of index.html -->
