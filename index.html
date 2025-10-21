@@ -4,13 +4,13 @@
     <!-- Basic Page Setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihith Mekala | Data Analyst Portfolio</title>
-    
+    <title>Nihith Mekala | Full-Stack Developer & Data Analyst Portfolio</title>
+
     <!-- SEO Optimization -->
-    <meta name="description" content="Nihith Mekala - Professional Data Analyst specializing in SQL, Tableau, and advanced statistical analysis. Explore comprehensive case studies in financial analytics, transportation systems, and business intelligence.">
-    <meta name="keywords" content="Nihith Mekala, Data Analyst, SQL, Tableau, Data Visualization, Statistical Analysis, Business Intelligence, Financial Analytics, Transportation Analytics">
+    <meta name="description" content="Nihith Mekala - Full-Stack Mobile Developer & Data Analyst specializing in React Native, Android (Kotlin), AI-assisted development, SQL, Tableau, and advanced statistical analysis. Built BrainBites from scratch with AI.">
+    <meta name="keywords" content="Nihith Mekala, Full-Stack Developer, React Native, Android Developer, Kotlin, Data Analyst, SQL, Tableau, AI Development, Claude Code, Mobile App Development, TypeScript, Firebase, Data Visualization, Statistical Analysis">
     <meta name="author" content="Nihith Mekala">
-    
+
     <!-- Stylesheet -->
     <style>
         /* Modern Professional Styling */
@@ -19,7 +19,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         :root {
             --primary-color: #1e3a8a;
             --secondary-color: #3b82f6;
@@ -31,15 +31,16 @@
             --border-color: #e2e8f0;
             --success-color: #10b981;
             --highlight-bg: #eff6ff;
+            --warning-color: #f59e0b;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.7;
             color: var(--text-dark);
             background-color: var(--light-bg);
         }
-        
+
         /* Header Styling */
         header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -48,21 +49,21 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
+
         header h1 {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
             letter-spacing: -1px;
         }
-        
+
         header p {
             font-size: 1.25rem;
             font-weight: 300;
             opacity: 0.95;
             margin-top: 0.5rem;
         }
-        
+
         /* Navigation */
         nav {
             background-color: white;
@@ -73,7 +74,7 @@
             z-index: 1000;
             text-align: center;
         }
-        
+
         nav a {
             color: var(--text-dark);
             text-decoration: none;
@@ -84,19 +85,19 @@
             transition: all 0.3s ease;
             border-radius: 6px;
         }
-        
+
         nav a:hover {
             background-color: var(--highlight-bg);
             color: var(--secondary-color);
         }
-        
+
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 3rem 2rem;
         }
-        
+
         /* Section Styling */
         section {
             background-color: white;
@@ -106,7 +107,7 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
             border: 1px solid var(--border-color);
         }
-        
+
         section h2 {
             color: var(--primary-color);
             font-size: 2.25rem;
@@ -115,7 +116,7 @@
             border-bottom: 3px solid var(--accent-color);
             font-weight: 700;
         }
-        
+
         section h3 {
             color: var(--secondary-color);
             font-size: 1.75rem;
@@ -123,7 +124,7 @@
             margin-bottom: 1.25rem;
             font-weight: 600;
         }
-        
+
         section h4 {
             color: var(--text-dark);
             font-size: 1.35rem;
@@ -131,47 +132,47 @@
             margin-bottom: 1rem;
             font-weight: 600;
         }
-        
+
         p {
             margin-bottom: 1.25rem;
             color: var(--text-dark);
             font-size: 1.05rem;
             line-height: 1.8;
         }
-        
+
         strong {
             color: var(--primary-color);
             font-weight: 600;
         }
-        
+
         em {
             color: var(--secondary-color);
             font-style: normal;
             font-weight: 500;
         }
-        
+
         /* Lists */
         ul {
             margin: 1.5rem 0 1.5rem 2rem;
         }
-        
+
         li {
             margin-bottom: 0.75rem;
             line-height: 1.7;
             color: var(--text-dark);
         }
-        
+
         /* Article Styling */
         article {
             margin-bottom: 4rem;
             padding-bottom: 3rem;
             border-bottom: 2px solid var(--border-color);
         }
-        
+
         article:last-child {
             border-bottom: none;
         }
-        
+
         /* Figure Styling */
         .figure {
             background-color: var(--highlight-bg);
@@ -181,7 +182,7 @@
             border-left: 4px solid var(--secondary-color);
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
         }
-        
+
         .figure img {
             width: 100%;
             height: auto;
@@ -189,29 +190,29 @@
             margin-bottom: 1.5rem;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .figure p {
             margin-bottom: 1rem;
         }
-        
+
         .figure strong {
             display: block;
             margin-bottom: 0.5rem;
             font-size: 1.1rem;
         }
-        
+
         /* Links */
         a {
             color: var(--secondary-color);
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        
+
         a:hover {
             color: var(--primary-color);
             text-decoration: underline;
         }
-        
+
         /* Methodology Box */
         .methodology-box {
             background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
@@ -220,7 +221,7 @@
             margin: 2rem 0;
             border-left: 5px solid var(--secondary-color);
         }
-        
+
         .key-insight {
             background-color: #f0fdf4;
             border-left: 5px solid var(--success-color);
@@ -228,11 +229,23 @@
             margin: 1.5rem 0;
             border-radius: 8px;
         }
-        
+
         .key-insight strong {
             color: var(--success-color);
         }
-        
+
+        .tech-stack-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .tech-stack-box strong {
+            color: var(--warning-color);
+        }
+
         /* Footer */
         footer {
             background-color: var(--dark-bg);
@@ -241,21 +254,31 @@
             padding: 2rem;
             margin-top: 4rem;
         }
-        
+
+        /* Code block styling */
+        code {
+            background-color: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            color: #dc2626;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
             }
-            
+
             .container {
                 padding: 1.5rem 1rem;
             }
-            
+
             section {
                 padding: 2rem 1.5rem;
             }
-            
+
             nav a {
                 display: block;
                 margin: 0.5rem 0;
@@ -267,7 +290,8 @@
     <!-- Header Section -->
     <header>
         <h1>Nihith Mekala</h1>
-        <p>Data Analyst | SQL Expert | Tableau Specialist | Business Intelligence Professional</p>
+        <p>Full-Stack Mobile Developer | Data Analyst | AI-Assisted Development Pioneer</p>
+        <p style="font-size: 1rem; margin-top: 1rem; opacity: 0.9;">React Native • Android (Kotlin) • TypeScript • SQL • Tableau • Python • Firebase</p>
     </header>
 
     <!-- Navigation -->
@@ -279,71 +303,385 @@
 
     <!-- Main Content Container -->
     <div class="container">
-        
+
         <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>
-                I am <strong>Nihith Mekala</strong>, a results-driven Data Analyst with a proven track record of transforming complex datasets into actionable business intelligence. My expertise spans <em>advanced SQL query optimization, statistical modeling, and enterprise-grade data visualization</em> using industry-leading tools including Tableau, Excel, and Python. With a foundation in life sciences and extensive cross-functional experience, I bring a unique analytical perspective that bridges technical precision with strategic business insight.
+                I am <strong>Nihith Mekala</strong>, a versatile <em>Full-Stack Mobile Developer and Data Analyst</em> with a unique combination of skills spanning mobile app development, native Android programming, data analytics, and AI-assisted software engineering. My journey represents the intersection of modern AI-powered development and traditional analytical rigor, having successfully built production-ready mobile applications from scratch while maintaining expertise in advanced data analysis and business intelligence.
             </p>
             <p>
-                My analytical philosophy centers on the principle that data without context is merely noise. Throughout my career, I have specialized in developing comprehensive analytical frameworks that not only identify patterns but also explain the underlying mechanisms driving those patterns. Whether analyzing multi-year transportation datasets comprising millions of records or building predictive models for financial market behavior, I maintain an unwavering commitment to methodological rigor and reproducible analysis.
+                My most recent accomplishment, <strong>BrainBites</strong>—a comprehensive gamified learning and screen time management application—demonstrates my ability to leverage AI tools (Claude Code) to architect, develop, and deploy complex full-stack mobile solutions. This project showcases not just technical proficiency across React Native, Kotlin, TypeScript, and Firebase, but also product thinking, market analysis, and the ability to solve novel technical challenges through innovative AI-human collaboration.
             </p>
-            
-            <h3>Core Competencies & Technical Expertise</h3>
+
+            <h3>Technical Expertise & Core Competencies</h3>
             <p>
-                My technical skill set has been developed through rigorous academic training at McMaster University and refined through real-world application across diverse analytical challenges:
+                My skill set bridges the gap between modern software development and data analytics, enabling me to build data-driven applications and analyze complex datasets with equal proficiency:
             </p>
+
+            <h4>Mobile & Full-Stack Development</h4>
+            <ul>
+                <li><strong>React Native Development:</strong> Expert-level proficiency in building cross-platform mobile applications using React Native (v0.80.2), TypeScript, and modern React patterns including hooks, context API, and state management with Zustand. Implemented complex UI/UX with custom animations, gesture handlers, and responsive design principles.</li>
+                <li><strong>Native Android Development (Kotlin):</strong> Hands-on experience writing native Android modules for React Native, including device-wide screen time tracking, background services with AlarmManager, foreground services with persistent notifications, AsyncStorage integration, and event emission to JavaScript layer. Proficient in Android SDK, Jetpack components, and Kotlin coroutines.</li>
+                <li><strong>State Management & Architecture:</strong> Implemented sophisticated state management solutions using Zustand for global state, React hooks for local state, and event-driven architecture for real-time updates. Designed service-oriented architecture with separation of concerns between UI components, business logic services, and native modules.</li>
+                <li><strong>Firebase & Backend Integration:</strong> Integrated Firebase Analytics, AdMob for monetization, and designed scalable backend architecture. Experience with AsyncStorage for local persistence, data synchronization strategies, and offline-first application design.</li>
+                <li><strong>AI-Assisted Development:</strong> Pioneered efficient development workflows using Claude Code for complex problem-solving, code generation, debugging, and architectural decision-making. Demonstrated ability to effectively collaborate with AI tools to accelerate development cycles while maintaining code quality and best practices.</li>
+            </ul>
+
+            <h4>Data Analytics & Business Intelligence</h4>
             <ul>
                 <li><strong>Advanced SQL & Database Management:</strong> Expert-level proficiency in complex query optimization, window functions, CTEs, subqueries, and performance tuning for large-scale datasets. Experienced in PostgreSQL, MySQL, and SQL Server environments with emphasis on efficient data extraction and transformation pipelines.</li>
                 <li><strong>Statistical Analysis & Modeling:</strong> Comprehensive understanding of descriptive and inferential statistics, hypothesis testing, regression analysis, correlation studies, and time-series analysis. Applied statistical methods to validate findings and ensure analytical conclusions are supported by robust quantitative evidence.</li>
                 <li><strong>Data Visualization & Storytelling:</strong> Mastery of Tableau for creating interactive dashboards and compelling visual narratives. Skilled in selecting appropriate chart types, color theory, and information hierarchy to maximize comprehension and drive data-informed decision-making at executive levels.</li>
-                <li><strong>Data Cleaning & Quality Assurance:</strong> Systematic approach to data validation, outlier detection, missing value imputation, and normalization. Implemented quality control frameworks that reduced data errors by establishing standardized cleaning protocols and automated validation checks.</li>
                 <li><strong>Business Intelligence & Reporting:</strong> Experience designing KPI frameworks, building automated reporting systems, and translating technical findings into executive-ready presentations. Proven ability to align analytical outputs with organizational objectives and strategic priorities.</li>
             </ul>
-            
-            <h3>Professional Background & Cross-Functional Experience</h3>
+
+            <h3>Key Technical Skills Summary</h3>
+            <div class="tech-stack-box">
+                <p><strong>Development Stack:</strong></p>
+                <ul style="margin-top: 0.5rem;">
+                    <li><strong>Frontend:</strong> React Native, TypeScript, JavaScript (ES6+), React Navigation, custom UI components, animations (Animated API)</li>
+                    <li><strong>Backend/Native:</strong> Kotlin, Java, Android SDK, Native Modules, AsyncStorage, RESTful APIs</li>
+                    <li><strong>State & Data:</strong> Zustand, React Hooks, Context API, Firebase, AsyncStorage, event-driven architecture</li>
+                    <li><strong>Tools & Services:</strong> Git, npm, Gradle, Android Studio, Firebase Analytics, AdMob, i18n (internationalization)</li>
+                    <li><strong>Analytics Stack:</strong> SQL (PostgreSQL, MySQL), Tableau, Python (pandas, numpy), Excel, statistical analysis</li>
+                    <li><strong>AI Tools:</strong> Claude Code (AI-assisted development), prompt engineering, AI-human collaboration workflows</li>
+                </ul>
+            </div>
+
+            <h3>Professional Philosophy & Approach</h3>
             <p>
-                During my tenure at McMaster University, I developed a multifaceted skill set that extends beyond pure analytical work. As an International Student Mentor and Cultural Event Coordinator, I managed logistics for events serving 200+ participants, requiring meticulous planning, resource allocation optimization, and stakeholder communication—skills that directly translate to project management in analytics environments.
+                My work philosophy centers on the principle that <em>technology should solve real human problems</em>. Whether building a mobile application to combat phone addiction and promote learning, or analyzing transportation data to improve urban infrastructure, I approach every project with a focus on measurable impact and user value.
             </p>
             <p>
-                My leadership of a charity initiative that raised significant funds for cancer research demonstrated my ability to synthesize data from multiple sources, identify key performance indicators, and adjust strategies based on real-time feedback. This experience reinforced the importance of iterative analysis and adaptive methodologies—principles I apply to every analytical project.
+                The development of BrainBites epitomizes this approach: identifying a genuine market need (students struggling with phone addiction), designing an engaging solution (gamified quizzes + screen time tracking), and executing technically complex implementation (native Android tracking + React Native UI) through innovative AI-assisted development workflows. This project taught me that modern software development is not just about writing code—it's about product thinking, market understanding, technical problem-solving, and effective tool utilization.
             </p>
-            
-            <h3>Analytical Approach & Methodology</h3>
+
+            <h3>AI-Assisted Development: A New Paradigm</h3>
             <p>
-                My analytical process follows a structured, reproducible framework that ensures consistency and validity across all projects:
+                My experience building BrainBites entirely with AI assistance (Claude Code) represents a pioneering approach to software development. This wasn't simply using autocomplete or code snippets—it was a collaborative partnership where I provided product vision, architectural direction, and quality control while AI accelerated implementation, suggested solutions to complex problems, and helped debug intricate issues.
+            </p>
+            <p>
+                <strong>Key learnings from AI-assisted development:</strong>
             </p>
             <ul>
-                <li><strong>Problem Definition & Scoping:</strong> Collaborate with stakeholders to clearly articulate business questions, define success metrics, and establish analytical boundaries. This prevents scope creep and ensures deliverables align with organizational needs.</li>
-                <li><strong>Data Acquisition & Assessment:</strong> Evaluate data sources for completeness, accuracy, and relevance. Document data lineage, identify potential biases, and establish baseline quality metrics before analysis begins.</li>
-                <li><strong>Exploratory Analysis & Hypothesis Formation:</strong> Conduct comprehensive exploratory data analysis (EDA) to understand distributions, identify relationships, and formulate testable hypotheses. Use statistical techniques to validate assumptions before proceeding to deeper analysis.</li>
-                <li><strong>Rigorous Analysis & Validation:</strong> Apply appropriate analytical methods, conduct sensitivity analyses, and validate findings through multiple approaches. Always test alternative explanations to avoid confirmation bias.</li>
-                <li><strong>Visualization & Communication:</strong> Design visualizations that highlight key insights while maintaining statistical integrity. Present findings with appropriate context, limitations, and confidence intervals.</li>
-                <li><strong>Recommendation & Implementation Support:</strong> Translate analytical findings into specific, actionable recommendations with clear implementation paths and expected outcomes.</li>
+                <li><strong>Accelerated Learning Curve:</strong> Gained expertise in React Native and Kotlin simultaneously while building a production app, compressed 6-12 months of learning into intensive focused development</li>
+                <li><strong>Problem-Solving Amplification:</strong> Leveraged AI to explore multiple solution approaches for complex challenges (native screen time tracking, daily score carryover with rollover penalties, multilingual support)</li>
+                <li><strong>Quality Through Iteration:</strong> Used AI to rapidly prototype, test, and refine solutions, maintaining high code quality through continuous refactoring and best practice application</li>
+                <li><strong>Documentation & Knowledge Transfer:</strong> AI assistance in creating comprehensive documentation (40+ markdown files) ensuring project maintainability and knowledge preservation</li>
             </ul>
-            
+
             <h3>Global Perspective & Communication Excellence</h3>
             <p>
-                As a multilingual professional fluent in <em>English, Telugu, and Hindi</em>, with working knowledge of Tamil, Japanese, and Turkish, I bring exceptional cross-cultural communication skills to collaborative environments. This linguistic diversity enables me to work effectively with global teams and understand how cultural context influences data interpretation and business strategy.
+                As a multilingual professional fluent in <em>English, Telugu, and Hindi</em>, with working knowledge of Tamil, Japanese, and Turkish, I bring exceptional cross-cultural communication skills to collaborative environments. This linguistic diversity enabled me to implement comprehensive internationalization (i18n) in BrainBites, supporting multiple languages and understanding global market opportunities (including detailed China market strategy with potential $2-3M revenue projections).
             </p>
             <p>
-                My commitment to continuous learning drives me to stay current with emerging analytical tools, statistical methodologies, and industry best practices. I regularly engage with the data science community through professional networks, online courses, and technical publications to ensure my skills remain at the forefront of the field.
+                My commitment to continuous learning drives me to stay current with emerging technologies, development frameworks, and analytical methodologies. I actively engage with developer communities, contribute to technical discussions, and continuously expand my skill set to remain at the forefront of both mobile development and data analytics.
             </p>
-            
+
             <div class="key-insight">
                 <p>
-                    <strong>Core Philosophy:</strong> I believe that the most powerful insights emerge not from sophisticated algorithms alone, but from the thoughtful integration of domain knowledge, statistical rigor, and effective communication. My goal is to serve as a bridge between raw data and strategic action, delivering analysis that is both technically sound and immediately applicable to real-world business challenges.
+                    <strong>Core Philosophy:</strong> I believe that the future of software development lies in the synergy between human creativity and AI capabilities. My goal is to serve as a bridge between innovative ideas and technical execution, leveraging both traditional analytical rigor and modern AI-assisted workflows to deliver solutions that are technically excellent, user-focused, and business-viable. Whether building mobile applications or analyzing complex datasets, I bring a unique combination of technical depth, strategic thinking, and execution excellence.
                 </p>
             </div>
         </section>
+
         <!-- Projects Section -->
         <section id="projects">
             <h2>Portfolio Projects & Case Studies</h2>
             <p>
-                The following portfolio showcases comprehensive analytical projects that demonstrate proficiency in statistical analysis, data visualization, and business intelligence. Each project follows rigorous methodological standards and provides actionable insights derived from systematic data exploration and validation.
+                The following portfolio showcases comprehensive projects spanning <em>full-stack mobile development</em> and <em>advanced data analytics</em>. Each project demonstrates proficiency in technical execution, problem-solving, and delivering measurable business value.
             </p>
 
+            <!-- ========================================
+                 BRAINBITES - FLAGSHIP PROJECT
+                 ======================================== -->
+            <article>
+                <h3>BrainBites: Gamified Learning & Screen Time Management App (Full-Stack Mobile Development)</h3>
+
+                <div class="methodology-box">
+                    <h4>Executive Summary</h4>
+                    <p>
+                        <strong>BrainBites</strong> is a production-ready Android mobile application that uniquely combines device-wide screen time tracking with gamified quiz-based learning to help students combat phone addiction while improving knowledge retention. Built entirely from scratch using AI-assisted development (Claude Code), this project represents a complete full-stack mobile solution encompassing React Native frontend, native Kotlin modules, Firebase integration, monetization strategy, and comprehensive market analysis.
+                    </p>
+                    <p>
+                        <strong>Project Scope:</strong> 20,000+ lines of code across TypeScript/JavaScript (React Native) and Kotlin (native Android) | 40+ markdown documentation files | 3 months development | Production-ready APK/AAB builds | Multi-language support (English, Turkish) | Complete business strategy with $900K-$3.7M Year 1 revenue projections
+                    </p>
+                </div>
+
+                <h4>The Problem & Market Opportunity</h4>
+                <p>
+                    In an era where average smartphone screen time exceeds 6-8 hours daily, students face unprecedented challenges with phone addiction disrupting education and productivity. Existing solutions fall into two camps: screen time tracking apps (passive monitoring without engagement) and educational apps (learning without addressing underlying addiction). <strong>No solution combined both</strong> to create a virtuous cycle where reducing screen time earns quiz opportunities, and completing quizzes earns time back—a gamified approach that makes productivity rewarding.
+                </p>
+                <p>
+                    <strong>Market Analysis:</strong> The global education app market represents a $12.9B opportunity (China alone), with quiz/assessment apps showing 15.2% CAGR. BrainBites occupies a unique position: appealing to students (gamified learning), parents (screen time control), and educators (knowledge reinforcement), with no direct competitor offering this specific combination.
+                </p>
+
+                <h4>Technical Architecture & Implementation</h4>
+
+                <h4>1. Frontend: React Native + TypeScript</h4>
+                <p>
+                    The application's user interface was built using <strong>React Native 0.80.2</strong> with <strong>TypeScript</strong> for type safety and improved developer experience. Key architectural decisions include:
+                </p>
+                <ul>
+                    <li><strong>Component Architecture:</strong> Designed modular, reusable component library including <code>HomeScreen</code>, <code>QuizScreen</code>, <code>DailyGoalsScreen</code>, <code>SettingsScreen</code>, <code>LeaderboardScreen</code>, and specialized components like <code>EnhancedMascotDisplay</code> (animated character with 6 emotional states), <code>TimerWidget</code>, <code>ScoreInsightsCard</code></li>
+                    <li><strong>State Management:</strong> Implemented <strong>Zustand</strong> for global state management (score, streaks, quiz state) with custom hooks (<code>useHomeIntegration</code>, <code>useLiveScore</code>) for clean component integration. Used React Context API for theme and localization, ensuring performant re-renders</li>
+                    <li><strong>Navigation:</strong> Utilized <strong>React Navigation</strong> with stack-based navigation, deep linking support, and proper TypeScript types for route parameters</li>
+                    <li><strong>Animations:</strong> Created fluid UI animations using React Native's <code>Animated</code> API for score updates, mascot state transitions, and micro-interactions that enhance user engagement</li>
+                    <li><strong>Internationalization:</strong> Integrated <strong>i18next</strong> with <code>react-i18next</code> for comprehensive multi-language support (English, Turkish) with locale switching and proper RTL layout handling</li>
+                </ul>
+
+                <h4>2. Native Android Development: Kotlin Modules</h4>
+                <p>
+                    The most technically challenging aspect was implementing <strong>device-wide screen time tracking</strong> on Android—functionality requiring deep native platform integration that cannot be achieved through JavaScript alone:
+                </p>
+                <ul>
+                    <li><strong>ScreenTimeService (Foreground Service):</strong> Built native Kotlin service running as persistent foreground service with notification, tracking actual device usage across ALL apps using <code>UsageStatsManager</code> API. Implemented second-by-second countdown timer, overtime tracking (penalty system), and real-time event emission to React Native layer via <code>NativeEventEmitter</code></li>
+                    <li><strong>DailyScoreCarryoverService:</strong> Engineered sophisticated daily rollover system that calculates bonus points for remaining time (67 points/minute for first 40 minutes, diminishing returns after) and penalty points for overtime (50 points/minute). Runs at midnight via <code>AlarmManager</code>, handles day transitions, persists scores to AsyncStorage with comprehensive logging for debugging</li>
+                    <li><strong>BackgroundCheckInReceiver:</strong> Implemented AlarmManager-based periodic check-in system firing every 5 hours to maintain engagement, send notifications, and prevent timer tampering</li>
+                    <li><strong>NotificationService:</strong> Created rich notification system with real-time timer display, action buttons (pause/resume), and custom layouts showing daily score, remaining time, and overtime warnings</li>
+                    <li><strong>React Native Bridge:</strong> Developed custom Native Module (<code>ScreenTimeModule</code>) exposing Kotlin functionality to JavaScript with methods for starting/stopping/resetting timer, querying current state, and handling permissions (UsageStats access, notification permissions, exact alarms for Android 12+)</li>
+                </ul>
+
+                <h4>3. Service Layer Architecture</h4>
+                <p>
+                    Designed comprehensive service-oriented architecture separating business logic from UI components:
+                </p>
+                <ul>
+                    <li><strong>EnhancedScoreService:</strong> Centralized score management handling daily scores, lifetime scores, streak tracking, and persistence to AsyncStorage with transactional updates to prevent data loss</li>
+                    <li><strong>HybridTimerService:</strong> Abstraction layer coordinating between native timer services and React Native UI, managing timer state, handling day transitions, and ensuring consistency across app restarts</li>
+                    <li><strong>TimerIntegrationService:</strong> Integration point between quiz system and timer, handling time rewards when quizzes completed, penalty reductions, and maintaining sync between different game mechanics</li>
+                    <li><strong>DailyGoalsService:</strong> Manages daily goal system (complete 3 hard quizzes, maintain 50% accuracy, check in 3 times, etc.) with progress tracking, time bonus rewards (30-60 seconds per goal), and reset logic</li>
+                    <li><strong>NotificationService:</strong> Handles all notification scheduling, morning reminders (8 AM daily), check-in notifications (every 5 hours), and congratulatory messages for achievements</li>
+                    <li><strong>QuestionService:</strong> Quiz question management with categorization (Math, Science, History, etc.), difficulty levels (Easy/Medium/Hard), Turkish and English question banks, and random selection algorithms</li>
+                </ul>
+
+                <h4>4. Quiz System & Gamification</h4>
+                <p>
+                    The core engagement mechanism—a sophisticated quiz system designed to make learning addictive:
+                </p>
+                <ul>
+                    <li><strong>Difficulty Tiers:</strong> Three difficulty levels with different rewards and time requirements—Easy (10 points, 1 minute), Medium (20 points, 2 minutes), Hard (30 points, 3 minutes)</li>
+                    <li><strong>Streak System:</strong> Consecutive correct answers build streaks (up to 10x multiplier), creating dramatic score acceleration and encouraging focused quiz sessions. Highest daily streak tracked for competitive element</li>
+                    <li><strong>Time Rewards:</strong> Correct answers add time back to daily allowance (Easy: 1 min, Medium: 2 min, Hard: 3 min), creating virtuous cycle where learning extends productive phone usage</li>
+                    <li><strong>Score Mechanics:</strong> Complex scoring system accounting for base points, difficulty multipliers, streak bonuses, accuracy tracking, and daily/lifetime leaderboards</li>
+                    <li><strong>Category System:</strong> Questions organized into categories (Math, Science, History, General Knowledge, etc.) with progress tracking and category-specific achievements</li>
+                </ul>
+
+                <h4>5. Firebase Integration & Analytics</h4>
+                <ul>
+                    <li><strong>Firebase Analytics:</strong> Integrated Firebase Analytics tracking 30+ custom events (quiz_completed, streak_achieved, daily_goal_completed, screen_time_reduced, etc.) providing insights into user behavior, retention patterns, and engagement metrics</li>
+                    <li><strong>AdMob Monetization:</strong> Implemented Google AdMob with banner ads on home screen and interstitial ads between quiz sessions, projected revenue $0.50-2.00 per daily active user based on industry benchmarks</li>
+                    <li><strong>Event Logging:</strong> Comprehensive event logging for user actions, enabling funnel analysis, A/B testing groundwork, and data-driven product decisions</li>
+                </ul>
+
+                <h4>6. Data Persistence & State Management</h4>
+                <ul>
+                    <li><strong>AsyncStorage:</strong> All critical data persisted to AsyncStorage (React Native's key-value storage) including scores, streaks, timer state, daily goals progress, user preferences, and quiz history</li>
+                    <li><strong>Data Consistency:</strong> Implemented transaction-like patterns to ensure atomic updates, rollback capabilities on errors, and verification logging to diagnose persistence issues</li>
+                    <li><strong>Migration Strategy:</strong> Version-aware data schema with migration paths for updates, ensuring smooth upgrades without user data loss</li>
+                </ul>
+
+                <h4>Complex Technical Challenges Solved</h4>
+                <div class="methodology-box">
+                    <h4>Challenge 1: Daily Score Rollover with Penalties</h4>
+                    <p>
+                        <strong>Problem:</strong> Implementing midnight rollover logic where remaining time converts to bonus points but overtime (screen time exceeding daily limit) applies penalties, with scores carrying forward to next day.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Created <code>DailyScoreCarryoverService</code> Kotlin service scheduled via <code>AlarmManager</code> with exact midnight trigger (accounting for timezone). Implemented complex calculation: first 40 minutes remaining = 67 points/min, 40-60 minutes = 40 points/min, 60+ minutes = 20 points/min (diminishing returns). Overtime penalty = 50 points/min, potentially creating negative scores that reduce next day's starting score.
+                    </p>
+                    <p>
+                        <strong>Debugging Complexity:</strong> Rollover bugs were most difficult to debug due to 24-hour test cycles. Solution: Added comprehensive logging with <code>[CARRYOVER-TRACE]</code> tags showing complete calculation flow, before/after values, and verification steps. Created manual date-change testing procedures and test scenarios documentation.
+                    </p>
+                </div>
+
+                <div class="methodology-box">
+                    <h4>Challenge 2: Persistent Foreground Service with Timer</h4>
+                    <p>
+                        <strong>Problem:</strong> Android aggressively kills background processes. Needed truly persistent timer that survives app closures, device sleep, and aggressive battery optimization.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Implemented foreground service (cannot be killed by system) with persistent notification showing real-time countdown. Used <code>AlarmManager</code> with exact alarms for critical timing events. Implemented service restart on device boot via <code>BroadcastReceiver</code>. Added "protection" layer detecting service death and auto-restart.
+                    </p>
+                    <p>
+                        <strong>Edge Cases Handled:</strong> Device reboot (persist timer state, restore on boot), app force-stop (detect and handle gracefully), battery optimization (request exemption, inform user), Android 12+ exact alarm restrictions (request permissions), timezone changes (recompute midnight triggers).
+                    </p>
+                </div>
+
+                <div class="methodology-box">
+                    <h4>Challenge 3: Negative Scores Not Displaying</h4>
+                    <p>
+                        <strong>Problem:</strong> When users had overtime penalties creating negative scores, UI wasn't updating to show negative values—confusing UX.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Traced through entire score persistence flow (Kotlin AsyncStorage write → JavaScript AsyncStorage read → Zustand store update → UI render). Added explicit logging at each step with "NEGATIVE ⚠️" indicators. Discovered AsyncStorage writes succeeding but reads returning stale data due to async timing. Fixed with forced notification update triggering immediate UI refresh after score calculation.
+                    </p>
+                    <p>
+                        <strong>Learning:</strong> Cross-boundary debugging (native ↔ JavaScript) requires comprehensive logging at all boundaries. React Native's async nature demands careful state synchronization.
+                    </p>
+                </div>
+
+                <div class="methodology-box">
+                    <h4>Challenge 4: Overtime Not Clearing for Large Values</h4>
+                    <p>
+                        <strong>Problem:</strong> Overtime would reset correctly for <1 hour but not for >2 hours, leaving notification showing incorrect overtime values.
+                    </p>
+                    <p>
+                        <strong>Solution:</strong> Added <code>[RESET-TRACE]</code> logging showing before/after overtime values. Discovered overtime WAS resetting in service but notification wasn't updating. Root cause: notification update occurring before AsyncStorage write completed. Fixed by forcing notification update AFTER score calculation with verification of success. Added broadcast to UI components forcing immediate re-query of timer state.
+                    </p>
+                </div>
+
+                <h4>AI-Assisted Development: Lessons Learned</h4>
+                <p>
+                    Building BrainBites with Claude Code represented a novel development paradigm. Here's what I learned about effective AI-human collaboration:
+                </p>
+
+                <h4>What Worked Exceptionally Well:</h4>
+                <ul>
+                    <li><strong>Rapid Prototyping:</strong> AI accelerated initial architecture design, component scaffolding, and boilerplate code generation, allowing me to focus on product logic and UX decisions rather than syntax</li>
+                    <li><strong>Cross-Technology Learning:</strong> Simultaneously learning React Native, TypeScript, Kotlin, and Android SDK would traditionally take 6-12 months. AI provided contextual explanations, best practices, and working examples, compressing this to 3 months of intensive development</li>
+                    <li><strong>Debugging Complex Issues:</strong> AI helped trace bugs across technology boundaries (React Native ↔ Kotlin), suggest logging strategies, and propose multiple solution approaches for testing</li>
+                    <li><strong>Documentation Generation:</strong> AI assisted in creating 40+ markdown files documenting architecture, API references, testing procedures, marketing strategies, and deployment guides—ensuring project maintainability</li>
+                    <li><strong>Best Practice Application:</strong> AI suggested industry best practices for state management, service architecture, error handling, and performance optimization that would typically require years of experience to learn</li>
+                </ul>
+
+                <h4>What Required Human Judgment:</h4>
+                <ul>
+                    <li><strong>Product Vision:</strong> All product decisions (features, UX flow, gamification mechanics) required human creativity and market understanding. AI provided technical execution, not product strategy</li>
+                    <li><strong>Architecture Trade-offs:</strong> Deciding between different architectural approaches (e.g., which state management library, how to structure services, native vs. JavaScript) required understanding business constraints and making judgment calls</li>
+                    <li><strong>Quality Control:</strong> AI-generated code required review, refactoring, and testing. I maintained final authority on code quality, naming conventions, and architectural coherence</li>
+                    <li><strong>Edge Case Handling:</strong> Identifying edge cases (device reboot, timezone changes, Android version differences) required real-world thinking and user empathy</li>
+                    <li><strong>Market Strategy:</strong> Business model, pricing strategy, target market identification, and go-to-market planning required human market understanding and strategic thinking</li>
+                </ul>
+
+                <h4>Development Workflow Evolution:</h4>
+                <p>
+                    My collaboration with AI evolved through three phases:
+                </p>
+                <ul>
+                    <li><strong>Phase 1 - Learning (Weeks 1-3):</strong> Heavy reliance on AI for learning syntax, framework patterns, and basic implementation. Focused on understanding React Native ecosystem and Android development fundamentals</li>
+                    <li><strong>Phase 2 - Building (Weeks 4-8):</strong> Shift to collaborative problem-solving where I defined requirements and architectural approaches, AI provided implementation options, and I selected/refined solutions. Developed mental models of both frameworks</li>
+                    <li><strong>Phase 3 - Refinement (Weeks 9-12):</strong> Independent implementation of features with AI assisting on complex problems, code review, optimization, and documentation. Achieved self-sufficiency with AI as accelerant rather than crutch</li>
+                </ul>
+
+                <h4>Business Strategy & Market Analysis</h4>
+                <p>
+                    Beyond technical implementation, I developed comprehensive business strategy including market sizing, competitive analysis, monetization models, and expansion plans:
+                </p>
+
+                <h4>Monetization Strategy:</h4>
+                <ul>
+                    <li><strong>Freemium Model:</strong> Free tier with daily time limit (2 hours) and limited quiz categories. Premium tier ($4.99/month or $39.99/year) unlocks unlimited time, all categories, ad-free experience, and exclusive features</li>
+                    <li><strong>AdMob Integration:</strong> Banner ads (home screen) + interstitial ads (between quiz sessions) projected at $0.50-2.00 eCPM based on education app benchmarks</li>
+                    <li><strong>Revenue Projections:</strong> Conservative Year 1: $200K (Android global). Aggressive Year 1: $500K with effective marketing and viral growth</li>
+                </ul>
+
+                <h4>Market Expansion Strategy:</h4>
+                <ul>
+                    <li><strong>iOS Development (4 weeks):</strong> Developed comprehensive technical plan using Apple's FamilyControls framework for device-wide screen time tracking, Live Activities for Dynamic Island integration, and WidgetKit for home/lock screen widgets. iOS can achieve feature parity with superior UX (Dynamic Island, native widgets). Projected: $150K-400K Year 1</li>
+                    <li><strong>China Market Entry (8-12 weeks):</strong> Analyzed massive opportunity: $12.9B education app market, 600M students, perfect cultural fit (exam culture, quiz learning mainstream). Detailed compliance plan (ICP license, Simplified Chinese, WeChat Pay/Alipay, Alibaba Cloud hosting). WeChat Mini Program for viral growth. Conservative projection: $560K Year 1. Aggressive: $2-2.8M Year 1 with viral adoption</li>
+                    <li><strong>Combined Projection:</strong> $900K-$3.7M Year 1 revenue across Android, iOS, and China markets</li>
+                </ul>
+
+                <h4>Competitive Analysis:</h4>
+                <p>
+                    Research revealed <strong>zero direct competitors</strong> combining screen time tracking with gamified learning. Existing apps fall into separate categories:
+                </p>
+                <ul>
+                    <li><strong>Screen Time Apps:</strong> Forest, Freedom, Screen Time by Google—passive tracking without engagement mechanism</li>
+                    <li><strong>Educational Apps:</strong> Duolingo, Quizlet, Khan Academy—learning without addressing underlying phone addiction</li>
+                    <li><strong>BrainBites Unique Value:</strong> Only solution creating virtuous cycle where reducing screen time earns learning opportunities, and learning earns productive screen time back—addressing both problems simultaneously</li>
+                </ul>
+
+                <h4>Key Metrics & Technical Achievements</h4>
+                <div class="tech-stack-box">
+                    <p><strong>Codebase Statistics:</strong></p>
+                    <ul style="margin-top: 0.5rem;">
+                        <li><strong>Total Lines of Code:</strong> ~20,000 lines (TypeScript/JavaScript: ~12,000 | Kotlin: ~8,000)</li>
+                        <li><strong>React Native Components:</strong> 9 screens + 15 reusable components + 6 custom hooks</li>
+                        <li><strong>Native Modules:</strong> 5 Kotlin services + 3 broadcast receivers + 2 native modules bridged to React Native</li>
+                        <li><strong>Services:</strong> 19 TypeScript service files handling business logic, analytics, audio, timers, notifications</li>
+                        <li><strong>Documentation:</strong> 40+ markdown files (technical docs, market analysis, testing guides, deployment procedures)</li>
+                        <li><strong>Dependencies:</strong> 29 npm packages (React Native, Firebase, AdMob, navigation, i18n, etc.) + Android dependencies</li>
+                        <li><strong>Languages Supported:</strong> English, Turkish (full i18n implementation)</li>
+                        <li><strong>Build Outputs:</strong> Release APK (72 MB) | Release AAB (43 MB, Play Store ready) | Debug builds for testing</li>
+                        <li><strong>Version:</strong> v20.0.0 (20 iterations with bug fixes, feature additions, performance improvements)</li>
+                        <li><strong>Testing:</strong> Comprehensive test scenarios for rollover logic, overtime tracking, score persistence, daily goals</li>
+                    </ul>
+                </div>
+
+                <h4>Key Learnings & Skills Acquired</h4>
+                <p>
+                    This project transformed my skill set and mindset about software development:
+                </p>
+
+                <h4>Technical Skills Gained:</h4>
+                <ul>
+                    <li><strong>React Native Mastery:</strong> Deep understanding of component lifecycle, hooks, state management, navigation, animations, performance optimization, and React Native's bridge architecture</li>
+                    <li><strong>Kotlin & Android Development:</strong> Proficiency in Kotlin syntax, Android SDK, services (foreground/background), AlarmManager, BroadcastReceivers, permissions, notifications, and React Native native module development</li>
+                    <li><strong>Cross-Platform Architecture:</strong> Learned to design systems spanning JavaScript and native code, managing async boundaries, event emission, and state synchronization</li>
+                    <li><strong>Mobile App Lifecycle:</strong> Understanding app states (foreground/background), process death, device reboot, battery optimization, permissions, and Android version compatibility</li>
+                    <li><strong>Firebase Ecosystem:</strong> Analytics integration, event tracking, AdMob monetization, and mobile analytics best practices</li>
+                    <li><strong>Internationalization:</strong> Multi-language support, locale management, RTL layouts, and cultural adaptation</li>
+                </ul>
+
+                <h4>Product & Business Skills:</h4>
+                <ul>
+                    <li><strong>Product Thinking:</strong> Learned to think beyond features to user problems, engagement loops, retention mechanics, and viral growth strategies</li>
+                    <li><strong>Market Analysis:</strong> Conducted competitive research, market sizing, target audience identification, and revenue modeling</li>
+                    <li><strong>Monetization Strategy:</strong> Designed freemium model, analyzed ad revenue potential, and created pricing tiers based on value delivered</li>
+                    <li><strong>Go-to-Market Planning:</strong> Developed multi-market expansion strategy (iOS, China) with realistic timelines and investment requirements</li>
+                </ul>
+
+                <h4>Soft Skills & Mindset:</h4>
+                <ul>
+                    <li><strong>Problem Decomposition:</strong> Breaking complex problems (persistent timers, rollover calculations, cross-boundary debugging) into manageable sub-problems</li>
+                    <li><strong>Debugging Methodology:</strong> Systematic debugging through logging, hypothesis testing, edge case identification, and root cause analysis</li>
+                    <li><strong>AI Collaboration:</strong> Learned to effectively work with AI tools—when to rely on AI (boilerplate, syntax, options generation), when to apply human judgment (architecture, product decisions, quality control)</li>
+                    <li><strong>Documentation Discipline:</strong> Maintaining comprehensive documentation as project grows, enabling future maintainability and knowledge transfer</li>
+                    <li><strong>Iteration & Refinement:</strong> Accepting that v1 won't be perfect, embracing iterative improvement, and learning from bugs (20 versions with continuous refinement)</li>
+                </ul>
+
+                <h4>Biggest Surprise:</h4>
+                <p>
+                    <strong>The biggest surprise was how much I didn't know I didn't know.</strong> Starting this project, I thought mobile development was "just React with different components." Reality: mobile development involves OS-level concepts (services, permissions, battery optimization), platform-specific constraints (Android version differences, manufacturer variations), complex async patterns, memory management, and bridging compiled native code with interpreted JavaScript. Each layer of complexity revealed new layers beneath. This humbling experience taught me that true expertise requires building real-world projects, encountering edge cases, and learning through failure.
+                </p>
+
+                <div class="key-insight">
+                    <p>
+                        <strong>Project Impact & Next Steps:</strong> BrainBites demonstrates that AI-assisted development enables individuals to execute projects traditionally requiring teams. The app is production-ready (version 20, all critical bugs fixed, Google Play Store ready), with comprehensive strategy for iOS expansion and China market entry. This project validates a new development paradigm: AI as collaborative partner accelerating execution while humans provide vision, judgment, and quality control. Next steps include Play Store submission, user acquisition strategy execution, and iOS development to achieve multi-platform presence.
+                    </p>
+                </div>
+
+                <h4>Technical Documentation & Resources</h4>
+                <p>
+                    Complete project documentation includes:
+                </p>
+                <ul>
+                    <li><strong>Executive Summary:</strong> Business strategy, market analysis, revenue projections, roadmap</li>
+                    <li><strong>Technical Guides:</strong> iOS implementation strategy, China market compliance, Android 15 compatibility, timer protection system</li>
+                    <li><strong>Testing Documentation:</strong> Test scenarios, bug analysis, verification procedures, rollover testing guide</li>
+                    <li><strong>Marketing Strategy:</strong> Zero-budget marketing plan, influencer outreach templates, Reddit promotion guide, social media strategy</li>
+                    <li><strong>Version Control:</strong> 20 documented versions with release notes, changelog, and upgrade guides</li>
+                </ul>
+
+                <h4>Conclusion: From Concept to Production in 3 Months</h4>
+                <p>
+                    BrainBites represents a complete journey from market opportunity identification to production-ready application. This project showcases:
+                </p>
+                <ul>
+                    <li>✅ <strong>Technical Depth:</strong> Full-stack mobile development spanning React Native, Kotlin, TypeScript, Firebase</li>
+                    <li>✅ <strong>Problem-Solving:</strong> Solving complex challenges (persistent timers, daily rollover, native tracking)</li>
+                    <li>✅ <strong>Product Thinking:</strong> Designing engaging UX, gamification loops, and retention mechanics</li>
+                    <li>✅ <strong>Business Acumen:</strong> Market analysis, competitive positioning, monetization strategy, expansion planning</li>
+                    <li>✅ <strong>AI Collaboration:</strong> Pioneering effective human-AI development workflows</li>
+                    <li>✅ <strong>Execution:</strong> Shipping production-ready software with comprehensive documentation</li>
+                </ul>
+                <p>
+                    Most importantly, this project demonstrates <strong>the ability to learn rapidly, execute independently, and deliver complete solutions</strong>—skills increasingly critical in modern software development.
+                </p>
+            </article>
             <!-- LATEST FINANCIAL ANALYSIS -->
             <article>
                 <h3>Advanced Financial Analysis: Comparative Performance Study of Meme Stocks vs. Traditional Safe-Haven Assets</h3>
@@ -1055,40 +1393,62 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>
-                I welcome opportunities to collaborate on challenging data analysis projects, discuss analytical methodologies, or explore how data-driven insights can address your organization's strategic objectives. Whether you're seeking a dedicated data analyst for your team or consulting expertise for a specific project, I'm eager to apply my skills to deliver measurable business impact.
+                I welcome opportunities to collaborate on challenging projects spanning <em>full-stack mobile development, data analytics, and AI-assisted software engineering</em>. Whether you're seeking a versatile developer who can build production-ready mobile applications from scratch, a data analyst to derive actionable insights from complex datasets, or someone who can bridge the gap between technical execution and business strategy, I'm eager to apply my unique combination of skills to deliver measurable impact.
             </p>
-            
+
             <h3>Professional Inquiries</h3>
             <p>
                 For project discussions, employment opportunities, or professional consultations, please reach out through the following channels:
             </p>
             <ul style="list-style-type: none; padding-left: 0;">
                 <li style="margin-bottom: 1rem;">
-                    <strong>📧 Email:</strong> 
+                    <strong>📧 Email:</strong>
                     <a href="mailto:nihith011@gmail.com">nihith011@gmail.com</a>
                     <br><em>Primary contact for all professional inquiries. Typical response time: 24-48 hours.</em>
                 </li>
                 <li style="margin-bottom: 1rem;">
-                    <strong>💼 LinkedIn:</strong> 
+                    <strong>💼 LinkedIn:</strong>
                     <a href="https://www.linkedin.com/in/nihith-mekala-174374206" target="_blank" rel="noopener noreferrer">linkedin.com/in/nihith-mekala-174374206</a>
                     <br><em>Connect with me to view detailed work history, endorsements, and professional recommendations.</em>
                 </li>
             </ul>
-            
+
             <h3>Areas of Expertise Available for Consultation</h3>
+
+            <h4>Mobile & Full-Stack Development:</h4>
+            <ul>
+                <li>React Native Cross-Platform Mobile Development (iOS & Android)</li>
+                <li>Native Android Development (Kotlin/Java) & React Native Bridge Architecture</li>
+                <li>TypeScript/JavaScript Full-Stack Development with Modern Frameworks</li>
+                <li>Firebase Integration (Analytics, AdMob, Authentication, Cloud Functions)</li>
+                <li>Mobile App Architecture, State Management (Zustand, Redux), and Performance Optimization</li>
+                <li>AI-Assisted Development Workflows & Rapid Prototyping with Claude Code</li>
+                <li>Product Strategy, Market Analysis, and Go-to-Market Planning for Mobile Apps</li>
+            </ul>
+
+            <h4>Data Analytics & Business Intelligence:</h4>
             <ul>
                 <li>SQL Database Design & Query Optimization for Large-Scale Datasets</li>
-                <li>Tableau Dashboard Development & Business Intelligence Solutions</li>
+                <li>Tableau Dashboard Development & Interactive Data Visualization</li>
                 <li>Statistical Analysis & Hypothesis Testing for Business Decisions</li>
                 <li>Financial Market Analysis & Investment Performance Modeling</li>
                 <li>Transportation & Urban Infrastructure Analytics</li>
                 <li>Customer Segmentation & Behavioral Analysis for Marketing Strategy</li>
                 <li>Data Visualization Best Practices & Storytelling with Data</li>
             </ul>
-            
+
             <div class="key-insight">
                 <p>
-                    <strong>Open to Opportunities:</strong> I am actively seeking full-time data analyst positions where I can apply advanced analytical skills to solve complex business problems. Particularly interested in roles involving SQL, Tableau, statistical modeling, and cross-functional collaboration in dynamic, data-driven organizations.
+                    <strong>Open to Opportunities:</strong> I am actively seeking positions where I can leverage my unique combination of <strong>full-stack mobile development</strong> and <strong>data analytics</strong> expertise. Particularly interested in roles involving:
+                </p>
+                <ul style="margin-top: 1rem;">
+                    <li><strong>Mobile Developer / Full-Stack Developer:</strong> Building production-ready React Native/Android applications with data-driven features</li>
+                    <li><strong>Product Analyst / Data-Driven Product Manager:</strong> Bridging technical development and analytics to build data-informed products</li>
+                    <li><strong>Growth Engineer:</strong> Combining development skills with analytical rigor to drive user acquisition and engagement</li>
+                    <li><strong>Data Analyst:</strong> Leveraging SQL, Tableau, and statistical modeling in dynamic, tech-forward organizations</li>
+                </ul>
+                <p style="margin-top: 1rem;">
+                    <strong>Ideal Role:</strong> A position that values versatility, rapid learning, AI-assisted productivity, and the ability to execute complete projects independently—from market analysis and technical architecture through implementation and deployment.
                 </p>
             </div>
         </section>
@@ -1096,10 +1456,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Nihith Mekala | Data Analyst Portfolio | All Rights Reserved</p>
+        <p>&copy; 2025 Nihith Mekala | Full-Stack Developer & Data Analyst Portfolio | All Rights Reserved</p>
         <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
-            Built with analytical precision and attention to detail
+            Built with technical excellence and analytical precision • React Native • Kotlin • TypeScript • SQL • Tableau
         </p>
     </footer>
 </body>
-</html>    
