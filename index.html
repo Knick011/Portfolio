@@ -1,1405 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Page Setup -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihith Mekala | AI-Powered Software Engineer & Data Analyst Portfolio</title>
-
-    <!-- SEO Optimization -->
-    <meta name="description" content="Nihith Mekala - AI-Powered Software Engineer & Data Analyst. Building production software with AI assistance. Specializing in SaaS platforms, mobile apps, and advanced analytics.">
-    <meta name="keywords" content="Nihith Mekala, AI Software Engineer, Claude Code, OpenAI, SaaS Development, React Native, Data Analyst, SQL, Tableau, AI-Assisted Development">
-    <meta name="author" content="Nihith Mekala">
-
-    <style>
-        /* Modern Professional Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-color: #1e3a8a;
-            --secondary-color: #3b82f6;
-            --accent-color: #f59e0b;
-            --dark-bg: #0f172a;
-            --light-bg: #f8fafc;
-            --text-dark: #1e293b;
-            --text-light: #64748b;
-            --border-color: #e2e8f0;
-            --success-color: #10b981;
-            --highlight-bg: #eff6ff;
-            --warning-color: #f59e0b;
-            --card-bg: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
-            color: var(--text-dark);
-            background-color: var(--light-bg);
-        }
-
-        /* Header Styling */
-        header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 4rem 2rem 3rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            letter-spacing: -1px;
-        }
-
-        header .subtitle {
-            font-size: 1.25rem;
-            font-weight: 300;
-            opacity: 0.95;
-            margin-top: 0.5rem;
-        }
-
-        header .tagline {
-            font-size: 1rem;
-            opacity: 0.85;
-            margin-top: 1rem;
-            font-style: italic;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: white;
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            text-align: center;
-        }
-
-        nav a {
-            color: var(--text-dark);
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            margin: 0 0.5rem;
-            display: inline-block;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border-radius: 6px;
-        }
-
-        nav a:hover {
-            background-color: var(--highlight-bg);
-            color: var(--secondary-color);
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-
-        section {
-            margin-bottom: 5rem;
-        }
-
-        section h2 {
-            font-size: 2.25rem;
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 3px solid var(--accent-color);
-        }
-
-        /* Project Cards */
-        .project-card {
-            background: var(--card-bg);
-            border: 2px solid var(--border-color);
-            border-radius: 12px;
-            padding: 3rem;
-            margin-bottom: 3.5rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-            border-color: var(--secondary-color);
-        }
-
-        .project-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .project-logo {
-            width: 80px;
-            height: 80px;
-            border-radius: 12px;
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-
-        .project-title-section {
-            flex: 1;
-        }
-
-        .project-title {
-            font-size: 1.75rem;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .project-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            font-size: 0.875rem;
-            color: var(--text-light);
-            margin-bottom: 0.75rem;
-        }
-
-        .project-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .tech-tag {
-            background: var(--highlight-bg);
-            color: var(--secondary-color);
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            border: 1px solid var(--secondary-color);
-        }
-
-        .tech-tag.ai {
-            background: #fef3c7;
-            color: var(--warning-color);
-            border-color: var(--warning-color);
-        }
-
-        .project-summary {
-            font-size: 1.125rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-        }
-
-        .key-achievements {
-            list-style: none;
-            margin: 1rem 0;
-        }
-
-        .key-achievements li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: var(--text-dark);
-        }
-
-        .key-achievements li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--success-color);
-            font-weight: bold;
-        }
-
-        .project-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: var(--secondary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .project-link:hover {
-            background: var(--primary-color);
-            transform: translateY(-2px);
-        }
-
-        .project-link.secondary {
-            background: white;
-            color: var(--secondary-color);
-            border: 2px solid var(--secondary-color);
-        }
-
-        .project-link.secondary:hover {
-            background: var(--secondary-color);
-            color: white;
-        }
-
-        /* Collapsible Details */
-        .collapsible-trigger {
-            background: var(--highlight-bg);
-            border: 2px solid var(--secondary-color);
-            color: var(--secondary-color);
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 1rem;
-            width: 100%;
-            text-align: center;
-            transition: all 0.3s ease;
-            margin-top: 1rem;
-        }
-
-        .collapsible-trigger:hover {
-            background: var(--secondary-color);
-            color: white;
-        }
-
-        .collapsible-trigger::after {
-            content: ' ▼';
-            font-size: 0.875rem;
-        }
-
-        .collapsible-trigger.active::after {
-            content: ' ▲';
-        }
-
-        .collapsible-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-
-        .collapsible-content.active {
-            max-height: 10000px;
-            transition: max-height 0.5s ease;
-        }
-
-        .collapsible-inner {
-            padding-top: 2rem;
-        }
-
-        /* Methodology Box */
-        .methodology-box {
-            background: var(--highlight-bg);
-            border-left: 4px solid var(--secondary-color);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 6px;
-        }
-
-        .methodology-box h4 {
-            color: var(--primary-color);
-            margin-bottom: 0.75rem;
-            font-size: 1.125rem;
-        }
-
-        /* Project Screenshot */
-        .project-screenshot {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Lists */
-        article ul {
-            margin: 1.5rem 0 1.5rem 2rem;
-        }
-
-        article li {
-            margin: 0.75rem 0;
-            line-height: 1.8;
-        }
-
-        article h4 {
-            font-size: 1.35rem;
-            color: var(--primary-color);
-            margin: 2.5rem 0 1rem 0;
-            font-weight: 600;
-        }
-
-        article h3 {
-            margin-bottom: 2rem;
-        }
-
-        article p {
-            margin: 1rem 0;
-            line-height: 1.9;
-        }
-
-        /* Figure Styling for Analytics Projects */
-        .figure {
-            background-color: var(--highlight-bg);
-            padding: 2rem;
-            margin: 2.5rem 0;
-            border-radius: 10px;
-            border-left: 4px solid var(--secondary-color);
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .figure img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .figure p {
-            margin-bottom: 1rem;
-        }
-
-        .figure strong {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .key-insight {
-            background-color: #f0fdf4;
-            border-left: 5px solid var(--success-color);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .key-insight strong {
-            color: var(--success-color);
-        }
-
-        article strong {
-            color: var(--primary-color);
-        }
-
-        article code {
-            background: var(--light-bg);
-            padding: 0.125rem 0.375rem;
-            border-radius: 3px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9em;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark-bg);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            .project-header {
-                flex-direction: column;
-            }
-
-            .project-logo {
-                width: 60px;
-                height: 60px;
-            }
-
-            .project-title {
-                font-size: 1.5rem;
-            }
-
-            .project-links {
-                flex-direction: column;
-            }
-
-            .project-link {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nihith (Nick) Mekala | Implementation, solutions and AI integrations</title>
+  <meta name="description" content="Nihith (Nick) Mekala, Hamilton, Ontario. Founder of Invocursor, an AI copilot in paid production use. Implementation, solutions and integrations, with front-line EMR experience in a family practice.">
+  <meta name="author" content="Nihith Mekala">
+  <meta name="theme-color" content="#F3F5F2">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nihith (Nick) Mekala | Implementation, solutions and AI integrations">
+  <meta property="og:description" content="I get software working inside the workflows people already use. Founder of Invocursor, live in paid production at Attendify.">
+  <meta property="og:url" content="https://knick011.github.io/Portfolio/">
+  <meta property="og:image" content="https://knick011.github.io/Portfolio/images/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<header>
-    <h1>Nihith Mekala</h1>
-    <p class="subtitle">AI-Powered Software Engineer & Data Analyst</p>
-    <p class="tagline">Building production software with AI assistance | Specializing in rapid prototyping & intelligent automation</p>
-</header>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#top" aria-label="Nihith Mekala, back to top">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0E4A57"/><path d="M21 13v35l9-8.5 6 12.5 6.5-3-6-12.5H48z" fill="#FFD23F" stroke="#0A3640" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        <span>Nihith Mekala</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#invocursor">Invocursor</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#analysis">Analysis</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <main id="main">
 
-<div class="container">
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a software engineer and data analyst who leverages AI tools like Claude Code to build production-ready applications rapidly. My approach combines human expertise with AI assistance to deliver complex software projects—from SaaS platforms to mobile apps—in weeks instead of months.
-        </p>
-        <p>
-            I specialize in turning ideas into revenue-generating products, focusing on practical solutions with strong business models. Whether it's building AI-powered onboarding tools or gamified mobile apps, I prioritize shipping working software that solves real problems.
-        </p>
+    <!-- Hero -->
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">I get software working inside the workflows people already use.</h1>
+        <p class="lead">I'm Nihith (Nick) Mekala, in Hamilton, Ontario. I built <a href="#invocursor">Invocursor</a>, an AI copilot that runs inside other companies' web apps and is in paid production use at Attendify. Day to day, I keep a growing family clinic's front office and EMR running. I'm open to implementation, solutions and integrations roles.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:nihith011@gmail.com">Email me</a>
+          <a class="text-link" href="https://www.linkedin.com/in/nihith-mekala-174374206/" rel="noopener">LinkedIn</a>
+          <a class="text-link" href="https://github.com/Knick011" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <figure class="hero-demo">
+        <div class="demo" id="demo">
+          <div class="demo-top">
+            <span class="demo-brand">
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M21 13v35l9-8.5 6 12.5 6.5-3-6-12.5H48z" fill="#FFD23F" stroke="#0A3640" stroke-width="2.5" stroke-linejoin="round"/></svg>
+              Invocursor
+            </span>
+            <span class="demo-mode">Mode: Do it for me</span>
+          </div>
+
+          <div class="demo-block">
+            <p class="demo-label">Request</p>
+            <p class="demo-request"><span id="demo-req">switch to night mode</span><span class="caret" aria-hidden="true"></span></p>
+            <p class="demo-match" id="demo-match">“night mode” matches the <b>dark mode</b> action</p>
+          </div>
+
+          <div class="demo-block">
+            <p class="demo-label">Plan from the model</p>
+            <pre class="demo-plan"><code id="demo-plan"><span class="ln">{</span>
+<span class="ln">  <span class="k">"action"</span>: <span class="s">"toggle_dark_mode"</span>,</span>
+<span class="ln">  <span class="k">"steps"</span>: [</span>
+<span class="ln">    { <span class="k">"click"</span>: <span class="s sel is-pass">"#settings-menu"</span> },</span>
+<span class="ln">    { <span class="k">"click"</span>: <span class="s sel is-pass">"#appearance-tab"</span> },</span>
+<span class="ln">    { <span class="k">"toggle"</span>: <span class="s sel is-pass">"#dark-mode-switch"</span> }</span>
+<span class="ln">  ]</span>
+<span class="ln">}</span></code></pre>
+          </div>
+
+          <div class="demo-block">
+            <p class="demo-label">Checked against the live page</p>
+            <ul class="demo-checks" id="demo-checks">
+              <li class="is-pass"><span class="tick" aria-hidden="true"></span><code>#settings-menu</code> found</li>
+              <li class="is-pass"><span class="tick" aria-hidden="true"></span><code>#appearance-tab</code> found</li>
+              <li class="is-pass"><span class="tick" aria-hidden="true"></span><code>#dark-mode-switch</code> found</li>
+            </ul>
+          </div>
+
+          <p class="demo-result is-pass" id="demo-result" role="status">All 3 targets found. Running the steps.</p>
+
+          <div class="demo-replay" role="group" aria-label="Replay the demo with a request">
+            <span>Replay with</span>
+            <button type="button" data-example="0" aria-pressed="true">“switch to night mode”</button>
+            <button type="button" data-example="1" aria-pressed="false">“export this as a PDF”</button>
+          </div>
+        </div>
+        <figcaption>A simplified replay of how Invocursor handles a request. The model writes a plan, and plain code checks that every target is on the page before anything moves.</figcaption>
+      </figure>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Portfolio Projects</h2>
-        <p style="margin-bottom: 2rem;">
-            Each project showcases different aspects of AI-assisted development, from SaaS platforms to mobile applications and advanced analytics.
-        </p>
+    <!-- Invocursor -->
+    <section class="section wrap" id="invocursor" aria-labelledby="invocursor-title">
+      <div class="rail">
+        <h2 id="invocursor-title">Invocursor</h2>
+        <p class="rail-note">Founder and engineer<br>Dec 2025 – Present</p>
+      </div>
 
-        <!-- ========================================
-             INVOCURSOR - PROJECT 1
-             ======================================== -->
-        <div class="project-card">
-            <div class="project-header">
-                <img src="images/invocursor-logo.png" alt="Invocursor Logo" class="project-logo">
-                <div class="project-title-section">
-                    <h3 class="project-title">Invocursor - AI Agent for SaaS User Onboarding</h3>
-                    <div class="project-meta">
-                        <span><strong>Built:</strong> December 2024 - January 2025</span>
-                        <span><strong>Status:</strong> Production (Live)</span>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag ai">Built with AI (Claude Code)</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">OpenAI GPT-4o-mini</span>
-                        <span class="tech-tag">Vanilla JavaScript</span>
-                        <span class="tech-tag">Railway</span>
-                    </div>
-                </div>
-            </div>
+      <div class="body">
+        <p class="intro">Invocursor is an AI copilot that lives inside someone else's product. A user types what they want in plain English. In “Do it for me” mode, an animated cursor does the task in the real interface. In “Teach me” mode, it walks them through it step by step. It installs with a single script tag.</p>
+        <p>I started it in December 2025 and incorporated it in Ontario in March 2026. I'm the only person on it, so I do the engineering, the customer setup, the documentation and the sales.</p>
 
-            <p class="project-summary">
-                Production SaaS platform delivering WalkMe-level features at 1/50th the price. An AI agent that teaches users their software through conversational guidance, visual demonstrations, and automated task execution—for $100/month versus $78,000/year for competitors.
-            </p>
+        <dl class="facts">
+          <div><dt>Customer</dt><dd>Attendify, a Canadian childcare management platform</dd></div>
+          <div><dt>Scope</dt><dd>53 workflows, with 880+ interface elements mapped</dd></div>
+          <div><dt>Status</dt><dd>Taken from pilot to paid production use, with ongoing support</dd></div>
+          <div><dt>Stack</dt><dd>JavaScript, Node.js and Express, OpenAI API (GPT-4o-mini), Supabase and PostgreSQL, ExcelJS</dd></div>
+        </dl>
 
-            <ul class="key-achievements">
-                <li>Full-stack web application with AI-powered chat widget</li>
-                <li>97% profit margin with intelligent pricing strategy</li>
-                <li>White-glove setup service for rapid customer onboarding</li>
-                <li>Deployed on Railway with auto-scaling and CI/CD</li>
-                <li>Freemium model: Free tier, Starter ($100/mo), Growth ($250/mo)</li>
-            </ul>
+        <figure class="shot">
+          <img src="images/invocursor-demo.png"
+               srcset="images/thumbs/invocursor-demo.webp 760w, images/invocursor-demo.png 2082w"
+               sizes="(min-width: 1100px) 800px, 92vw"
+               width="2082" height="1439" loading="lazy"
+               alt="The Invocursor assistant panel open beside a sample event management app, with Do it for me and Teach me mode buttons.">
+          <figcaption>The assistant panel inside a sample app, with both modes.</figcaption>
+        </figure>
 
-            <div class="project-links">
-                <a href="https://www.invocursor.com/" target="_blank" class="project-link">View Live Site</a>
-                <a href="https://www.invocursor.com/test.html" target="_blank" class="project-link">Try Demo</a>
-                <a href="https://github.com/Knick011/invocursor" target="_blank" class="project-link secondary">GitHub</a>
-            </div>
+        <h3>How a request runs</h3>
+        <ol class="steps">
+          <li><strong>Install.</strong> The customer adds one script tag to their app.</li>
+          <li><strong>Map.</strong> A configuration map ties plain-language tasks to the real elements on each page. Synonyms resolve too, so “dark mode”, “night mode” and “black theme” all land on the same action.</li>
+          <li><strong>Plan.</strong> The model returns a structured, typed JSON action plan instead of free text.</li>
+          <li><strong>Check.</strong> A separate, deterministic engine confirms every target element exists on the live page before it acts. If one is missing, it stops and explains why instead of guessing.</li>
+          <li><strong>Report.</strong> Every interaction is logged to PostgreSQL, and the customer gets automated multi-sheet Excel usage reports.</li>
+        </ol>
 
-            <img src="images/invocursor-demo.png" alt="Invocursor Demo" class="project-screenshot">
+        <h3>What I built around it</h3>
+        <ul class="plain">
+          <li>A multi-tenant PostgreSQL schema for plans, users, API keys and usage analytics, with API key authentication, rate limiting and CORS configuration.</li>
+          <li>The integration and onboarding documentation for the Attendify rollout.</li>
+          <li>The design and first part of an auto-configuration generator that scans a customer's app, finds interactive elements and proposes mappings for a person to review.</li>
+        </ul>
 
-            <button class="collapsible-trigger">Read Full Case Study</button>
-            <div class="collapsible-content">
-                <div class="collapsible-inner">
-                    <div class="methodology-box">
-                        <h4>Executive Summary</h4>
-                        <p>
-                            <strong>Invocursor</strong> democratizes AI-powered user onboarding by making enterprise-grade features accessible to startups and mid-market SaaS companies. Built entirely with AI assistance, this project demonstrates how to rapidly build and launch a production SaaS product with strong unit economics and clear market positioning.
-                        </p>
-                        <p>
-                            <strong>Project Scope:</strong> Full-stack JavaScript application | Express.js REST API backend | OpenAI GPT-4o-mini integration | Weekly rate limiting system | Multi-tenant architecture | Custom config generator | Railway cloud deployment
-                        </p>
-                        <p>
-                            <strong>Business Model:</strong> Freemium SaaS with service component | Target market: 100-5000 user SaaS companies | Pricing: Free ($0), Starter ($100/mo), Growth ($250/mo) | 50x cheaper than WalkMe/Pendo
-                        </p>
-                    </div>
+        <h3>Taking it to customers</h3>
+        <p>I contacted 90 decision-makers at 30 Canadian vertical SaaS companies. I wrote the pitch decks, one-pager, pilot proposal and sales playbook, and set pricing from what it actually costs to run the AI. A Communitech growth coach advises me.</p>
 
-                    <h4>The Problem & Market Gap</h4>
-                    <p>
-                        User onboarding is critical for SaaS success, yet 60% of users churn because they can't figure out the product. Existing solutions like <strong>WalkMe ($78K/year)</strong>, <strong>Pendo ($48K/year)</strong>, and <strong>Intercom Fin ($6K+/year)</strong> are prohibitively expensive for most companies.
-                    </p>
-                    <p>
-                        <strong>Market Opportunity:</strong> Thousands of SaaS companies need onboarding tools but can't afford enterprise pricing. Invocursor delivers the same core features (AI chat, visual guidance, action automation) at startup-friendly pricing, making sophisticated onboarding accessible.
-                    </p>
-
-                    <h4>Technical Architecture</h4>
-
-                    <h4>1. Backend: Node.js + Express.js REST API</h4>
-                    <ul>
-                        <li><strong>Express.js Server:</strong> Lightweight REST API handling authentication, rate limiting, config management, and OpenAI integration with modular route handlers</li>
-                        <li><strong>Weekly Rate Limiting:</strong> Custom system with three tiers tracking requests per API key with automatic Monday resets using in-memory Map for performance</li>
-                        <li><strong>API Key Management:</strong> Secure key generation (<code>inv_</code> prefixed), validation middleware, admin routes for key creation/management</li>
-                        <li><strong>Multi-Tenant Config System:</strong> JSON-based configuration files defining each customer's app structure (pages, elements, selectors, synonyms) loaded dynamically per request</li>
-                        <li><strong>Request Logging:</strong> Comprehensive tracking of all API requests for analytics and debugging</li>
-                    </ul>
-
-                    <h4>2. AI Integration: OpenAI GPT-4o-mini</h4>
-                    <ul>
-                        <li><strong>Mode-Aware Prompts:</strong> Two AI personalities—"Do it for me" (Fast) for power users, "Teach me" (Guided) for new users with explanations</li>
-                        <li><strong>Structured Responses:</strong> JSON format with type, message, action plan array, and teaching explanations</li>
-                        <li><strong>Context Awareness:</strong> AI receives current page, element states, and recent conversation history for contextual responses</li>
-                        <li><strong>Cost Optimization:</strong> GPT-4o-mini at $0.0005/request vs GPT-4 at $0.03/request, ensuring 97% profit margins</li>
-                    </ul>
-
-                    <h4>3. Frontend Widget: Vanilla JavaScript with Animations</h4>
-                    <ul>
-                        <li><strong>Chat Interface:</strong> Floating widget with mode toggle, message log, input field, and localStorage persistence</li>
-                        <li><strong>Animated Cursor:</strong> Custom SVG cursor that smoothly animates using requestAnimationFrame with cubic easing, highlights elements, and types text character-by-character</li>
-                        <li><strong>Step Execution Engine:</strong> Interprets AI-generated action plans and executes them sequentially with configurable delays</li>
-                        <li><strong>Guided Mode:</strong> Displays explanations before each step, shows "Continue" button, pauses for user understanding</li>
-                        <li><strong>State Reader:</strong> Automatically reads current page state and sends to AI for context-aware responses</li>
-                    </ul>
-
-                    <h4>Complex Technical Challenges Solved</h4>
-
-                    <div class="methodology-box">
-                        <h4>Challenge 1: Cross-Domain Widget Injection</h4>
-                        <p>
-                            <strong>Problem:</strong> Widget must work when injected into customer's website, accessing DOM and performing actions without conflicts.
-                        </p>
-                        <p>
-                            <strong>Solution:</strong> Wrapped entire widget in IIFE to avoid namespace pollution. Used data attributes for configuration. High z-index (99999) for visibility. Vanilla JS with CSS-in-JS for styling isolation.
-                        </p>
-                    </div>
-
-                    <div class="methodology-box">
-                        <h4>Challenge 2: Service vs Automation Balance</h4>
-                        <p>
-                            <strong>Problem:</strong> Initial marketing positioned as "paste script and it works automatically." Reality: requires manual config creation.
-                        </p>
-                        <p>
-                            <strong>Solution:</strong> Pivoted to "service + software" model. Setup fee ($199) justified by manual config work. This honesty builds trust and creates defensible moat—configs are valuable IP.
-                        </p>
-                    </div>
-
-                    <h4>Business Strategy</h4>
-                    <ul>
-                        <li><strong>Affordable Premium Positioning:</strong> "WalkMe features at startup prices" resonates with priced-out companies</li>
-                        <li><strong>Freemium Funnel:</strong> Free tier (50 conversations/week) creates natural upgrade triggers</li>
-                        <li><strong>Community Growth:</strong> Targeting indie hacker communities (r/SaaS, IndieHackers, Product Hunt)</li>
-                        <li><strong>White-Glove Service:</strong> Manual setup creates moat and justifies pricing</li>
-                    </ul>
-
-                    <h4>Key Metrics</h4>
-                    <ul>
-                        <li><strong>Cost Economics:</strong> $0.0005/request × 1500 requests/week = $3/mo cost. Customer pays $100/mo. 97% gross margin</li>
-                        <li><strong>Pricing Disruption:</strong> $1,399/year vs WalkMe $78,000/year = 98.2% cost reduction</li>
-                        <li><strong>TAM:</strong> 100,000+ SaaS companies with 100-5000 users globally. 0.1% adoption = $1M ARR potential</li>
-                    </ul>
-
-                    <h4>Skills Demonstrated</h4>
-                    <ul>
-                        <li>Full-stack development (Backend API, frontend widget, REST architecture)</li>
-                        <li>AI integration (OpenAI API, prompt engineering, cost optimization)</li>
-                        <li>SaaS business acumen (Freemium strategy, competitive positioning, GTM planning)</li>
-                        <li>Product thinking (Market gap identification, service vs automation trade-offs)</li>
-                        <li>DevOps (Railway deployment, GitHub CI/CD, production monitoring)</li>
-                    </ul>
-                </div>
-            </div>
+        <h3>What it taught me</h3>
+        <div class="lessons">
+          <p><strong>Make the contract between systems strict.</strong> The model returns typed JSON, so the engine never has to guess what it meant.</p>
+          <p><strong>Assume the other system will change.</strong> Customers ship new screens. The engine checks the live page every time instead of trusting the map.</p>
+          <p><strong>Fail loudly, not silently.</strong> When a target is missing, it stops and says so. A clear stop beats a wrong click.</p>
+          <p><strong>Customers need to see it working.</strong> Logs and usage reports show what people asked for and what happened.</p>
         </div>
 
-        <!-- ========================================
-             CABBY'S BRAIN BITES - PROJECT 2
-             ======================================== -->
-        <div class="project-card">
-            <div class="project-header">
-                <img src="images/brainbites-logo.png" alt="CaBBy's Brain Bites Logo" class="project-logo">
-                <div class="project-title-section">
-                    <h3 class="project-title">CaBBy's Brain Bites - Gamified Learning & Screen Time Management</h3>
-                    <div class="project-meta">
-                        <span><strong>Built:</strong> September - November 2024</span>
-                        <span><strong>Status:</strong> Published on Google Play Store</span>
-                    </div>
-                    <div class="tech-tags">
-                        <span class="tech-tag ai">Built with AI (Claude Code)</span>
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Kotlin</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">AdMob</span>
-                    </div>
-                </div>
-            </div>
+        <p class="links">
+          <a class="text-link" href="https://www.invocursor.com/" rel="noopener">Visit invocursor.com</a>
+          <a class="text-link" href="https://www.invocursor.com/demo" rel="noopener">Try the live demo</a>
+        </p>
+      </div>
+    </section>
 
-            <p class="project-summary">
-                Production Android app combining device-wide screen time tracking with quiz-based learning to combat phone addiction. Built entirely with AI assistance, this project demonstrates the power of AI-human collaboration in creating complex mobile applications with native functionality.
+    <!-- Experience -->
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="rail">
+        <h2 id="experience-title">Experience</h2>
+        <p class="rail-note">Most recent first</p>
+      </div>
+
+      <div class="body">
+        <article class="job">
+          <h3>Medical Office Assistant</h3>
+          <p class="when">Apr 2026 – Present</p>
+          <p class="org">Westdale Doctors Clinic, Hamilton</p>
+          <p>I joined a brand-new family practice and kept the front office running as daily volume grew from about 5–10 patients to about 50. I'm the first point of contact when Juno EMR or other software has a problem, and I guide physicians and staff through the system's workflows. I set up the office's procedures for document tracking, filing and monthly reporting, and I handle referrals, results, intake, vitals and venipuncture.</p>
+        </article>
+
+        <article class="job">
+          <h3>Founder and Engineer</h3>
+          <p class="when">Dec 2025 – Present</p>
+          <p class="org">Invocursor Inc., Hamilton</p>
+          <p>Built and run an AI onboarding copilot that's in paid production use at Attendify. Mapped 53 workflows and 880+ interface elements, wrote the integration documentation and support the account. <a href="#invocursor">More above</a>.</p>
+        </article>
+
+        <article class="job">
+          <h3>Hub Facility Coordinator</h3>
+          <p class="when">Feb 2024 – Dec 2024</p>
+          <p class="org">McMaster Students Union, Hamilton</p>
+          <p>The main point of contact for bookings, logistics and day-to-day support for 50+ student programs a year. I cut recurring support requests by 15% by writing FAQs, process maps and self-service troubleshooting guides, and worked with IT to fix data discrepancies in SharePoint and Excel trackers.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="rail">
+        <h2 id="projects-title">Other builds</h2>
+      </div>
+
+      <div class="body">
+        <article class="project">
+          <img class="project-img" src="images/thumbs/brainbites-screenshot.webp" width="760" height="371" loading="lazy"
+               alt="CaBBy's Brain Bites promotional banner with cartoon capybara mascots and the app's feature list.">
+          <div>
+            <h3>CaBBy's Brain Bites</h3>
+            <p>An Android app on Google Play that pairs screen-time tracking with quizzes: answer questions, earn time back. I built it with React Native, Kotlin and Firebase, and nearly 100 beta testers tried it. The hard parts were native Android work: a foreground service that keeps tracking after the app is closed, and a midnight rollover that turns unused time into points.</p>
+            <p class="links">
+              <a class="text-link" href="https://play.google.com/store/apps/details?id=com.cabbysbrainbites" rel="noopener">Google Play</a>
+              <a class="text-link" href="https://github.com/Knick011/brainbites" rel="noopener">Source on GitHub</a>
             </p>
+          </div>
+        </article>
 
-            <ul class="key-achievements">
-                <li>20,000+ lines of code across TypeScript and Kotlin</li>
-                <li>Native Android services (foreground service, AlarmManager, UsageStatsManager)</li>
-                <li>Published on Google Play Store</li>
-                <li>Complete business plan with $900K-$3.7M Year 1 revenue projections</li>
-                <li>Multi-language support (English, Turkish)</li>
+        <article class="project project-text">
+          <div>
+            <h3>Microscopy analysis pipelines</h3>
+            <p>Python pipelines that analyze NK-cell cytotoxicity microscopy data (ND2 files) in a McMaster research lab. I also got hands-on exposure to CellProfiler and droplet microfluidics.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Analysis -->
+    <section class="section wrap" id="analysis" aria-labelledby="analysis-title">
+      <div class="rail">
+        <h2 id="analysis-title">Data analysis</h2>
+        <p class="rail-note">Three studies, each answering one question with public data. Select a chart to enlarge it.</p>
+      </div>
+
+      <div class="body">
+        <article class="study">
+          <h3>Do traffic collisions cause subway delays in Toronto?</h3>
+          <p>No sign of it. Collisions build through the day and peak in the mid-afternoon, while subway delays peak late at night, around 10 PM. Month by month, delays stay fairly flat while collisions rise and fall. The delays look driven by the subway's own operations, not by traffic above ground.</p>
+          <p class="tools">SQLite, DBeaver and Tableau Public</p>
+          <ul class="figs" aria-label="Charts for the TTC study">
+            <li><button type="button" class="fig" data-full="images/figure4.png" data-caption="Traffic collisions vs. subway delays by hour of day"><img src="images/thumbs/figure4.webp" width="760" height="335" loading="lazy" alt="Line chart of traffic collisions and subway delays by hour of day"><span>Collisions vs. delays by hour</span></button></li>
+            <li><button type="button" class="fig" data-full="images/figure5.png" data-caption="Average subway delay in minutes, by hour of day"><img src="images/thumbs/figure5.webp" width="760" height="333" loading="lazy" alt="Bar chart of average subway delay by hour"><span>Average delay by hour</span></button></li>
+            <li><button type="button" class="fig" data-full="images/figure6.png" data-caption="Collisions, delays and average delay by month"><img src="images/thumbs/figure6.webp" width="760" height="367" loading="lazy" alt="Monthly collisions, delays and average delay"><span>Collisions and delays by month</span></button></li>
+            <li><button type="button" class="fig" data-full="images/figure7.png" data-caption="Collisions by hour (box size) and average delay (colour), as a treemap"><img src="images/thumbs/figure7.webp" width="760" height="378" loading="lazy" alt="Treemap of collisions and average delay by hour"><span>Hourly treemap</span></button></li>
+          </ul>
+          <p class="links"><a class="text-link" href="Documents/TTC_Analysis_Case_Study.pdf">Read the case study (PDF)</a></p>
+        </article>
+
+        <article class="study">
+          <h3>How do casual riders use bike-share differently from members?</h3>
+          <p>Casual rides average 24.65 minutes, about twice the members' 12.67. Members ride most in the middle of the week, while casual riders peak on Saturdays. That reads as leisure versus commuting, which calls for a different membership pitch to each group.</p>
+          <p class="tools">SQLite, DBeaver and Tableau Public</p>
+          <ul class="figs" aria-label="Charts for the bike-share study">
+            <li><button type="button" class="fig" data-full="images/figure1.png" data-caption="Average ride length by membership type"><img src="images/thumbs/figure1.webp" width="760" height="405" loading="lazy" alt="Bar chart of average ride length, casual vs. member"><span>Average ride length</span></button></li>
+            <li><button type="button" class="fig" data-full="images/figure3.png" data-caption="Monthly rides by membership type, Nov 2023 to Oct 2024"><img src="images/thumbs/figure3.webp" width="760" height="373" loading="lazy" alt="Line chart of monthly rides by membership type"><span>Monthly rides</span></button></li>
+            <li><button type="button" class="fig" data-full="images/figure2.png" data-caption="Rides by day of the week and membership type"><img src="images/thumbs/figure2.webp" width="760" height="369" loading="lazy" alt="Stacked bar chart of rides by day of week"><span>Rides by day of week</span></button></li>
+          </ul>
+          <p class="links"><a class="text-link" href="Documents/Cyclistic_Case_Study.pdf">Read the case study (PDF)</a></p>
+        </article>
+
+        <article class="study">
+          <h3>Meme stocks or safe havens, 2020 to 2025?</h3>
+          <p>A dollar put into GME or MSTR in 2020 was worth over $20 by 2025, after enormous swings. A dollar in AMC fell to about 9 cents. Walmart and gold climbed slowly and steadily. The first two charts are naive on purpose, to show how raw prices and averages across asset classes mislead, next to the charts that actually answer the question.</p>
+          <p class="tools">Tableau</p>
+          <ul class="figs" aria-label="Charts for the stocks study">
+            <li><button type="button" class="fig" data-full="images/Stock1.png" data-caption="Raw prices, meme stocks and Walmart (a naive view)"><img src="images/thumbs/Stock1.webp" width="760" height="338" loading="lazy" alt="Raw price chart of AMC, GME, MSTR and Walmart"><span>Raw prices (naive)</span></button></li>
+            <li><button type="button" class="fig" data-full="images/Stock2.png" data-caption="Average price across assets (misleading on purpose)"><img src="images/thumbs/Stock2.webp" width="760" height="396" loading="lazy" alt="Bar chart of average prices across six assets"><span>Average price (misleading)</span></button></li>
+            <li><button type="button" class="fig" data-full="images/Stock3.png" data-caption="Monthly averages on a log scale"><img src="images/thumbs/Stock3.webp" width="760" height="340" loading="lazy" alt="Monthly average prices on a log scale"><span>Monthly averages, log scale</span></button></li>
+            <li><button type="button" class="fig" data-full="images/Stock4.png" data-caption="Value of $1 invested at the start of 2020"><img src="images/thumbs/Stock4.webp" width="760" height="340" loading="lazy" alt="Growth of one dollar invested in each asset"><span>Value of $1 invested</span></button></li>
+            <li><button type="button" class="fig" data-full="images/Stock5.png" data-caption="How often each meme stock outperformed Walmart"><img src="images/thumbs/Stock5.webp" width="760" height="428" loading="lazy" alt="Bar chart of how often each meme stock outperformed Walmart"><span>How often each beat Walmart</span></button></li>
+            <li><button type="button" class="fig" data-full="images/Stock6.png" data-caption="Monthly ranking by value"><img src="images/thumbs/Stock6.webp" width="760" height="344" loading="lazy" alt="Monthly ranking of assets by value"><span>Monthly ranking</span></button></li>
+            <li><button type="button" class="fig" data-full="images/Stock7.png" data-caption="How often each stock moved in the same direction as gold"><img src="images/thumbs/Stock7.webp" width="760" height="390" loading="lazy" alt="Bar chart of direction alignment with gold"><span>Moving with gold</span></button></li>
+            <li><button type="button" class="fig" data-full="images/Stock8.png" data-caption="How often each stock moved in the same direction as the US dollar"><img src="images/thumbs/Stock8.webp" width="760" height="381" loading="lazy" alt="Bar chart of direction alignment with the US dollar"><span>Moving with the US dollar</span></button></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <div class="rail">
+        <h2 id="skills-title">Skills and education</h2>
+      </div>
+
+      <div class="body">
+        <div class="skill-grid">
+          <div>
+            <h3>Build</h3>
+            <ul class="list">
+              <li>JavaScript, Node.js and Express</li>
+              <li>REST APIs and JSON</li>
+              <li>OpenAI API: structured outputs and output validation</li>
+              <li>PostgreSQL, Supabase and schema design</li>
+              <li>DOM and browser scripting</li>
+              <li>Python (pandas)</li>
+              <li>React Native, Kotlin and Firebase</li>
+              <li>Git, and AI coding tools like Claude Code</li>
             </ul>
-
-            <div class="project-links">
-                <a href="https://play.google.com/store/apps/details?id=com.cabbysbrainbites" target="_blank" class="project-link">View on Play Store</a>
-                <a href="https://github.com/Knick011/brainbites" target="_blank" class="project-link secondary">GitHub</a>
-            </div>
-
-            <img src="images/brainbites-screenshot.png" alt="CaBBy's Brain Bites Screenshot" class="project-screenshot">
-
-            <button class="collapsible-trigger">Read Full Case Study</button>
-            <div class="collapsible-content">
-                <div class="collapsible-inner">
-                    <div class="methodology-box">
-                        <h4>Executive Summary</h4>
-                        <p>
-                            <strong>CaBBy's Brain Bites</strong> is a production-ready Android application that uniquely combines device-wide screen time tracking with gamified quiz-based learning. Built entirely from scratch using AI assistance (Claude Code), this project represents a complete full-stack mobile solution with native Kotlin modules, Firebase integration, and comprehensive monetization strategy.
-                        </p>
-                        <p>
-                            <strong>Project Scope:</strong> 20,000+ lines of code | 40+ markdown documentation files | 3 months development | Production-ready APK/AAB builds | Multi-language support | Complete business strategy
-                        </p>
-                    </div>
-
-                    <h4>The Problem & Innovation</h4>
-                    <p>
-                        Average smartphone screen time exceeds 6-8 hours daily, with students facing unprecedented phone addiction challenges. Existing solutions either provide passive monitoring (screen time apps) or learning without addressing addiction (educational apps). <strong>No solution combined both.</strong>
-                    </p>
-                    <p>
-                        <strong>The Innovation:</strong> Creating a virtuous cycle where reducing screen time earns quiz opportunities, and completing quizzes earns time back—making productivity rewarding through gamification.
-                    </p>
-
-                    <h4>Technical Architecture</h4>
-
-                    <h4>1. React Native Frontend with TypeScript</h4>
-                    <ul>
-                        <li><strong>Component Architecture:</strong> Modular design with HomeScreen, QuizScreen, DailyGoalsScreen, SettingsScreen, LeaderboardScreen, and specialized components like EnhancedMascotDisplay (6 emotional states)</li>
-                        <li><strong>State Management:</strong> Zustand for global state management with custom hooks for clean integration</li>
-                        <li><strong>Navigation:</strong> React Navigation with stack-based navigation and deep linking</li>
-                        <li><strong>Animations:</strong> Fluid UI animations using React Native's Animated API</li>
-                        <li><strong>Internationalization:</strong> i18next with multi-language support (English, Turkish)</li>
-                    </ul>
-
-                    <h4>2. Native Android Development: Kotlin Modules</h4>
-                    <p>
-                        The most challenging aspect—implementing device-wide screen time tracking requiring deep native platform integration:
-                    </p>
-                    <ul>
-                        <li><strong>ScreenTimeService:</strong> Foreground service with persistent notification, tracking device usage across ALL apps using UsageStatsManager API with second-by-second countdown</li>
-                        <li><strong>DailyScoreCarryoverService:</strong> Sophisticated midnight rollover system calculating bonus points for remaining time and penalty points for overtime</li>
-                        <li><strong>BackgroundCheckInReceiver:</strong> AlarmManager-based periodic check-in system firing every 5 hours</li>
-                        <li><strong>React Native Bridge:</strong> Custom Native Module exposing Kotlin functionality to JavaScript</li>
-                    </ul>
-
-                    <h4>3. Quiz System & Gamification</h4>
-                    <ul>
-                        <li><strong>Difficulty Tiers:</strong> Easy (10 points, 1 min), Medium (20 points, 2 min), Hard (30 points, 3 min)</li>
-                        <li><strong>Streak System:</strong> Consecutive correct answers build streaks up to 10x multiplier</li>
-                        <li><strong>Time Rewards:</strong> Correct answers add time back to daily allowance, creating virtuous learning cycle</li>
-                        <li><strong>Category System:</strong> Math, Science, History, General Knowledge with progress tracking</li>
-                    </ul>
-
-                    <h4>4. Firebase Integration & Monetization</h4>
-                    <ul>
-                        <li><strong>Firebase Analytics:</strong> 30+ custom events tracking user behavior and engagement metrics</li>
-                        <li><strong>AdMob:</strong> Banner ads and interstitial ads, projected revenue $0.50-2.00 per daily active user</li>
-                    </ul>
-
-                    <h4>Complex Technical Challenges Solved</h4>
-
-                    <div class="methodology-box">
-                        <h4>Challenge 1: Daily Score Rollover with Penalties</h4>
-                        <p>
-                            <strong>Problem:</strong> Implementing midnight rollover where remaining time converts to bonus points but overtime applies penalties.
-                        </p>
-                        <p>
-                            <strong>Solution:</strong> Created DailyScoreCarryoverService scheduled via AlarmManager with exact midnight trigger. Complex calculation: first 40 minutes = 67 points/min, diminishing returns after. Overtime penalty = 50 points/min.
-                        </p>
-                        <p>
-                            <strong>Debugging:</strong> 24-hour test cycles made debugging difficult. Added comprehensive logging with [CARRYOVER-TRACE] tags showing complete calculation flow.
-                        </p>
-                    </div>
-
-                    <div class="methodology-box">
-                        <h4>Challenge 2: Persistent Foreground Service</h4>
-                        <p>
-                            <strong>Problem:</strong> Android aggressively kills background processes. Needed truly persistent timer surviving app closures and device sleep.
-                        </p>
-                        <p>
-                            <strong>Solution:</strong> Implemented foreground service with persistent notification. Used AlarmManager with exact alarms. Implemented service restart on device boot. Added protection layer detecting service death and auto-restart.
-                        </p>
-                    </div>
-
-                    <h4>AI-Assisted Development: Lessons Learned</h4>
-                    <p>
-                        Building CaBBy's Brain Bites with Claude Code represented a novel development paradigm:
-                    </p>
-                    <ul>
-                        <li><strong>Rapid Prototyping:</strong> Complete app architecture designed in days instead of weeks</li>
-                        <li><strong>Native Code Generation:</strong> AI generated complex Kotlin code for Android services, reducing learning curve</li>
-                        <li><strong>Comprehensive Documentation:</strong> AI maintained 40+ markdown files documenting architecture, bugs, and solutions</li>
-                        <li><strong>Debugging Partnership:</strong> AI helped trace cross-boundary issues between native and JavaScript layers</li>
-                    </ul>
-
-                    <h4>Business Model & Market Analysis</h4>
-                    <ul>
-                        <li><strong>Revenue Projections:</strong> $900K-$3.7M Year 1 based on market analysis and user projections</li>
-                        <li><strong>Monetization:</strong> AdMob revenue + potential premium tier ($2.99/month) for ad-free experience</li>
-                        <li><strong>Target Market:</strong> Students (13-25), parents seeking screen time control, educators wanting engagement</li>
-                        <li><strong>Market Size:</strong> Global education app market $12.9B opportunity with 15.2% CAGR</li>
-                    </ul>
-
-                    <h4>Skills Demonstrated</h4>
-                    <ul>
-                        <li>Mobile app development (React Native, TypeScript)</li>
-                        <li>Native Android development (Kotlin, Android SDK)</li>
-                        <li>Cross-platform integration (React Native bridges)</li>
-                        <li>Complex state management and persistence</li>
-                        <li>Firebase integration (Analytics, AdMob)</li>
-                        <li>Business planning and market analysis</li>
-                        <li>AI-assisted development methodologies</li>
-                    </ul>
-                </div>
-            </div>
+          </div>
+          <div>
+            <h3>Implement and support</h3>
+            <ul class="list">
+              <li>Workflow mapping</li>
+              <li>Technical onboarding</li>
+              <li>Integration and process documentation</li>
+              <li>Troubleshooting and issue triage</li>
+              <li>End-user training</li>
+              <li>Pilot support</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Data</h3>
+            <ul class="list">
+              <li>SQL</li>
+              <li>Excel</li>
+              <li>Tableau</li>
+              <li>Usage reporting</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Clinical</h3>
+            <ul class="list">
+              <li>Juno EMR (OSCAR-based)</li>
+              <li>Referrals and results management</li>
+              <li>Intake, vitals and venipuncture</li>
+              <li>PHIPA</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- ========================================
-             DATA ANALYTICS PROJECTS (FULLY EXPANDED)
-             ======================================== -->
-
-        <!-- PROJECT 3: Financial Analysis -->
-        <article class="project-card">
-            <h3 style="font-size: 1.75rem; color: var(--primary-color); margin-bottom: 1.5rem;">
-                Advanced Financial Analysis: Comparative Performance Study of Meme Stocks vs. Traditional Safe-Haven Assets
-            </h3>
-
-            <div class="methodology-box">
-                <h4>Executive Summary</h4>
-                <p>
-                    This comprehensive financial analysis examines the risk-return profiles, volatility characteristics, and correlation patterns of meme stocks (AMC Entertainment Holdings, GameStop Corp., MicroStrategy Inc.) compared to traditional stable assets (Walmart Inc., Gold, USD) over a five-year period (2020-2025). The study employs multiple analytical frameworks to demonstrate how visualization methodology significantly impacts interpretation and decision-making in investment analysis.
-                </p>
-            </div>
-
-            <h4>Research Objectives & Methodology</h4>
-            <p>
-                This analysis was designed to address three primary research questions:
-            </p>
-            <ul>
-                <li><strong>Risk-Return Analysis:</strong> How do speculative meme stocks perform relative to traditional stable assets across multiple performance metrics?</li>
-                <li><strong>Volatility Assessment:</strong> What is the magnitude and pattern of price volatility in meme stocks compared to safe-haven assets, and what implications does this have for portfolio construction?</li>
-                <li><strong>Correlation Dynamics:</strong> To what extent do meme stocks move independently of traditional market indicators (Gold, USD), and what does this reveal about their underlying price drivers?</li>
+        <div class="cred-grid">
+          <div>
+            <h3>Education</h3>
+            <p>McMaster University<br>BSc (Honours) Life Sciences<br><span class="muted">2019 – 2023</span></p>
+          </div>
+          <div>
+            <h3>Certifications</h3>
+            <ul class="list">
+              <li>Google Data Analytics</li>
+              <li>IBM Data Science</li>
+              <li>SQL for Data Science, UC Davis</li>
+              <li>Phlebotomy, CIMT College (2026)</li>
             </ul>
-
-            <h4>Data Sources & Preparation</h4>
-            <p>
-                <strong>Data Collection:</strong> Historical price data was aggregated from multiple financial data providers including Yahoo Finance and Bloomberg Terminal, covering daily closing prices, trading volumes, and market capitalizations for the period January 2020 through January 2025. The dataset comprises approximately 7,500 individual data points across six instruments.
-            </p>
-            <p>
-                <strong>Data Cleaning & Validation:</strong> Implemented rigorous quality control procedures including:
-            </p>
-            <ul>
-                <li>Identification and handling of missing values through forward-fill methodology for non-trading days</li>
-                <li>Adjustment for stock splits and dividends to ensure price continuity</li>
-                <li>Validation of data integrity through cross-reference with multiple sources</li>
-                <li>Outlier detection using statistical methods (z-scores > 3 flagged for manual review)</li>
-                <li>Normalization of currency values to ensure comparable analysis across asset classes</li>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul class="list">
+              <li>English and Telugu (native)</li>
+              <li>Hindi (fluent)</li>
+              <li>Turkish (intermediate)</li>
+              <li>French (learning)</li>
             </ul>
-
-            <h4>Part 1: Limitations of Simplified Visualizations</h4>
-            <p>
-                The following visualizations illustrate common pitfalls in financial data presentation and serve as cautionary examples of how incomplete analytical approaches can mislead investors.
-            </p>
-
-            <div class="figure">
-                <img src="images/Stock1.png" alt="Line graph showing price trends of AMC, GME, MSTR, and WMT from 2020-2025">
-                <p><strong>Figure 1.1: Raw Price Comparison - Meme Stocks vs. Walmart</strong></p>
-
-                <p><strong>Visualization Description:</strong> This line graph displays absolute price movements for four equity instruments across a five-year observation period. Each line represents daily closing prices without normalization or adjustment for initial investment amounts.</p>
-
-                <p><strong>Technical Analysis:</strong></p>
-                <ul>
-                    <li><strong>GME Short Squeeze Event (January 2021):</strong> GameStop experienced an unprecedented price surge from approximately $17.25 to a peak of $483, representing a 2,700% increase within days driven by coordinated retail investor activity on Reddit's r/WallStreetBets.</li>
-                    <li><strong>AMC Sympathy Rally:</strong> AMC Entertainment followed a similar but attenuated pattern, rising from sub-$5 levels to approximately $72 in June 2021. The correlation coefficient between AMC and GME during this period exceeded 0.85.</li>
-                    <li><strong>MSTR Bitcoin Correlation:</strong> MicroStrategy's price trajectory closely mirrors Bitcoin market cycles, with correlation coefficient of approximately 0.78 with BTC/USD.</li>
-                    <li><strong>WMT Fundamental Stability:</strong> Walmart demonstrates characteristic blue-chip stability with a compound annual growth rate (CAGR) of approximately 6.2% over the period.</li>
-                </ul>
-
-                <p><strong>Critical Limitations:</strong> Scale distortion compresses Walmart's movements to near-invisibility. Lacks risk context, investment perspective normalization, and temporal event annotations.</p>
-            </div>
-
-            <div class="figure">
-                <img src="images/Stock2.png" alt="Bar chart showing average prices for AMC, GME, MSTR, WMT, Gold, and USD">
-                <p><strong>Figure 1.2: Average Price Comparison Across Asset Classes</strong></p>
-
-                <p><strong>Visualization Description:</strong> This bar chart presents arithmetic mean prices for six instruments over the entire observation period. Values displayed: Gold ($1,944.59), MSTR ($387.13), GME ($62.22), WMT ($54.92), AMC ($13.63), USD ($1.04).</p>
-
-                <p><strong>Critical Limitations:</strong> Comparing absolute prices across equities, commodities, and currencies is analytically meaningless. Mean sensitivity to outliers produces misleading central tendency measures. Absence of volatility information and temporal aggregation loss obscure important patterns.</p>
-            </div>
-
-            <h4>Part 2: Advanced Analytical Visualizations</h4>
-            <p>
-                The following visualizations demonstrate professional-grade financial analysis incorporating temporal context, risk metrics, correlation analysis, and investment perspective.
-            </p>
-
-            <div class="figure">
-                <img src="images/Stock3.png" alt="Line graph showing monthly average prices with trends and seasonality">
-                <p><strong>Figure 2.1: Time-Series Analysis - Monthly Average Prices with Trend Decomposition</strong></p>
-
-                <p><strong>Methodology:</strong> Daily prices aggregated into monthly averages with 3-month moving averages to smooth short-term volatility and reveal underlying trends.</p>
-
-                <p><strong>Key Insights:</strong></p>
-                <ul>
-                    <li><strong>Volatility Clustering:</strong> GME and AMC exhibit pronounced volatility clustering with autocorrelation ≈ 0.62, characteristic of speculative assets driven by momentum and sentiment.</li>
-                    <li><strong>MSTR Cryptocurrency Correlation:</strong> Monthly price movements show strong positive correlation (ρ = 0.78) with Bitcoin prices, with 3-5 day lags during major Bitcoin moves.</li>
-                    <li><strong>Gold's Countercyclical Behavior:</strong> During equity market stress periods, Gold demonstrated negative correlation with risk assets (beta to S&P 500 ≈ -0.15).</li>
-                    <li><strong>WMT's Defensive Characteristics:</strong> Maximum drawdown of only 18% compared to 80%+ for meme stocks, confirming defensive characteristics (beta ≈ 0.65).</li>
-                </ul>
-            </div>
-
-            <div class="figure">
-                <img src="images/Stock4.png" alt="Growth of $1 invested chart showing cumulative returns">
-                <p><strong>Figure 2.2: Cumulative Returns Analysis - Growth of $1.00 Invested</strong></p>
-
-                <p><strong>Methodology:</strong> Normalized each asset to $1.00 at start of observation period and calculated daily compounded returns to show total portfolio value evolution.</p>
-
-                <p><strong>Performance Analysis:</strong></p>
-                <ul>
-                    <li><strong>GME Extraordinary Volatility:</strong> $1 invested peaked at $28.00 during January 2021 short squeeze, but declined to $2.20 by Q4 2023. Annualized volatility: 187%.</li>
-                    <li><strong>MSTR Bitcoin Exposure:</strong> Peak returns exceeding 600% during crypto bull markets, but 75%+ drawdowns during corrections. Correlation with Bitcoin: 0.78.</li>
-                    <li><strong>WMT Steady Compounding:</strong> Grew $1.00 to $1.75 (CAGR ≈ 6.2%). Sharpe ratio of 1.1 significantly outperforms meme stocks on risk-adjusted basis.</li>
-                    <li><strong>Gold Inflation Hedge:</strong> Modest positive returns (CAGR ≈ 3.8%) with significant downside protection during equity stress, particularly strong during 2021-2022 inflationary period (+18%).</li>
-                </ul>
-
-                <p><strong>Risk-Adjusted Metrics:</strong> Sharpe Ratios - WMT: 1.12, Gold: 0.48, MSTR: 0.23, GME: -0.15, AMC: -0.32. Maximum Drawdowns - GME: -92%, AMC: -87%, MSTR: -82%, WMT: -18%, Gold: -15%.</p>
-            </div>
-
-            <div class="figure">
-                <img src="images/Stock5.png" alt="Bar chart showing frequency of outperformance relative to WMT">
-                <p><strong>Figure 2.3: Relative Performance Analysis - Frequency of Outperformance vs. Walmart Baseline</strong></p>
-
-                <p><strong>Methodology:</strong> Calculated daily percentage changes for each asset and compared against WMT as stability benchmark. Computed proportion of trading days where each asset's daily return exceeded WMT's return.</p>
-
-                <p><strong>Performance Metrics:</strong></p>
-                <ul>
-                    <li><strong>GME Outperformance Rate (≈87%):</strong> GameStop outperformed WMT on 87% of days, but heavily skewed by extreme positive outliers. Median daily returns actually underperform WMT.</li>
-                    <li><strong>MSTR Outperformance Rate (≈83%):</strong> High frequency correlates with Bitcoin bull markets. During crypto bear markets, MSTR outperformed WMT on only 42% of days.</li>
-                    <li><strong>Critical Consideration:</strong> Metric doesn't account for magnitude of underperformance. Assets winning 80% of days but losing catastrophically on 20% can still destroy wealth.</li>
-                </ul>
-            </div>
-
-            <div class="figure">
-                <img src="images/Stock6.png" alt="Heatmap showing monthly rankings and percentage increases">
-                <p><strong>Figure 2.4: Temporal Performance Ranking - Monthly Leadership Analysis</strong></p>
-
-                <p><strong>Methodology:</strong> Assets ranked each month by total return performance. Rank 1 = best performer, Rank 6 = worst. Additional analysis calculated monthly percentage increases and identified regime changes.</p>
-
-                <p><strong>Ranking Analysis:</strong></p>
-                <ul>
-                    <li><strong>GME Dominant Period (Q4 2020 - Q2 2021):</strong> Ranked #1 for seven consecutive months during short squeeze, with monthly returns reaching +400% in January 2021.</li>
-                    <li><strong>Ranking Volatility as Risk Indicator:</strong> GME standard deviation of monthly ranking: 2.1 vs. WMT: 0.6, quantifying stability differences.</li>
-                    <li><strong>WMT Consistent Mid-Tier:</strong> Maintained rankings between 2-4 in 78% of months, indicating predictable risk-return characteristics.</li>
-                    <li><strong>Gold Safe-Haven Activation:</strong> Consistently ranked #1 or #2 during equity stress: March 2020 (COVID), Q1 2022 (Fed tightening), Q2 2022 (inflation peak).</li>
-                </ul>
-            </div>
-
-            <div class="figure">
-                <img src="images/Stock7.png" alt="Bar chart showing correlation frequency with Gold movements">
-                <p><strong>Figure 2.5: Correlation Analysis - Price Movement Alignment with Gold</strong></p>
-
-                <p><strong>Methodology:</strong> Calculated daily price direction (up/down) for each asset and compared with Gold's daily direction. Computed percentage of days where price movements occurred in same direction.</p>
-
-                <p><strong>Correlation Findings:</strong></p>
-                <ul>
-                    <li><strong>Meme Stocks Low Gold Correlation (30-38%):</strong> AMC, GME, and MSTR show near-random relationship with Gold (Pearson ρ = 0.05 to 0.12), indicating independence from macroeconomic forces.</li>
-                    <li><strong>WMT Moderate Gold Correlation (58%):</strong> Statistically significant positive correlation (ρ = 0.31, p < 0.01), likely reflecting shared sensitivity to inflation expectations.</li>
-                    <li><strong>Diversification Benefits:</strong> Low correlation between meme stocks and Gold provides diversification opportunities, though extreme meme stock volatility may overwhelm benefits.</li>
-                </ul>
-            </div>
-
-            <div class="figure">
-                <img src="images/Stock8.png" alt="Bar chart showing correlation frequency with USD movements">
-                <p><strong>Figure 2.6: Currency Sensitivity Analysis - Price Movement Alignment with USD</strong></p>
-
-                <p><strong>Methodology:</strong> Calculated directional alignment of each asset with USD index movements. Analyzed whether assets serve as USD hedges or exhibit USD sensitivity.</p>
-
-                <p><strong>Currency Correlation Analysis:</strong></p>
-                <ul>
-                    <li><strong>Meme Stocks USD Independence (35-42%):</strong> All three meme stocks show no meaningful relationship with USD movements, confirming currency effects are not primary price drivers.</li>
-                    <li><strong>WMT Modest USD Sensitivity (54%):</strong> Slight positive correlation reflects predominantly domestic operations with limited international revenue exposure.</li>
-                    <li><strong>Portfolio Hedging Implications:</strong> Lack of USD sensitivity in meme stocks means they provide no currency hedge benefits, unlike Gold which typically shows strong negative USD correlation (ρ ≈ -0.7).</li>
-                </ul>
-            </div>
-
-            <h4>Comprehensive Findings & Investment Implications</h4>
-
-            <div class="key-insight">
-                <p><strong>Primary Conclusion:</strong> This analysis definitively demonstrates that visualization methodology fundamentally shapes investment understanding and decision quality. Simplistic approaches (Figures 1.1-1.2) obscure critical risk information and temporal patterns, potentially leading to catastrophic investment decisions. Professional-grade analysis (Figures 2.1-2.6) incorporating time-series perspective, risk-adjusted metrics, and correlation analysis provides actionable intelligence for portfolio construction.</p>
-            </div>
-
-            <h4>Key Strategic Takeaways for Investors:</h4>
-            <ul>
-                <li><strong>Timing Criticality in Speculative Assets:</strong> Meme stock returns are dominated by short windows of extreme performance. GME's entire 5-year positive return was generated in approximately 15 trading days, while the remaining 1,245 days produced net losses. This concentration makes timing essential and buy-and-hold strategies inappropriate.</li>
-                <li><strong>Risk-Adjusted Performance Supremacy of Stable Assets:</strong> Despite lower headline returns, WMT and Gold delivered superior risk-adjusted performance (Sharpe ratios) and enabled compound growth through avoidance of catastrophic drawdowns. Recovering from an 80% loss requires a 400% gain—a mathematical reality that favors volatility avoidance.</li>
-                <li><strong>Diversification Effectiveness:</strong> Low correlation between meme stocks, traditional equities (WMT), and safe-haven assets (Gold) creates opportunities for portfolio construction that maintains upside exposure while mitigating downside risk through strategic allocation.</li>
-                <li><strong>Regime-Dependent Strategies Required:</strong> Performance characteristics of all assets shifted dramatically across market regimes (risk-on speculation, inflation concerns, rate tightening). Successful strategies must adapt to changing environments rather than maintaining static allocations.</li>
-                <li><strong>The Cost of Volatility:</strong> While high volatility creates opportunities for tactical traders, buy-and-hold investors in volatile assets suffer from volatility drag (the mathematical erosion of compound returns caused by large up/down swings). This effect reduced meme stock compound annual returns by an estimated 15-25 percentage points.</li>
-            </ul>
-
-            <h4>Statistical Highlights</h4>
-            <ul>
-                <li><strong>GME Performance:</strong> $1 invested peaked at $28 (2,700% return) during Jan 2021 short squeeze, but declined to $2.20 by Q4 2023. Annualized volatility: 187%</li>
-                <li><strong>Sharpe Ratios:</strong> WMT: 1.12, Gold: 0.48, MSTR: 0.23, GME: -0.15, AMC: -0.32. Walmart demonstrated most efficient return generation per unit of risk</li>
-                <li><strong>Maximum Drawdowns:</strong> GME: -92%, AMC: -87%, MSTR: -82%, WMT: -18%, Gold: -15%</li>
-                <li><strong>Correlation with Gold:</strong> Meme stocks showed near-zero correlation (ρ = 0.05 to 0.12), indicating independence from macroeconomic factors</li>
-            </ul>
-
-            <h4>Methodological Lessons for Data Analysts:</h4>
-            <ul>
-                <li>Always present financial data with appropriate temporal context and risk metrics</li>
-                <li>Use normalized returns rather than absolute prices for meaningful cross-asset comparison</li>
-                <li>Include volatility measures (standard deviation, confidence intervals) in all visualizations</li>
-                <li>Apply appropriate scaling (logarithmic for percentage changes) to prevent visual distortion</li>
-                <li>Validate insights using multiple analytical approaches to avoid methodology-dependent conclusions</li>
-                <li>Consider the audience and decision context when designing visualizations—different stakeholders require different information hierarchies</li>
-            </ul>
-
-            <p><strong>Technical Tools Employed:</strong> SQL for data extraction and transformation, Excel for statistical analysis and preliminary calculations, Tableau for all visualizations with calculated fields for returns analysis, Python (pandas, numpy) for correlation matrices and statistical testing, and R for time-series decomposition and regime shift detection.</p>
-        </article>
-
-        <!-- PROJECT 4: TTC Transportation Analysis -->
-        <article class="project-card">
-            <h3 style="font-size: 1.75rem; color: var(--primary-color); margin-bottom: 1.5rem;">
-                Urban Transportation Analytics: Comprehensive Analysis of TTC Traffic Collisions and Subway Delay Correlation
-            </h3>
-
-            <div class="methodology-box">
-                <h4>Executive Summary</h4>
-                <p>
-                    This project investigates the relationship between surface-level traffic collisions and underground subway service disruptions within Toronto's extensive public transportation network. Using advanced SQL techniques for data preparation and Tableau for interactive visualization, this analysis examines over 250,000 collision records and 75,000 subway delay incidents across a multi-year period to test the hypothesis that surface traffic conditions meaningfully impact subway operational performance.
-                </p>
-            </div>
-
-            <h4>Research Context & Business Significance</h4>
-            <p>
-                The Toronto Transit Commission (TTC) serves approximately 1.8 million daily riders across North America's third-largest public transit system. Understanding the factors that drive service delays is critical for operational optimization, resource allocation, and infrastructure investment prioritization. This analysis addresses a fundamental question: <strong>Do surface-level traffic patterns and collision events impact underground subway reliability, or are delays primarily driven by internal operational factors?</strong>
-            </p>
-            <p>
-                The business implications are substantial. If surface traffic significantly influences subway performance, investments in traffic management and collision reduction could yield subway reliability improvements. Conversely, if delays are operationally driven, resources should focus on infrastructure maintenance, equipment upgrades, and process optimization.
-            </p>
-
-            <h4>Data Architecture & Preparation Methodology</h4>
-            <p><strong>Data Sources:</strong></p>
-            <ul>
-                <li><strong>Traffic Collision Database:</strong> City of Toronto Open Data Portal, containing 267,543 reported collision records from 2016-2023 with fields including location coordinates, time stamps, collision severity, contributing factors, and environmental conditions.</li>
-                <li><strong>TTC Subway Delay Data:</strong> TTC operational database documenting 78,921 delay incidents across all subway lines, including delay duration (minutes), cause classification, station location, time of occurrence, and impact on service.</li>
-            </ul>
-
-            <p><strong>Advanced SQL Data Preparation Pipeline:</strong></p>
-            <ul>
-                <li><strong>Data Quality Assessment:</strong> Identified 12,847 collision records (4.8%) with missing or invalid timestamps, 3,204 records (1.2%) with location coordinate errors outside Toronto boundaries, and 891 subway delay records (1.1%) lacking cause classifications. Implemented systematic cleaning protocols to handle each category.</li>
-                <li><strong>Temporal Standardization:</strong> Converted all timestamps to UTC timezone, created derived fields for hour-of-day (0-23), day-of-week (Monday-Sunday), month, and year. Applied SQL window functions to calculate rolling averages and identify temporal patterns.</li>
-                <li><strong>Spatial Join Operations:</strong> Utilized PostGIS extensions to perform spatial joins between collision coordinates and TTC station proximity zones (500m radius). This enabled analysis of whether collisions near subway stations showed stronger correlation with delays.</li>
-                <li><strong>Aggregation & Feature Engineering:</strong> Created hourly and monthly aggregation tables using GROUP BY operations, calculated collision density metrics per square kilometer, derived rush-hour classifications (7-10 AM, 4-7 PM), and engineered lagged variables to test whether collisions predict delays with temporal lags.</li>
-                <li><strong>Statistical Metric Computation:</strong> Implemented SQL window functions to calculate 30-day rolling averages, standard deviations, and percentile rankings. Created correlation matrices using SQL statistical functions to quantify relationship strength between collision frequency and delay occurrences.</li>
-            </ul>
-
-            <p><strong>Data Validation Procedures:</strong> Cross-referenced collision data against Toronto Police Service reports (98.7% alignment), validated subway delay counts against TTC monthly operational reports (99.2% accuracy), and performed temporal consistency checks to ensure no duplicate entries or timestamp anomalies.</p>
-
-            <h4>Analytical Methodology & Statistical Framework</h4>
-            <p><strong>Hypothesis Testing Approach:</strong></p>
-            <ul>
-                <li><strong>Primary Hypothesis (H1):</strong> Surface traffic collision frequency positively correlates with subway delay occurrence and duration, with correlation coefficient ρ > 0.4 considered practically significant.</li>
-                <li><strong>Null Hypothesis (H0):</strong> No meaningful correlation exists between traffic collisions and subway delays (ρ ≈ 0), suggesting independent operational systems.</li>
-                <li><strong>Statistical Tests Applied:</strong> Pearson correlation analysis for linear relationships, Spearman rank correlation for non-linear associations, time-lagged cross-correlation to identify delayed effects, and regime-based subsetting (rush hour vs. off-peak) to detect context-dependent relationships.</li>
-            </ul>
-
-            <h4>Visual Analysis & Key Findings</h4>
-
-            <div class="figure">
-                <img src="images/figure4.png" alt="Line chart comparing hourly collisions and subway delays">
-                <p><strong>Figure 3.1: Hourly Distribution Analysis - Traffic Collisions vs. Subway Delays</strong></p>
-
-                <p><strong>Visualization Methodology:</strong> Dual-axis line chart displaying total collision count (left Y-axis) and total subway delay occurrences (right Y-axis) aggregated by hour of day across entire observation period (n = 2,555 days).</p>
-
-                <p><strong>Comprehensive Findings:</strong></p>
-                <ul>
-                    <li><strong>Collision Peak Hours (8 AM & 5 PM):</strong> Surface traffic collisions exhibit classic bimodal distribution with pronounced peaks at 8:00 AM (3,847 collisions/hour average) and 5:00 PM (4,203 collisions/hour average). Evening peak is 27% larger than morning peak, consistent with end-of-day fatigue effects.</li>
-                    <li><strong>Subway Delay Peak Hours (6 AM & 10 PM):</strong> Subway delays show dramatically different temporal patterns with primary peaks at 6:00 AM (287 delays/hour average) and 10:00 PM (312 delays/hour average)—times characterized by minimal collision activity.</li>
-                    <li><strong>Statistical Independence:</strong> Calculated Pearson correlation between hourly collision and delay counts yields ρ = 0.12 (p = 0.58), indicating no statistically significant linear relationship. Time-lagged correlation analysis (0-6 hour lags) produces maximum correlation of ρ = 0.19 at 2-hour lag, still below significance threshold.</li>
-                    <li><strong>Operational Insight - Early Morning Delays:</strong> The 6 AM delay peak likely reflects planned maintenance completion delays, equipment cold-start issues, and staffing transitions. Analysis shows 68% of 6 AM delays are "Equipment Issues" or "Maintenance Completion."</li>
-                    <li><strong>Rush Hour Paradox:</strong> During peak collision hours, subway delays are actually below average (8 AM: 203 delays, 5 PM: 198 delays vs. daily average of 237), suggesting increased staffing and operational attention during rush hours compensates for surface conditions.</li>
-                </ul>
-
-                <p><strong>Operational Recommendations:</strong> Focus delay reduction on off-peak hours through improved preventive maintenance scheduling, enhanced equipment diagnostics, and extended maintenance windows with buffer time.</p>
-            </div>
-
-            <div class="figure">
-                <img src="images/figure5.png" alt="Bar chart showing average subway delay duration by hour">
-                <p><strong>Figure 3.2: Delay Duration Analysis - Average Delay Length by Hour</strong></p>
-
-                <p><strong>Methodology:</strong> Calculated arithmetic mean delay duration (minutes) for all delays within each hour bucket. Applied outlier detection using IQR method and conducted sensitivity analysis confirming mean estimates remain stable after excluding extreme outliers (>60 minutes).</p>
-
-                <p><strong>In-Depth Analysis:</strong></p>
-                <ul>
-                    <li><strong>Extended Early Morning Delays:</strong> Average delay duration peaks at 6:00 AM (18.7 minutes) and 7:00 AM (16.3 minutes), significantly exceeding 24-hour average of 11.2 minutes. Statistical testing (t-test) confirms early morning delays are significantly longer than midday delays (p < 0.001). Not only are delays more frequent in early morning, but each delay is 67% longer than average.</li>
-                    <li><strong>Late Evening Duration Spike:</strong> The 10:00 PM hour shows average delay of 15.8 minutes, second-highest of the day. Combined with high frequency, this creates substantial service disruption during final hour of regular service, potentially causing cascading effects on overnight maintenance schedule.</li>
-                    <li><strong>Efficient Rush Hour Resolution:</strong> Despite high system utilization, delays during peak hours are resolved relatively quickly (average 9.4 minutes at 8 AM, 8.7 minutes at 5 PM), likely reflecting full staffing deployment and immediate supervisor attention.</li>
-                    <li><strong>Midday Stability Window:</strong> Hours 11 AM - 3 PM show both lowest delay frequency and shortest duration (8.2-9.6 minutes), representing optimal operational performance window for planned maintenance activities.</li>
-                    <li><strong>Equipment Failure Duration:</strong> Subsetting delays by cause code reveals equipment failures take 2.3x longer to resolve than service-related delays (16.8 min vs. 7.2 min), suggesting value in predictive maintenance systems.</li>
-                </ul>
-
-                <p><strong>Customer Impact:</strong> Early morning delays affect approximately 94,000 daily commuters who tend to be time-sensitive workers (healthcare, emergency services, opening shift retail). The 10 PM delays affect approximately 67,000 riders who may miss last connections, forcing costly alternative transportation.</p>
-            </div>
-
-            <div class="figure">
-                <img src="images/figure6.png" alt="Combined monthly chart of collisions and delays">
-                <p><strong>Figure 3.3: Seasonal Analysis - Monthly Collision and Delay Trends</strong></p>
-
-                <p><strong>Methodology:</strong> Aggregated all collision and delay events by calendar month, normalized to per-day rates to account for varying month lengths. Applied seasonal decomposition using moving averages to isolate trend, seasonal, and irregular components.</p>
-
-                <p><strong>Comprehensive Seasonal Analysis:</strong></p>
-                <ul>
-                    <li><strong>Winter Collision Surge:</strong> Traffic collisions peak during winter months with January averaging 1,247 collisions/day (+34% above annual average). Statistical decomposition attributes 67% of January collision increase to seasonal weather factors (snow, ice, reduced visibility).</li>
-                    <li><strong>Subway Delay Seasonal Independence:</strong> Subway delays show no corresponding winter increase, remaining relatively flat across seasons (monthly average range: 217-243 delays/day, coefficient of variation = 0.08). Calculated Pearson correlation between monthly collision rates and delay rates yields ρ = -0.03 (p = 0.92), indicating complete statistical independence.</li>
-                    <li><strong>Summer Anomaly:</strong> Subway delays actually peak slightly in summer months (June-August average: 238 delays/day) despite this being period of lowest collision rates (June-August: 897 collisions/day). Analysis reveals summer delays driven by track expansion from heat (31%), equipment cooling failures (18%), and increased construction/maintenance (14%).</li>
-                    <li><strong>Weather Effect Decoupling:</strong> Divergent seasonal patterns provide compelling evidence that weather conditions affecting surface traffic do not substantially impact underground subway operations. While snow/ice dramatically increases surface collisions, subway systems in temperature-controlled underground environments show resilience.</li>
-                    <li><strong>Long-Term Trend:</strong> Collisions show modest declining trend (-2.3% per year, likely reflecting autonomous braking systems), while subway delays show slight increasing trend (+1.7% per year), further evidence of independent causal mechanisms.</li>
-                </ul>
-
-                <p><strong>Infrastructure Implications:</strong> Seasonal independence suggests infrastructure investments should be directed separately: surface collision reduction through improved winter road maintenance and vision-zero initiatives; subway reliability through enhanced equipment redundancy and improved HVAC systems for summer operation.</p>
-            </div>
-
-            <div class="figure">
-                <img src="images/figure7.png" alt="Treemap visualization of hourly collisions and delays">
-                <p><strong>Figure 3.4: Integrated Hourly Analysis - Collision Volume vs. Delay Duration Treemap</strong></p>
-
-                <p><strong>Advanced Visualization Methodology:</strong> Treemap visualization encoding three dimensions: (1) rectangle size = total collision count per hour, (2) color intensity (blue gradient) = average subway delay duration, (3) spatial positioning groups similar hours.</p>
-
-                <p><strong>Interpretation Guide:</strong></p>
-                <ul>
-                    <li><strong>Rectangle Size = Collision Frequency:</strong> Larger rectangles indicate higher total collision counts. Largest rectangles correspond to 15:00-17:00 hours (afternoon rush).</li>
-                    <li><strong>Color Intensity = Delay Duration:</strong> Darker blue shading indicates longer average delays. Darkest rectangles appear at 5:00-7:00 AM, despite these hours having relatively small rectangle sizes (low collisions).</li>
-                    <li><strong>Visual Pattern Recognition:</strong> Effective analysis looks for rectangles that are simultaneously large AND dark—indicating hours where both problems converge. The notable absence of such rectangles provides visual evidence of low correlation.</li>
-                </ul>
-
-                <p><strong>Hour-by-Hour Analysis:</strong></p>
-                <ul>
-                    <li><strong>High Collision / Low Delay Hours (15:00-17:00):</strong> Largest rectangles but light color intensity. Despite highest collision rates (17:00 peak: 4,203 collisions), average delays remain below 10 minutes. This decoupling demonstrates that collision frequency does not predict delay severity.</li>
-                    <li><strong>Low Collision / High Delay Hours (5:00-7:00):</strong> Small rectangles (421-789 collisions) but darkest blue coloring (15.8-18.7 minute average delays). If surface traffic caused delays, we would expect the opposite pattern.</li>
-                    <li><strong>Optimal Performance Hours (11:00-14:00):</strong> Mid-day hours show moderate rectangle sizes and light coloring, indicating balanced system performance.</li>
-                    <li><strong>The "Missing Pattern":</strong> If strong collision-delay relationship existed, treemap should show positively correlated size and color (large rectangles should be dark). Actual visualization shows inverse or random patterns, visually confirming statistical independence.</li>
-                </ul>
-
-                <p><strong>Statistical Validation:</strong> Computed correlation between rectangle size rank and color intensity rank: ρ = -0.18, indicating slight inverse relationship where high-collision hours tend to have slightly shorter delays, further refuting collision-driven delays hypothesis.</p>
-
-                <p><strong>Strategy Implications:</strong> Treemap clearly visualizes need for time-differentiated strategies: focus traffic safety resources during 15:00-17:00 collision peak, dedicate subway reliability resources to early morning (5:00-7:00) through preventive maintenance, recognizing these as independent problems requiring separate resource allocation.</p>
-            </div>
-
-            <h4>Advanced Statistical Analysis & Regression Modeling</h4>
-            <p>To rigorously test the collision-delay hypothesis beyond descriptive analysis, I implemented multivariate regression models controlling for confounding factors:</p>
-
-            <div class="methodology-box">
-                <p><strong>Regression Model Specification:</strong></p>
-                <p>Delay_Count = β₀ + β₁(Collision_Count) + β₂(Hour_of_Day) + β₃(Day_of_Week) + β₄(Month) + β₅(Temperature) + β₆(Precipitation) + ε</p>
-                <p><strong>Results:</strong></p>
-                <ul>
-                    <li>Collision_Count coefficient: β₁ = 0.003 (p = 0.67) - statistically insignificant</li>
-                    <li>Hour_of_Day coefficient: β₂ = -0.12 (p < 0.001) - highly significant, confirming time-of-day as primary delay driver</li>
-                    <li>Model R²: 0.41 - without collision variable, R² = 0.40, confirming collision variable contributes virtually nothing to explanatory power</li>
-                </ul>
-            </div>
-
-            <h4>Delay Cause Code Analysis - Root Cause Identification</h4>
-            <p>Analysis of TTC's delay cause classification system provides definitive evidence of delay drivers:</p>
-            <ul>
-                <li><strong>Equipment/Mechanical Issues: 42.3%</strong> of all delays (31,847 incidents) - signal failures, train mechanical problems, track issues</li>
-                <li><strong>Operational Issues: 23.7%</strong> (17,894 incidents) - crew unavailability, schedule adherence, train positioning</li>
-                <li><strong>Customer-Related: 18.4%</strong> (13,897 incidents) - medical emergencies, suspicious packages, security incidents</li>
-                <li><strong>Infrastructure/Maintenance: 12.1%</strong> (9,128 incidents) - planned maintenance overruns, emergency repairs</li>
-                <li><strong>External Factors: 3.5%</strong> (2,641 incidents) - weather, power outages, police investigations</li>
-            </ul>
-            <p>Notably, no category exists for "traffic conditions" or "surface collisions," and "External Factors" category shows no correlation with collision frequency when analyzed hourly or monthly.</p>
-
-            <h4>Key Findings Summary</h4>
-
-            <div class="key-insight">
-                <p><strong>Primary Conclusion:</strong> This analysis provides overwhelming evidence that surface traffic collisions and subway delays are <strong>statistically independent phenomena</strong> driven by distinct operational mechanisms. Correlation coefficients across all tested timeframes (hourly, daily, monthly) fail to reach statistical significance (all ρ < 0.20, all p > 0.05). The TTC's subway system operates as a functionally isolated network where surface conditions exert negligible influence on underground service reliability.</p>
-            </div>
-
-            <h4>Evidence-Based Recommendations for TTC Operations:</h4>
-            <ul>
-                <li><strong>Redirect Delay Analysis Focus:</strong> Eliminate hypotheses linking surface traffic to subway delays. Focus analytical resources on internal operational factors: equipment reliability, maintenance scheduling, staffing optimization, and signal system modernization.</li>
-                <li><strong>Preventive Maintenance Restructuring:</strong> The 6 AM delay peak suggests current overnight maintenance windows are insufficient or poorly scheduled. Extend maintenance windows by 30 minutes, implement stricter completion deadlines, and create buffer time between maintenance and revenue service start.</li>
-                <li><strong>Equipment Replacement Prioritization:</strong> The dominance of equipment-related delays (42.3%) and concentration during off-peak hours suggests aging equipment fails when pushed beyond standard operating conditions. Implement accelerated replacement schedule for equipment showing elevated failure rates during low-supervision hours.</li>
-                <li><strong>Predictive Maintenance Systems:</strong> Deploy IoT sensors and machine learning models to predict equipment failures before they occur. Analysis shows 68% of early morning delays are equipment-related and potentially predictable through pattern recognition.</li>
-                <li><strong>Late Evening Service Protocol:</strong> The 10 PM delay peak requires operational intervention. Implement enhanced equipment health checks at 9 PM, deploy backup equipment during 10-11 PM window, and adjust maintenance start times to minimize service-hour overlap.</li>
-            </ul>
-
-            <h4>Technical Implementation Details</h4>
-            <p><strong>SQL Techniques Demonstrated:</strong></p>
-            <ul>
-                <li>Complex JOINs across multiple tables with spatial and temporal constraints</li>
-                <li>Window functions (ROW_NUMBER, RANK, LAG, LEAD) for time-series analysis</li>
-                <li>Common Table Expressions (CTEs) for multi-stage aggregation pipelines</li>
-                <li>Subquery optimization for performance on 300K+ row datasets</li>
-                <li>Custom aggregate functions and CASE statements for conditional logic</li>
-                <li>Date/time manipulation functions for temporal feature engineering</li>
-            </ul>
-
-            <p><strong>Tableau Dashboard Features:</strong></p>
-            <ul>
-                <li>Interactive filters allowing users to explore specific time periods, subway lines, and collision severity levels</li>
-                <li>Calculated fields implementing statistical formulas (correlation, standard deviation, percentile ranks)</li>
-                <li>Dual-axis charts for direct visual comparison of disparate metrics</li>
-                <li>Color-coded treemaps with tooltip enhancement showing detailed statistics</li>
-                <li>Parameter controls enabling dynamic what-if analysis scenarios</li>
-            </ul>
-
-            <p>
-                <strong>Conclusion:</strong> This comprehensive analysis definitively demonstrates that traffic collisions and subway delays are independent phenomena requiring separate analytical and operational approaches. The findings enable TTC to optimize resource allocation by focusing delay reduction efforts on internal operational factors—equipment reliability, maintenance scheduling, and staffing optimization—rather than external traffic conditions.
-            </p>
-        </article>
-
-        <!-- PROJECT 5: Cyclistic Bike-Share Analysis -->
-        <article class="project-card">
-            <h3 style="font-size: 1.75rem; color: var(--primary-color); margin-bottom: 1.5rem;">
-                Behavioral Analytics & Marketing Strategy: Cyclistic Bike-Share User Segmentation Study
-            </h3>
-
-            <div class="methodology-box">
-                <h4>Executive Summary</h4>
-                <p>
-                    This capstone project for the Google Data Analytics Professional Certificate examines usage patterns across two distinct customer segments within Cyclistic, a Chicago-based bike-sharing service. Through comprehensive analysis of 5.7 million ride records, this study quantifies behavioral differences between casual riders and annual members, identifies conversion opportunities, and develops data-driven marketing strategies to increase membership subscriptions—the primary driver of long-term revenue stability and business growth.
-                </p>
-            </div>
-
-            <h4>Business Context & Strategic Importance</h4>
-            <p>
-                Cyclistic operates a fleet of 5,824 bicycles across 692 stations throughout Chicago, serving both casual users (single-ride and day-pass purchasers) and annual members (subscription holders). The company's financial analysis reveals that <strong>annual members are significantly more profitable than casual riders</strong> due to predictable recurring revenue, reduced transaction costs, higher lifetime value, and lower customer acquisition costs per ride.
-            </p>
-            <p>
-                The executive team has set a strategic objective: <em>maximize annual memberships rather than focusing solely on casual ridership growth</em>. However, converting casual riders to members requires deep understanding of behavioral differences, usage patterns, and value propositions that resonate with each segment. This analysis provides the empirical foundation for targeted marketing strategies designed to drive conversion.
-            </p>
-
-            <h4>Research Questions & Analytical Objectives</h4>
-            <ul>
-                <li><strong>Behavioral Differentiation:</strong> How do casual riders and annual members differ in their usage patterns, ride characteristics, and temporal preferences?</li>
-                <li><strong>Conversion Opportunity Identification:</strong> Which casual rider behaviors indicate latent demand for membership-style usage patterns?</li>
-                <li><strong>Marketing Segmentation:</strong> What distinct casual rider sub-segments exist, and what messaging/incentives would most effectively drive conversion for each?</li>
-                <li><strong>Seasonal Optimization:</strong> When do conversion campaigns have the highest likelihood of success based on usage pattern alignment?</li>
-            </ul>
-
-            <h4>Data Infrastructure & Analytical Methodology</h4>
-            <p><strong>Dataset Specifications:</strong></p>
-            <ul>
-                <li>12 months of ride transaction data (January 2023 - December 2023)</li>
-                <li>5,738,612 total ride records analyzed</li>
-                <li>Key variables: ride_id, rideable_type, start/end timestamps, station locations, geographic coordinates, member status</li>
-                <li>Data source: Cyclistic internal database (fictional scenario based on real Divvy bike-share data structure)</li>
-            </ul>
-
-            <p><strong>Comprehensive Data Preparation Process:</strong></p>
-            <ul>
-                <li><strong>Data Import & Consolidation:</strong> Imported 12 separate monthly CSV files into Excel using Power Query, establishing unified schema. Addressed field name inconsistencies across months and standardized data types.</li>
-                <li><strong>Data Quality Assessment:</strong> Identified 127,439 records (2.2%) with missing start/end station information, 8,732 records (0.15%) with implausible ride durations (>24 hours or <1 minute), and 3,208 duplicate ride_id entries. Implemented systematic exclusion criteria based on data reliability requirements.</li>
-                <li><strong>Feature Engineering:</strong> Calculated ride_length_minutes, extracted day_of_week (Monday-Sunday), created month variable for seasonal analysis, engineered time_of_day categories (Early Morning, Morning Rush, Midday, Evening Rush, Night), and calculated straight-line distance between start/end coordinates using Haversine formula.</li>
-                <li><strong>Outlier Treatment:</strong> Applied statistical outlier detection using IQR method. Rides with duration > Q3 + 1.5*IQR (>78 minutes) were flagged and analyzed separately as "extended usage" segment.</li>
-                <li><strong>Validation Procedures:</strong> Cross-checked aggregate statistics against Cyclistic's published monthly reports (98.4% alignment), validated station coordinates against official station registry, and performed temporal consistency checks ensuring sequential timestamp logic.</li>
-            </ul>
-
-            <h4>Visual Analysis & Key Findings</h4>
-
-            <div class="figure">
-                <img src="images/figure1.png" alt="Bar chart comparing average ride lengths">
-                <p><strong>Figure 4.1: Ride Duration Comparison - Average Trip Length by User Type</strong></p>
-
-                <p><strong>Visualization Methodology:</strong> Side-by-side bar chart displaying mean ride duration for casual riders vs. annual members across entire 12-month observation period. Error bars represent 95% confidence intervals to indicate statistical precision.</p>
-
-                <p><strong>Comprehensive Statistical Analysis:</strong></p>
-                <ul>
-                    <li><strong>Casual Riders - Leisure-Oriented Usage (24.65 minutes average):</strong> Casual riders demonstrate significantly longer ride durations, nearly double that of members. Statistical distribution analysis reveals right-skewed distribution with substantial tail of extended rides (>60 minutes comprising 12% of casual rides vs. 2% of member rides). This pattern strongly suggests recreational usage—sightseeing, lakefront leisure rides, social activities—rather than utilitarian point-to-point transportation.</li>
-                    <li><strong>Annual Members - Commute-Optimized Behavior (12.67 minutes average):</strong> Members exhibit highly consistent, short-duration rides with low variance (SD = 8.3 minutes vs. 18.7 for casual riders). The tight distribution around a 12-13 minute mean suggests specific origin-destination pairs consistent with commuting patterns. Analysis of start/end station pairs confirms 73% of member rides occur between residential neighborhoods and employment centers during traditional commute hours.</li>
-                    <li><strong>Statistical Significance:</strong> Two-sample t-test confirms the difference is highly significant (t = 187.4, p < 0.001, Cohen's d = 0.89 indicating large effect size). This is not a sampling artifact but a genuine behavioral distinction between segments.</li>
-                    <li><strong>Economic Implications:</strong> Casual riders' longer rides generate higher revenue per ride under single-use pricing (average $8.20 per casual ride vs. $0.17 amortized cost per member ride given unlimited usage). However, members' higher frequency (2.7 rides per week vs. 0.4 for casual riders) and retention (95% annual renewal) produces superior lifetime value despite lower per-ride revenue.</li>
-                    <li><strong>Behavioral Interpretation:</strong> The duration gap reveals fundamental usage psychology differences. Casual riders view bike-share as an <em>experiential activity</em>—they're paying for leisure time on a bike. Members view it as <em>transportation infrastructure</em>—they're optimizing commute efficiency. Effective conversion messaging must acknowledge and bridge this perception gap.</li>
-                </ul>
-
-                <p><strong>Marketing Strategy Implications:</strong> Casual riders already demonstrate comfort with extended bike usage, suggesting they'd extract significant value from unlimited-ride memberships. Position membership as "unlimited adventure" or "freedom to explore without watching the clock" rather than purely commute-focused messaging. Emphasize the psychological benefit of not calculating per-ride costs.</p>
-            </div>
-
-            <div class="figure">
-                <img src="images/figure3.png" alt="Line chart showing monthly ridership trends">
-                <p><strong>Figure 4.2: Seasonal Demand Analysis - Monthly Ridership Volume by User Type</strong></p>
-
-                <p><strong>Methodology:</strong> Aggregated ride counts by calendar month and user type. Calculated percentage change month-over-month to quantify seasonal volatility. Applied seasonal decomposition models to isolate weather effects from underlying trends.</p>
-
-                <p><strong>In-Depth Seasonal Analysis:</strong></p>
-                <ul>
-                    <li><strong>Dramatic Casual Rider Seasonality:</strong> Casual ridership exhibits extreme seasonal variation with summer peaks (July: 487,000 rides) exceeding winter troughs (February: 47,000 rides) by 936%. This 10:1 seasonal ratio indicates casual riders view bike-share as a weather-dependent recreational activity, not essential transportation. Temperature correlation analysis shows ρ = 0.87 between monthly average temperature and casual ride volume.</li>
-                    <li><strong>Member Resilience to Seasonal Effects:</strong> Annual members maintain more stable usage across seasons, with summer peak (July: 412,000 rides) only 2.8x winter trough (February: 148,000 rides). This 3:1 ratio vs. 10:1 for casual riders demonstrates committed usage regardless of weather. Members continue riding in rain, cold, and snow because bike-share is integrated into their essential transportation routine.</li>
-                    <li><strong>Summer Convergence Opportunity:</strong> During peak season (June-August), casual rider volume (1.38M rides) actually approaches member volume (1.21M rides), demonstrating massive casual engagement during favorable conditions. This convergence presents optimal conversion timing—casual riders are already using the service frequently enough to potentially benefit from membership economics.</li>
-                    <li><strong>Conversion Calculation Example:</strong> A casual rider taking 8 rides in July ($65.60 spent) would have saved $49.60 with an annual membership ($16 monthly cost). During summer months, approximately 62,000 casual riders exceed the economic breakeven threshold where membership becomes cheaper than per-ride payment.</li>
-                    <li><strong>Spring Activation Pattern:</strong> Both segments show sharp ridership increases in April-May, but casual growth rate (+289% from March to May) significantly exceeds member growth (+94%). This suggests spring awakening represents prime conversion window when casual riders are reactivating annual habits—capture them early with membership offers before they establish summer casual payment patterns.</li>
-                    <li><strong>Winter Base Load Insight:</strong> The 148,000 rides by members in February vs. 47,000 casual rides demonstrates that committed users continue riding year-round. Any casual rider showing winter usage is exhibiting member-like behavior and represents prime conversion target with high predicted retention.</li>
-                </ul>
-
-                <p><strong>Campaign Timing Strategy:</strong> Launch major conversion campaigns in April-May (spring activation) and June-July (peak usage/economic breakeven visibility). Implement graduated incentive structure: aggressive discounts in early summer to capture high-frequency casual riders before they spend heavily on per-ride fees, then maintenance campaigns in fall to convert before seasonal decline.</p>
-            </div>
-
-            <div class="figure">
-                <img src="images/figure2.png" alt="Chart showing daily usage patterns">
-                <p><strong>Figure 4.3: Weekly Usage Pattern Analysis - Day-of-Week Distribution by User Type</strong></p>
-
-                <p><strong>Methodology:</strong> Calculated total rides occurring on each day of week across all 52 weeks in dataset. Normalized to average rides per occurrence of each weekday (e.g., average across all 52 Mondays) to account for varying number of occurrences. Applied chi-square tests to confirm significance of distribution differences.</p>
-
-                <p><strong>Comprehensive Weekly Pattern Analysis:</strong></p>
-                <ul>
-                    <li><strong>Casual Weekend Concentration:</strong> Casual riders show pronounced weekend preference with Saturday (18.7% of weekly rides) and Sunday (16.3% of weekly rides) significantly outperforming their 28.6% weekly share. If casual usage were distributed evenly, weekends would represent only 28.6% of rides (2/7 days). The actual 35% weekend share represents 22% over-indexing. Chi-square test confirms non-random distribution (χ² = 3,247, p < 0.001).</li>
-                    <li><strong>Member Weekday Dominance:</strong> Annual members exhibit inverse pattern with distinct weekday preference. Monday-Friday represents 71.4% of days but captures 78.2% of member rides, indicating 10% over-indexing. Individual weekdays show remarkably consistent usage (Tuesday: 15.8%, Wednesday: 15.9%, Thursday: 15.7%), characteristic of habitual commute behavior with minimal day-to-day variation.</li>
-                    <li><strong>Commute Hypothesis Validation:</strong> Members' weekday preference combined with previously identified short ride duration (12.67 min) and peak hour timing (8-9 AM, 5-6 PM, analyzed in supplementary data) provides strong convergent evidence of commute-centric usage. This represents the "core value proposition" of membership for current customers.</li>
-                    <li><strong>Leisure vs. Utility Distinction:</strong> Weekend vs. weekday preference serves as behavioral proxy for leisure vs. utility usage orientation. Casual riders optimize for leisure (weekend, good weather, extended duration). Members optimize for utility (consistent weekday, time-efficient, integrated into routine).</li>
-                    <li><strong>Conversion Segment Identification:</strong> Analyzed casual riders showing weekday usage patterns—this sub-segment (22% of casual riders, ~340,000 individuals) exhibits member-like behavior while paying per-ride. They represent highest-probability conversion targets. Further segmentation shows weekday casual riders have 3.7x higher conversion rate when targeted vs. weekend-only casual riders.</li>
-                    <li><strong>Monday-Friday Consistency Metric:</strong> Members show coefficient of variation (CV) across weekdays of only 0.08, indicating highly predictable demand. Casual riders show CV of 0.31, reflecting more variable, spontaneous usage decisions influenced by weather, events, and discretionary leisure time availability.</li>
-                </ul>
-
-                <p><strong>Targeted Marketing Strategy:</strong> Develop dual-track conversion approach: (1) <strong>Weekday Casual Riders:</strong> "You're already riding like a member—make it official and save." Emphasize economic rationality and convenience. Target with commute-focused messaging. (2) <strong>Weekend Leisure Riders:</strong> "Unlimited summer adventures." Emphasize freedom, spontaneity, and eliminating cost anxiety. Highlight non-commute usage value to address perception that membership is only for commuters.</p>
-            </div>
-
-            <h4>Advanced Segmentation Analysis</h4>
-            <p>Cluster analysis identified distinct behavioral segments within the casual rider population:</p>
-
-            <ul>
-                <li><strong>Segment 1: "Tourist/Visitor" (38%):</strong> Exclusively weekend, summer-concentrated, long rides (avg 42 min), lakefront stations. <em>Low conversion priority</em></li>
-                <li><strong>Segment 2: "Weekend Warrior" (29%):</strong> Regular weekend usage year-round, medium duration (avg 28 min), residential origins. <em>Medium conversion priority</em></li>
-                <li><strong>Segment 3: "Flexible Commuter" (22%):</strong> Mixed weekday/weekend, consistent year-round, short duration (avg 15 min), residential-to-employment routes. <em>Highest conversion priority</em>—already exhibiting member behavior</li>
-                <li><strong>Segment 4: "Occasional User" (11%):</strong> Sporadic usage, no clear patterns. <em>Low immediate priority</em></li>
-            </ul>
-
-            <h4>Economic Analysis & Business Case</h4>
-            <p><strong>Revenue Model Comparison:</strong></p>
-            <ul>
-                <li><strong>Casual Rider:</strong> Average 21 rides/year, $8.20 per ride = $172 annual revenue, zero retention guarantee</li>
-                <li><strong>Annual Member:</strong> $192 annual membership, 95% renewal rate, average 140 rides/year</li>
-                <li><strong>Lifetime Value (5-year):</strong> Member LTV = $912. Casual LTV = $310. Members deliver 2.9x greater lifetime value</li>
-            </ul>
-
-            <p><strong>Conversion Target Modeling:</strong> If Cyclistic converts 15% of high-frequency casual riders (Segments 2 & 3) representing ~175,000 individuals:</p>
-            <ul>
-                <li>Additional annual membership revenue: $33.6M</li>
-                <li>Improved revenue predictability enabling better operational planning</li>
-                <li>Reduced payment processing costs</li>
-                <li>Enhanced network effects as membership base grows</li>
-            </ul>
-
-            <h4>Data-Driven Marketing Recommendations</h4>
-
-            <p><strong>Core Strategic Recommendation:</strong> Implement behaviorally-targeted, seasonally-optimized conversion campaigns that acknowledge the distinct value propositions resonating with different casual rider segments. Avoid one-size-fits-all messaging; instead deploy micro-targeted campaigns based on observed usage patterns.</p>
-
-            <h4>Specific Tactical Recommendations:</h4>
-            <ul>
-                <li><strong>Summer Economic Visibility Campaign (June-August):</strong> Deploy in-app notifications to casual riders who have taken 5+ rides in current month showing: "You've spent $X this month. A membership costs only $16/month for unlimited rides." Target the 62,000 casual riders exceeding economic breakeven monthly.</li>
-                <li><strong>Weekday Commuter Conversion Track:</strong> Identify casual riders with 3+ weekday rides in morning/evening rush hours. Send targeted email: "Your commute routine is already established—make it unlimited." Offer 20% first-year discount plus free helmet or lock accessory.</li>
-                <li><strong>Spring Activation Campaign (April-May):</strong> Target all casual riders from previous year with reactivation offer: "Welcome back! Spring is here—upgrade to unlimited rides and explore all summer." Capitalize on seasonal reengagement moment.</li>
-                <li><strong>Weekend Explorer Membership Tier:</strong> Test specialized weekend-only membership ($9/month) for casual riders showing exclusive weekend usage. Remove perception that membership is only for weekday commuters.</li>
-                <li><strong>Trial Membership Program:</strong> Offer high-frequency casual riders (8+ rides in 60 days) a free 30-day trial membership. Behavioral psychology research shows trial conversion rates of 40-60%.</li>
-                <li><strong>Seasonal Discount Optimization:</strong> Offer annual membership with higher discount in fall (when casual usage drops). "Lock in summer pricing for next year—$129 annual membership (33% off) if you join before November 1."</li>
-            </ul>
-
-            <h4>Implementation Roadmap & Success Metrics</h4>
-            <p><strong>Phase 1 (Months 1-3): High-Probability Conversions</strong></p>
-            <ul>
-                <li>Target: Segment 3 (Flexible Commuters) with economic rationality messaging</li>
-                <li>Success Metric: 20% conversion rate from 180,000-rider segment (36,000 new members)</li>
-                <li>Revenue Impact: $6.9M annual recurring revenue</li>
-            </ul>
-
-            <p><strong>Phase 2 (Months 4-6): Seasonal Opportunity Capture</strong></p>
-            <ul>
-                <li>Target: Summer high-frequency casual riders with economic breakeven messaging</li>
-                <li>Success Metric: 12% conversion rate from 62,000 summer power-users (7,400 new members)</li>
-                <li>Revenue Impact: $1.4M annual recurring revenue</li>
-            </ul>
-
-            <p><strong>Phase 3 (Months 7-12): Perception Shift & Market Expansion</strong></p>
-            <ul>
-                <li>Target: Segment 2 (Weekend Warriors) with leisure-focused unlimited exploration messaging</li>
-                <li>Success Metric: 8% conversion rate from 240,000 segment (19,200 new members)</li>
-                <li>Revenue Impact: $3.7M annual recurring revenue</li>
-            </ul>
-
-            <p><strong>Total Year 1 Impact: 62,600 conversions, $12M new ARR, 23% increase in membership base</strong></p>
-
-            <h4>Tools & Technical Skills Demonstrated</h4>
-            <ul>
-                <li><strong>Microsoft Excel:</strong> Power Query for data import/transformation, pivot tables for multi-dimensional analysis, statistical functions (T.TEST, CORREL, STDEV), data validation and cleaning protocols</li>
-                <li><strong>Tableau:</strong> Interactive dashboards with calculated fields, parameter controls for dynamic filtering, LOD expressions for complex aggregations, color-coded visualizations optimized for executive presentation</li>
-                <li><strong>Statistical Analysis:</strong> Hypothesis testing, distribution analysis, segmentation modeling, correlation analysis, seasonal decomposition</li>
-                <li><strong>Business Strategy:</strong> Customer lifetime value modeling, conversion funnel optimization, market segmentation, pricing analysis</li>
-            </ul>
-
-            <p>
-                <strong>Conclusion:</strong> This comprehensive analysis reveals clear, actionable behavioral differences between casual riders and annual members across duration, frequency, temporal, and seasonal dimensions. The identified conversion opportunities—particularly weekday-riding casual users and summer high-frequency riders—represent immediately addressable market segments with high conversion probability and significant revenue impact.
-            </p>
-        </article>
-
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Interested in discussing projects, opportunities, or collaborations? Feel free to reach out.
+    <!-- Contact -->
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
+      <div class="rail">
+        <h2 id="contact-title">Contact</h2>
+      </div>
+
+      <div class="body">
+        <p class="contact-line">If you're hiring for implementation, solutions or integrations work, I'd like to hear from you.</p>
+        <p class="email-row">
+          <a class="email" href="mailto:nihith011@gmail.com">nihith011@gmail.com</a>
+          <button type="button" class="copy" id="copy-email" data-email="nihith011@gmail.com">Copy</button>
+          <span class="visually-hidden" id="copy-status" role="status"></span>
         </p>
-        <p>
-            <strong>Email:</strong> nihith011@gmail.com<br>
-            <strong>GitHub:</strong> <a href="https://github.com/Knick011" target="_blank" style="color: var(--secondary-color);">github.com/Knick011</a><br>
-            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nihith-mekala-174374206/" target="_blank" style="color: var(--secondary-color);">linkedin.com/in/nihith-mekala</a>
+        <p class="muted">Based in Hamilton. Open to remote work, or hybrid in Toronto, Waterloo and the GTA.</p>
+        <p class="links">
+          <a class="text-link" href="https://www.linkedin.com/in/nihith-mekala-174374206/" rel="noopener">LinkedIn</a>
+          <a class="text-link" href="https://github.com/Knick011" rel="noopener">GitHub</a>
         </p>
+      </div>
     </section>
-</div>
+  </main>
 
-<footer>
-    <p>&copy; 2025 Nihith Mekala. All rights reserved.</p>
-    <p>Built with attention to detail and a passion for creating impactful software.</p>
-</footer>
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p>© 2026 Nihith Mekala</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
 
-<script>
-    // Collapsible functionality
-    document.querySelectorAll('.collapsible-trigger').forEach(trigger => {
-        trigger.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const content = this.nextElementSibling;
-            content.classList.toggle('active');
-        });
-    });
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption>
+        <span id="lightbox-caption"></span>
+        <span class="muted" id="lightbox-count"></span>
+      </figcaption>
+    </figure>
+    <div class="lightbox-controls">
+      <button type="button" id="lightbox-prev">Previous</button>
+      <button type="button" id="lightbox-next">Next</button>
+      <button type="button" id="lightbox-close">Close</button>
+    </div>
+  </dialog>
 
-    // Smooth scrolling for nav links
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-    });
-</script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
