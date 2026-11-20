@@ -19,6 +19,23 @@
   <link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nihith Mekala",
+    "alternateName": "Nick Mekala",
+    "url": "https://knick011.github.io/Portfolio/",
+    "jobTitle": "Founder and Engineer",
+    "worksFor": { "@type": "Organization", "name": "Invocursor Inc.", "url": "https://www.invocursor.com/" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "McMaster University" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Hamilton", "addressRegion": "ON", "addressCountry": "CA" },
+    "email": "mailto:nihith011@gmail.com",
+    "sameAs": ["https://www.linkedin.com/in/nihith-mekala-174374206/", "https://github.com/Knick011"],
+    "knowsAbout": ["Software implementation", "SaaS integrations", "Technical onboarding", "JavaScript", "Node.js", "PostgreSQL", "OpenAI API", "Juno EMR"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -26,10 +43,11 @@
   <header class="top">
     <div class="wrap top-inner">
       <a class="brand" href="#top" aria-label="Nihith Mekala, back to top">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0E4A57"/><path d="M21 13v35l9-8.5 6 12.5 6.5-3-6-12.5H48z" fill="#FFD23F" stroke="#0A3640" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        <svg class="avatar" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="32" fill="#0E4A57"/><path d="M22 44V20l20 24V20" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span>Nihith Mekala</span>
       </a>
       <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
         <a href="#invocursor">Invocursor</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
@@ -46,11 +64,14 @@
     <section class="hero wrap" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">I get software working inside the workflows people already use.</h1>
-        <p class="lead">I'm Nihith (Nick) Mekala, in Hamilton, Ontario. I built <a href="#invocursor">Invocursor</a>, an AI copilot that runs inside other companies' web apps and is in paid production use at Attendify. Day to day, I keep a growing family clinic's front office and EMR running. I'm open to implementation, solutions and integrations roles.</p>
+        <p class="lead">I'm Nihith (Nick) Mekala, in Hamilton, Ontario. I built <a class="with-logo" href="#invocursor"><img class="inline-logo" src="images/invocursor-logo-256.png" width="64" height="64" alt="">Invocursor</a>, an AI copilot that runs inside other companies' web apps and is in paid production use at Attendify. Day to day, I keep a growing family clinic's front office and EMR running. I'm open to implementation, solutions and integrations roles.</p>
         <div class="actions">
           <a class="btn" href="mailto:nihith011@gmail.com">Email me</a>
-          <a class="text-link" href="https://www.linkedin.com/in/nihith-mekala-174374206/" rel="noopener">LinkedIn</a>
-          <a class="text-link" href="https://github.com/Knick011" rel="noopener">GitHub</a>
+          <a class="btn btn-quiet" href="#invocursor-video">Watch the 3-min demo</a>
+          <span class="actions-links">
+            <a class="text-link" href="https://www.linkedin.com/in/nihith-mekala-174374206/" rel="noopener">LinkedIn</a>
+            <a class="text-link" href="https://github.com/Knick011" rel="noopener">GitHub</a>
+          </span>
         </div>
       </div>
 
@@ -58,7 +79,7 @@
         <div class="demo" id="demo">
           <div class="demo-top">
             <span class="demo-brand">
-              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M21 13v35l9-8.5 6 12.5 6.5-3-6-12.5H48z" fill="#FFD23F" stroke="#0A3640" stroke-width="2.5" stroke-linejoin="round"/></svg>
+              <img src="images/invocursor-logo-256.png" width="64" height="64" alt="">
               Invocursor
             </span>
             <span class="demo-mode">Mode: Do it for me</span>
@@ -103,9 +124,34 @@
       </figure>
     </section>
 
+    <!-- About -->
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="rail">
+        <h2 id="about-title">About</h2>
+      </div>
+
+      <div class="body">
+        <div class="about-text">
+          <p class="intro">I studied Life Sciences at McMaster and taught myself to code. Since then I've kept a fast-growing clinic's front office running, coordinated a busy student union facility, and built an AI product that a paying customer runs in production. Each time, the job was the same: learn how people actually work, then make the software fit.</p>
+
+          <h3>What I bring</h3>
+          <ul class="bring">
+            <li><strong>Implementation that sticks.</strong> I took Attendify from pilot to paid production use, mapping 53 workflows and 880+ interface elements.</li>
+            <li><strong>Steady support under load.</strong> I kept a new clinic's front office running as it grew from about <span class="nw">5–10</span> to about 50 patients a day, and I'm the go-to person for its EMR.</li>
+            <li><strong>Documentation people use.</strong> At the McMaster Students Union, my FAQs, process maps and self-service guides cut recurring support requests by 15%.</li>
+            <li><strong>Real technical depth.</strong> I build and run production systems in Node.js, PostgreSQL and the OpenAI API.</li>
+          </ul>
+
+          <h3>What I'm looking for</h3>
+          <p>Implementation, solutions engineering, integrations and technical onboarding roles, especially in health tech and SaaS. I'm based in Hamilton and open to remote work, or hybrid in Toronto, Waterloo and the GTA.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Invocursor -->
     <section class="section wrap" id="invocursor" aria-labelledby="invocursor-title">
       <div class="rail">
+        <img class="rail-logo" src="images/invocursor-logo-256.png" width="64" height="64" alt="Invocursor logo">
         <h2 id="invocursor-title">Invocursor</h2>
         <p class="rail-note">Founder and engineer<br>Dec 2025 – Present</p>
       </div>
@@ -114,21 +160,20 @@
         <p class="intro">Invocursor is an AI copilot that lives inside someone else's product. A user types what they want in plain English. In “Do it for me” mode, an animated cursor does the task in the real interface. In “Teach me” mode, it walks them through it step by step. It installs with a single script tag.</p>
         <p>I started it in December 2025 and incorporated it in Ontario in March 2026. I'm the only person on it, so I do the engineering, the customer setup, the documentation and the sales.</p>
 
+        <figure class="video" id="invocursor-video">
+          <video controls preload="none" playsinline poster="images/invocursor-video-poster.webp" width="1920" height="1080">
+            <source src="media/invocursor-demo.mp4" type="video/mp4">
+            <a href="media/invocursor-demo.mp4">Download the Invocursor demo video (MP4)</a>
+          </video>
+          <figcaption>A 3-minute walkthrough I recorded on a sample event app. The assistant adds a speaker from a plain-English request, hands a question off to the team, and turns what users ran into into reports the product team can sort.</figcaption>
+        </figure>
+
         <dl class="facts">
           <div><dt>Customer</dt><dd>Attendify, a Canadian childcare management platform</dd></div>
           <div><dt>Scope</dt><dd>53 workflows, with 880+ interface elements mapped</dd></div>
           <div><dt>Status</dt><dd>Taken from pilot to paid production use, with ongoing support</dd></div>
           <div><dt>Stack</dt><dd>JavaScript, Node.js and Express, OpenAI API (GPT-4o-mini), Supabase and PostgreSQL, ExcelJS</dd></div>
         </dl>
-
-        <figure class="shot">
-          <img src="images/invocursor-demo.png"
-               srcset="images/thumbs/invocursor-demo.webp 760w, images/invocursor-demo.png 2082w"
-               sizes="(min-width: 1100px) 800px, 92vw"
-               width="2082" height="1439" loading="lazy"
-               alt="The Invocursor assistant panel open beside a sample event management app, with Do it for me and Teach me mode buttons.">
-          <figcaption>The assistant panel inside a sample app, with both modes.</figcaption>
-        </figure>
 
         <h3>How a request runs</h3>
         <ol class="steps">
@@ -173,24 +218,39 @@
 
       <div class="body">
         <article class="job">
-          <h3>Medical Office Assistant</h3>
-          <p class="when">Apr 2026 – Present</p>
-          <p class="org">Westdale Doctors Clinic, Hamilton</p>
-          <p>I joined a brand-new family practice and kept the front office running as daily volume grew from about 5–10 patients to about 50. I'm the first point of contact when Juno EMR or other software has a problem, and I guide physicians and staff through the system's workflows. I set up the office's procedures for document tracking, filing and monthly reporting, and I handle referrals, results, intake, vitals and venipuncture.</p>
+          <span class="job-mark" aria-hidden="true">WD</span>
+          <div class="job-main">
+            <div class="job-head">
+              <h3>Medical Office Assistant</h3>
+              <p class="when">Apr 2026 – Present</p>
+            </div>
+            <p class="org">Westdale Doctors Clinic, Hamilton</p>
+            <p>I joined a brand-new family practice and kept the front office running as daily volume grew from about <span class="nw">5–10</span> patients to about 50. I'm the first point of contact when Juno EMR or other software has a problem, and I guide physicians and staff through the system's workflows. I set up the office's procedures for document tracking, filing and monthly reporting, and I handle referrals, results, intake, vitals and venipuncture.</p>
+          </div>
         </article>
 
         <article class="job">
-          <h3>Founder and Engineer</h3>
-          <p class="when">Dec 2025 – Present</p>
-          <p class="org">Invocursor Inc., Hamilton</p>
-          <p>Built and run an AI onboarding copilot that's in paid production use at Attendify. Mapped 53 workflows and 880+ interface elements, wrote the integration documentation and support the account. <a href="#invocursor">More above</a>.</p>
+          <img class="job-mark" src="images/invocursor-logo-256.png" width="64" height="64" alt="">
+          <div class="job-main">
+            <div class="job-head">
+              <h3>Founder and Engineer</h3>
+              <p class="when">Dec 2025 – Present</p>
+            </div>
+            <p class="org">Invocursor Inc., Hamilton</p>
+            <p>Built and run an AI onboarding copilot that's in paid production use at Attendify. Mapped 53 workflows and 880+ interface elements, wrote the integration documentation and support the account. <a href="#invocursor">More above</a>.</p>
+          </div>
         </article>
 
         <article class="job">
-          <h3>Hub Facility Coordinator</h3>
-          <p class="when">Feb 2024 – Dec 2024</p>
-          <p class="org">McMaster Students Union, Hamilton</p>
-          <p>The main point of contact for bookings, logistics and day-to-day support for 50+ student programs a year. I cut recurring support requests by 15% by writing FAQs, process maps and self-service troubleshooting guides, and worked with IT to fix data discrepancies in SharePoint and Excel trackers.</p>
+          <span class="job-mark" aria-hidden="true">MSU</span>
+          <div class="job-main">
+            <div class="job-head">
+              <h3>Hub Facility Coordinator</h3>
+              <p class="when">Feb 2024 – Dec 2024</p>
+            </div>
+            <p class="org">McMaster Students Union, Hamilton</p>
+            <p>The main point of contact for bookings, logistics and day-to-day support for 50+ student programs a year. I cut recurring support requests by 15% by writing FAQs, process maps and self-service troubleshooting guides, and worked with IT to fix data discrepancies in SharePoint and Excel trackers.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -206,7 +266,7 @@
           <img class="project-img" src="images/thumbs/brainbites-screenshot.webp" width="760" height="371" loading="lazy"
                alt="CaBBy's Brain Bites promotional banner with cartoon capybara mascots and the app's feature list.">
           <div>
-            <h3>CaBBy's Brain Bites</h3>
+            <h3 class="with-mark"><img class="title-logo" src="images/brainbites-logo-256.webp" width="64" height="64" alt="">CaBBy's Brain Bites</h3>
             <p>An Android app on Google Play that pairs screen-time tracking with quizzes: answer questions, earn time back. I built it with React Native, Kotlin and Firebase, and nearly 100 beta testers tried it. The hard parts were native Android work: a foreground service that keeps tracking after the app is closed, and a midnight rollover that turns unused time into points.</p>
             <p class="links">
               <a class="text-link" href="https://play.google.com/store/apps/details?id=com.cabbysbrainbites" rel="noopener">Google Play</a>

@@ -1,6 +1,7 @@
 /* Nihith (Nick) Mekala portfolio
    Type: Atkinson Hyperlegible Next and Mono (SIL Open Font License, see fonts/OFL.txt)
-   Motif: the yellow box is what Invocursor's engine draws around an element it has found. */
+   Motif: the orange box is what Invocursor's engine draws around an element it has found.
+   The orange is Invocursor's brand colour. */
 
 @font-face { font-family: "Atkinson Next"; src: url("fonts/atkinson-hyperlegible-next-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Atkinson Next"; src: url("fonts/atkinson-hyperlegible-next-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
@@ -19,7 +20,7 @@
   --petrol-deep: #0A3640;
   --on-petrol: #E8F1EF;
   --on-petrol-muted: #A9C4C2;
-  --hl: #FFD23F;          /* cursor highlight */
+  --hl: #F59E0B;          /* Invocursor orange: cursor highlight */
   --pass: #5FD39A;        /* on petrol */
   --stop: #FF8A6B;        /* on petrol */
 
@@ -110,7 +111,7 @@ a:hover { text-decoration-thickness: 2px; }
   display: inline-flex; align-items: center; gap: 10px;
   font-weight: 800; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap;
 }
-.brand-mark { width: 28px; height: 28px; }
+.avatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--rule); }
 
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav a {
@@ -142,17 +143,27 @@ a:hover { text-decoration-thickness: 2px; }
 .lead { font-size: var(--fs-md); line-height: 1.55; max-width: 34em; }
 .lead a { font-weight: 700; }
 
-.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 28px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 28px; }
 
 .btn {
   display: inline-block;
   background: var(--ink); color: var(--paper);
   font-weight: 700; text-decoration: none;
-  padding: 13px 22px; border-radius: 8px;
+  padding: 12px 20px; border-radius: 8px; font-size: 1rem;
 }
 .btn:hover { background: var(--petrol); }
+.btn-quiet { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.btn-quiet:hover { background: var(--ink); color: var(--paper); }
+
+.with-logo { white-space: nowrap; }
+.inline-logo {
+  display: inline-block; width: 1.05em; height: 1.05em; border-radius: 0.22em;
+  vertical-align: -0.16em; margin-right: 0.3em;
+}
 
 .text-link { font-weight: 700; }
+.actions-links { display: inline-flex; gap: 20px; }
+.nw { white-space: nowrap; }
 
 /* ---------- Demo ---------- */
 .hero-demo { margin: 0; }
@@ -175,7 +186,7 @@ a:hover { text-decoration-thickness: 2px; }
   border-bottom: 1px solid rgba(255,255,255,.12);
 }
 .demo-brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; }
-.demo-brand svg { width: 18px; height: 18px; }
+.demo-brand img { width: 22px; height: 22px; border-radius: 5px; }
 .demo-mode { color: var(--on-petrol-muted); }
 
 .demo-block { padding-block: 10px; border-bottom: 1px solid rgba(255,255,255,.12); }
@@ -222,7 +233,7 @@ a:hover { text-decoration-thickness: 2px; }
 .demo-plan .k { color: #9FD8CB; }
 .demo-plan .s { color: var(--on-petrol); }
 .demo-plan .sel { border-radius: 3px; padding: 0 2px; margin: 0 -2px; transition: outline-color .2s ease; outline: 2px solid transparent; outline-offset: 1px; }
-.demo-plan .sel.is-target { outline-color: var(--hl); background: rgba(255, 210, 63, .14); }
+.demo-plan .sel.is-target { outline-color: var(--hl); background: rgba(245, 158, 11, .16); }
 .demo-plan .sel.is-pass { outline-color: transparent; }
 .demo-plan .sel.is-fail { outline: 2px dashed var(--stop); }
 
@@ -324,9 +335,31 @@ a:hover { text-decoration-thickness: 2px; }
 .facts dt { font-weight: 700; }
 .facts dd { margin: 0; }
 
-.shot { margin: 0 0 8px; }
-.shot img { border-radius: 10px; border: 1px solid var(--rule); background: #fff; }
-.shot figcaption { font-size: var(--fs-sm); color: var(--muted); margin-top: 10px; }
+.rail-logo { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 16px; }
+
+.video { margin: 36px 0 8px; }
+.video video {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+  border-radius: 12px; background: var(--petrol-deep);
+  box-shadow: 0 0 0 1px var(--rule), 0 24px 48px -28px rgba(10, 54, 64, .55);
+}
+.video figcaption { font-size: var(--fs-sm); color: var(--muted); margin-top: 12px; max-width: var(--measure); }
+
+/* ---------- About ---------- */
+.portrait {
+  width: 100%; max-width: 260px; aspect-ratio: 4 / 5; object-fit: cover;
+  border-radius: 14px; background: var(--paper-2);
+  margin-top: 24px;
+}
+.about-text h3 { margin-top: 40px; }
+.bring { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
+.bring li { padding: 12px 0 12px 22px; position: relative; border-bottom: 1px solid var(--rule); }
+.bring li:last-child { border-bottom: 0; }
+.bring li::before {
+  content: ""; position: absolute; left: 0; top: 1.15em;
+  width: 10px; height: 10px; border-radius: 2px; background: var(--hl);
+}
+.bring strong { font-weight: 700; }
 
 .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
 .steps li {
@@ -360,18 +393,29 @@ a:hover { text-decoration-thickness: 2px; }
 /* ---------- Experience ---------- */
 .job {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  column-gap: 24px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  column-gap: 20px;
   padding-block: 28px;
   border-bottom: 1px solid var(--rule);
   max-width: 54rem;
 }
 .job:first-child { padding-top: 0; }
 .job:last-child { border-bottom: 0; }
+.job-mark {
+  width: 48px; height: 48px; border-radius: 10px;
+  display: grid; place-items: center;
+  background: var(--paper-2); color: var(--petrol);
+  font-weight: 800; font-size: 0.8125rem; letter-spacing: 0.02em;
+  margin-top: 2px;
+}
+.job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 24px; flex-wrap: wrap; }
 .job h3 { margin: 0; font-size: var(--fs-md); }
-.job .when { margin: 0; color: var(--muted); font-size: var(--fs-sm); font-variant-numeric: tabular-nums; white-space: nowrap; padding-top: 0.3em; }
-.job .org { grid-column: 1 / -1; margin: 2px 0 12px; color: var(--muted); }
-.job > p:last-child { grid-column: 1 / -1; max-width: var(--measure); }
+.job .when { margin: 0; color: var(--muted); font-size: var(--fs-sm); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.job .org { margin: 2px 0 12px; color: var(--muted); }
+.job-main > p:last-child { max-width: var(--measure); }
+
+.with-mark { display: flex; align-items: center; gap: 12px; }
+.title-logo { width: 40px; height: 40px; border-radius: 10px; flex: none; }
 
 /* ---------- Projects ---------- */
 .project {
@@ -478,6 +522,7 @@ a:hover { text-decoration-thickness: 2px; }
 @media (max-width: 860px) {
   .top-inner { flex-direction: column; align-items: stretch; gap: 0; padding-block: 10px 6px; }
   .brand { padding-block: 4px 6px; }
+  .avatar { width: 32px; height: 32px; }
   .nav {
     overflow-x: auto; scrollbar-width: none; margin-inline: -8px; padding-inline: 8px 24px; padding-bottom: 4px;
     -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
@@ -491,6 +536,7 @@ a:hover { text-decoration-thickness: 2px; }
   .rail { position: static; margin-bottom: 28px; }
   .rail-note { max-width: none; }
   .project { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .portrait { max-width: 220px; margin-top: 20px; }
   .cred-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -500,8 +546,9 @@ a:hover { text-decoration-thickness: 2px; }
   .lessons { grid-template-columns: minmax(0, 1fr); }
   .skill-grid, .cred-grid { grid-template-columns: minmax(0, 1fr); }
   .facts div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
-  .job { grid-template-columns: minmax(0, 1fr); }
-  .job .when { padding-top: 4px; }
+  .job { grid-template-columns: 40px minmax(0, 1fr); column-gap: 14px; }
+  .job-mark { width: 40px; height: 40px; font-size: 0.75rem; }
+  .job-head { flex-direction: column; gap: 2px; }
   .demo { padding: 16px 14px 14px; border-radius: 14px; }
   .demo-plan { font-size: 0.75rem; padding: 10px; }
   .figs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
